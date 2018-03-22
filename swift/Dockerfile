@@ -37,6 +37,7 @@ RUN apt-get install -y \
     php5.6-curl \
     php5.6-mcrypt \
     php5.6-gd \
+    php5.6-xml \
 		php5.6-xdebug
 
 # Turn off daemon mode
@@ -51,6 +52,11 @@ RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.ori
 RUN perl -pi -e 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/allow_url_fopen = Off/allow_url_fopen = On/g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/expose_php = On/expose_php = Off/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/upload_max_filesize = 2M/upload_max_filesize = 25M/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/max_execution_time = 30/max_execution_time = 300/g' /etc/php/5.6/fpm/php.ini
+
+ARG xdebug_host
+RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_port=9001\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
 
 # Copy default site conf
 COPY default.conf /etc/nginx/sites-available/default

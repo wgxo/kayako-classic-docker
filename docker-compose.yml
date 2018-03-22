@@ -3,6 +3,8 @@ services:
   swift:
     build:
       context: ./swift
+      args:
+        xdebug_host: ${XDEBUG_HOST}
     restart: always
     ports:
      - "80:80"
@@ -10,4 +12,3 @@ services:
      - ${CODE_PATH}:/var/www/html/classic
     environment:
       PHP_IDE_CONFIG: "serverName=default"
-      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_port=9001 remote_enable=1"
