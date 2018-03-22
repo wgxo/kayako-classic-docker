@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  swift:
+    build:
+      context: ./swift
+    restart: always
+    ports:
+     - "80:80"
+    volumes:
+     - ${CODE_PATH}:/var/www/html/classic
+    environment:
+      PHP_IDE_CONFIG: "serverName=default"
+      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_port=9001 remote_enable=1"
