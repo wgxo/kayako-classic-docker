@@ -5,7 +5,6 @@ services:
       context: ./swift
       args:
         xdebug_host: ${XDEBUG_HOST}
-    restart: always
     ports:
      - "80:80"
     volumes:
