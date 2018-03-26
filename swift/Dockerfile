@@ -15,6 +15,8 @@ RUN apt-get update && apt-get -y install \
     mcrypt \
     build-essential \
     tcl8.5 \
+		zip \
+		unzip \
     git
 
 # Download Nginx signing key
@@ -38,6 +40,7 @@ RUN apt-get install -y \
     php5.6-mcrypt \
     php5.6-gd \
     php5.6-xml \
+    php5.6-zip \
 		php5.6-xdebug
 
 # Turn off daemon mode
@@ -62,11 +65,13 @@ RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\n
 COPY default.conf /etc/nginx/sites-available/default
 
 # Set the current working directory
-WORKDIR /var/www/html/classic
+WORKDIR /var/www
 
 # Expose port 80
 EXPOSE 80
 
+# Replace index file
+RUN mv html/index.nginx-debian.html html/index.html
+
 # Boot up Nginx, and PHP5-FPM when container is started
 CMD service php5.6-fpm start && nginx
-

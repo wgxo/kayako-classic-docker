@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "COMPOSE_PROJECT_NAME=classic" > .env
+
 CONFIG="./swift/kayako-SWIFT/trunk/__swift/config/config.php"
 if [ ! -f $CONFIG ]; then
 		echo "$CONFIG does not exist!"
@@ -18,7 +20,7 @@ if [ -z "$HOSTIP" ]; then
 		echo "Unable to get host IP address"
 		exit 1
 fi
-echo "XDEBUG_HOST=$HOSTIP" > .env
+echo "XDEBUG_HOST=$HOSTIP" >> .env
 
 DIR="./swift/kayako-SWIFT/trunk"
 if [ ! -d $DIR ]; then
@@ -28,7 +30,10 @@ fi
 WINPATH=$(readlink -f $DIR | sed -e 's|^/mnt/c|C:|' -e 's|/|\\|g')
 printf "CODE_PATH=%s\n" $WINPATH >> .env
 
-echo "Press ENTER to start composing..."
-read key
+for d in ../vendor/*; do
+		APP=$(basename $d | sed 's/-.*$//' | awk '{print toupper($0)}' )
+		WINPATH=$(readlink -f $d | sed -e 's|^/mnt/c|C:|' -e 's|/|\\|g')
+		printf "%s=%s\n" $APP $WINPATH >> .env
+done
 
 docker-compose.exe up --build -d

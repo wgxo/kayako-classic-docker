@@ -8,6 +8,9 @@ services:
     ports:
      - "80:80"
     volumes:
-     - ${CODE_PATH}:/var/www/html/classic
+     - ${CODE_PATH}:/var/www/swift
+     - ${JOOMLA}:/var/www/joomla
+     - ${DRUPAL}:/var/www/drupal
+     - ${MAGENTO}:/var/www/magento
     environment:
       PHP_IDE_CONFIG: "serverName=default"
