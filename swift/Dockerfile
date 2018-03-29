@@ -41,7 +41,10 @@ RUN apt-get install -y \
     php5.6-gd \
     php5.6-xml \
     php5.6-zip \
-		php5.6-xdebug
+    php5.6-intl \
+    php5.6-sqlite3 \
+		php5.6-xdebug \
+		composer
 
 # Turn off daemon mode
 # Reference: http://stackoverflow.com/questions/18861300/how-to-run-nginx-within-docker-container-without-halting

@@ -12,6 +12,7 @@ if [ -z "$GATEWAY" ]; then
 		echo "Unable to get IP of MySQL container"
 		echo "Remember to set DB_HOSTNAME on $CONFIG"
 else
+echo "MYSQL_HOST=$GATEWAY" >> .env
 		perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$GATEWAY'/" $CONFIG
 fi
 

@@ -12,5 +12,7 @@ services:
      - ${JOOMLA}:/var/www/joomla
      - ${DRUPAL}:/var/www/drupal
      - ${MAGENTO}:/var/www/magento
+     - ${WORDPRESS}:/var/www/wordpress
+     - ${OAUTH2}:/var/www/oauth2
     environment:
       PHP_IDE_CONFIG: "serverName=default"
