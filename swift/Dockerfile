@@ -65,7 +65,8 @@ ARG xdebug_host
 RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_port=9001\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
 
 # Copy default site conf
-COPY default.conf /etc/nginx/sites-available/default
+COPY server.conf /etc/nginx/nginx.conf
+COPY site.conf /etc/nginx/sites-available/default
 
 # Set the current working directory
 WORKDIR /var/www

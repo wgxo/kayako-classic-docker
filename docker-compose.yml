@@ -1,6 +1,7 @@
 version: '3.0'
 services:
   swift:
+    container_name: swift
     build:
       context: ./swift
       args:
@@ -14,5 +15,6 @@ services:
      - ${MAGENTO}:/var/www/magento
      - ${WORDPRESS}:/var/www/wordpress
      - ${OAUTH2}:/var/www/oauth2
+     - ${WHMCS}:/var/www/whmcs
     environment:
       PHP_IDE_CONFIG: "serverName=default"

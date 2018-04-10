@@ -7,7 +7,7 @@ if [ ! -f $CONFIG ]; then
 		echo "$CONFIG does not exist!"
 		exit 1
 fi
-GATEWAY=$(docker.exe inspect classic_default -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}' 2>/dev/null)
+GATEWAY=$(docker inspect aladdin_default -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}' 2>/dev/null)
 if [ -z "$GATEWAY" ]; then
 		echo "Unable to get IP of MySQL container"
 		echo "Remember to set DB_HOSTNAME on $CONFIG"
@@ -16,7 +16,7 @@ echo "MYSQL_HOST=$GATEWAY" >> .env
 		perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$GATEWAY'/" $CONFIG
 fi
 
-HOSTIP=$(ip -4 address show eth1 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+HOSTIP=$(ip -4 address show ens33 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 if [ -z "$HOSTIP" ]; then
 		echo "Unable to get host IP address"
 		exit 1
@@ -28,13 +28,13 @@ if [ ! -d $DIR ]; then
 		echo "$DIR does not exist!"
 		exit 1
 fi
-WINPATH=$(readlink -f $DIR | sed -e 's|^/mnt/c|C:|' -e 's|/|\\|g')
-printf "CODE_PATH=%s\n" $WINPATH >> .env
+DEST=$(readlink -f $DIR)
+printf "CODE_PATH=%s\n" $DEST >> .env
 
 for d in ../vendor/*; do
 		APP=$(basename $d | sed 's/-.*$//' | awk '{print toupper($0)}' )
-		WINPATH=$(readlink -f $d | sed -e 's|^/mnt/c|C:|' -e 's|/|\\|g')
-		printf "%s=%s\n" $APP $WINPATH >> .env
+		DEST=$(readlink -f $d)
+		printf "%s=%s\n" $APP $DEST >> .env
 done
 
-docker-compose.exe up --build -d
+docker-compose up --build -d
