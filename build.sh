@@ -1,6 +1,15 @@
 #!/bin/sh
 
+MYSQL_SERVER="aladdin_db_1"
+MYSQL_PASS="OGYxYmI1OTUzZmM"
+
 echo "COMPOSE_PROJECT_NAME=classic" > .env
+
+##### MySQL Stuff #####
+perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \
+        ./swift/kayako-SWIFT/trunk/__swift/config/config.php
+perl -pi -e "s/(?=('DB_PASSWORD', ))'.*'/\\1'$MYSQL_PASS'/" \
+        ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
 ##### Xdebug stuff #####
 HOSTIP=$(ip route show scope global|grep -oP '(?<=src\s)\d+(\.\d+){3}')
@@ -40,3 +49,5 @@ if [ $# -gt 0 ]; then
 else
 		docker-compose up -d
 fi
+
+echo "*** Remember to check your database settings in SWIFT_DIR/__swift/config/config.ini ***"

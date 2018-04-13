@@ -77,9 +77,5 @@ EXPOSE 80
 # Replace index file
 RUN mv html/index.nginx-debian.html html/index.html
 
-# Set MySQL server in config file
-ARG mysql_server
-RUN perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$mysql_server'/" /var/www/swift/__swift/config/config.php
-
 # Boot up Nginx, and PHP5-FPM when container is started
 CMD service php5.6-fpm start && nginx

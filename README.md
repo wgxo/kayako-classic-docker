@@ -8,11 +8,11 @@ This configuration assumes that: Drupal, Joomla, etc. exist on ../vendor directo
 
 The container depends on a external mysql instance named `aladdin_db_1`. Running on the `aladdin_default` network from TNK.
 
-If another MySQL instance is to be used, it needs to be declared in the `docker-compose.yml` file
+If another MySQL instance is to be used, it needs to be declared in `docker-compose.yml` and in `build.sh`
 
 The swift/kayako-SWIFT directory is a clone of the [Kayako Classic repo](https://github.com/trilogy-group/kayako-SWIFT)
 
-Running `./build.sh` generates a `.env` file with several environment variables.
+Running `./build.sh` generates a `.env` file with several environment variables and builds the KC container.
 
 The `XDEBUG_HOST` variable is the IP of the host. It permits to debug KC from inside the container using PHPStorm.
 
