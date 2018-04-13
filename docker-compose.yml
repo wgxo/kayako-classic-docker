@@ -18,3 +18,12 @@ services:
      - ${WHMCS}:/var/www/whmcs
     environment:
       PHP_IDE_CONFIG: "serverName=default"
+    networks:
+      - default
+      - aladdin_default
+    external_links:
+      - mysql
+
+networks:
+  aladdin_default:
+    external: true

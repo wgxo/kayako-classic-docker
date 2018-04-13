@@ -7,16 +7,10 @@ if [ ! -f $CONFIG ]; then
 		echo "$CONFIG does not exist!"
 		exit 1
 fi
-GATEWAY=$(docker inspect aladdin_default -f '{{range .IPAM.Config}}{{.Gateway}}{{end}}' 2>/dev/null)
-if [ -z "$GATEWAY" ]; then
-		echo "Unable to get IP of MySQL container"
-		echo "Remember to set DB_HOSTNAME on $CONFIG"
-else
-echo "MYSQL_HOST=$GATEWAY" >> .env
-		perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$GATEWAY'/" $CONFIG
-fi
 
-HOSTIP=$(ip -4 address show ens33 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'mysql'/" $CONFIG
+
+HOSTIP=$(ip route show scope global|grep -oP '(?<=src\s)\d+(\.\d+){3}')
 if [ -z "$HOSTIP" ]; then
 		echo "Unable to get host IP address"
 		exit 1
@@ -37,4 +31,8 @@ for d in ../vendor/*; do
 		printf "%s=%s\n" $APP $DEST >> .env
 done
 
-docker-compose up --build -d
+if [ $# -gt 0 ]; then
+		docker-compose up --build -d
+else
+		docker-compose up -d
+fi
