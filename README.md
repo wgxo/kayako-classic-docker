@@ -6,9 +6,9 @@ The subdir branch was started to run KC and other tools from a path diferent fro
 
 This configuration assumes that: Drupal, Joomla, etc. exist on ../vendor directory.
 
-The container depends on a external mysql instance named `mysql`.
+The container depends on a external mysql instance named `aladdin_db_1`. Running on the `aladdin_default` network from TNK.
 
-If there is already a TNK env running, the instance name is aladdin_db_1
+If another MySQL instance is to be used, it needs to be declared in the `docker-compose.yml` file
 
 The swift/kayako-SWIFT directory is a clone of the [Kayako Classic repo](https://github.com/trilogy-group/kayako-SWIFT)
 

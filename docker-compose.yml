@@ -6,6 +6,7 @@ services:
       context: ./swift
       args:
         xdebug_host: ${XDEBUG_HOST}
+        mysql_server: aladdin_db_1
     ports:
      - "80:80"
     volumes:
@@ -22,7 +23,7 @@ services:
       - default
       - aladdin_default
     external_links:
-      - mysql
+      - aladdin_db_1
 
 networks:
   aladdin_default:
