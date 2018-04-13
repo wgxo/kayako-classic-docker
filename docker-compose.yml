@@ -1,6 +1,7 @@
 version: '3.0'
 services:
   swift:
+    container_name: swift
     build:
       context: ./swift
       args:
@@ -8,6 +9,21 @@ services:
     ports:
      - "80:80"
     volumes:
-     - ${CODE_PATH}:/var/www/html/classic
+     - ${CODE_PATH}:/var/www/swift
+     - ${JOOMLA}:/var/www/joomla
+     - ${DRUPAL}:/var/www/drupal
+     - ${MAGENTO}:/var/www/magento
+     - ${WORDPRESS}:/var/www/wordpress
+     - ${OAUTH2}:/var/www/oauth2
+     - ${WHMCS}:/var/www/whmcs
     environment:
       PHP_IDE_CONFIG: "serverName=default"
+    networks:
+      - default
+      - aladdin_default
+    external_links:
+      - aladdin_db_1
+
+networks:
+  aladdin_default:
+    external: true

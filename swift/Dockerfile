@@ -15,6 +15,8 @@ RUN apt-get update && apt-get -y install \
     mcrypt \
     build-essential \
     tcl8.5 \
+		zip \
+		unzip \
     git
 
 # Download Nginx signing key
@@ -38,7 +40,11 @@ RUN apt-get install -y \
     php5.6-mcrypt \
     php5.6-gd \
     php5.6-xml \
-		php5.6-xdebug
+    php5.6-zip \
+    php5.6-intl \
+    php5.6-sqlite3 \
+		php5.6-xdebug \
+		composer
 
 # Turn off daemon mode
 # Reference: http://stackoverflow.com/questions/18861300/how-to-run-nginx-within-docker-container-without-halting
@@ -59,14 +65,17 @@ ARG xdebug_host
 RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_port=9001\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
 
 # Copy default site conf
-COPY default.conf /etc/nginx/sites-available/default
+COPY server.conf /etc/nginx/nginx.conf
+COPY site.conf /etc/nginx/sites-available/default
 
 # Set the current working directory
-WORKDIR /var/www/html/classic
+WORKDIR /var/www
 
 # Expose port 80
 EXPOSE 80
 
+# Replace index file
+RUN mv html/index.nginx-debian.html html/index.html
+
 # Boot up Nginx, and PHP5-FPM when container is started
 CMD service php5.6-fpm start && nginx
-

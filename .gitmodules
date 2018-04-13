@@ -1,0 +1,5 @@
+[submodule "swift/kayako-SWIFT"]
+    path = swift/kayako-SWIFT
+    url = git@github.com:trilogy-group/kayako-SWIFT.git
+    branch = master
+    ignore = all
