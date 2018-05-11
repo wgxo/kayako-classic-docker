@@ -1,11 +1,16 @@
 # Pull from the ubuntu:latest
 FROM ubuntu:latest
 
+# Disable TERM warning during build
+ARG DEBIAN_FRONTEND=noninteractive
+
 # Update cache and install base packages
 RUN apt-get update && apt-get -y install \
     software-properties-common \
     python-software-properties \
     debian-archive-keyring \
+		apt-utils \
+		libterm-readline-perl-perl \
     wget \
     curl \
     vim \
@@ -42,9 +47,11 @@ RUN apt-get install -y \
     php5.6-xml \
     php5.6-zip \
     php5.6-intl \
+    php5.6-imap \
     php5.6-sqlite3 \
 		php5.6-xdebug \
-		composer
+		composer \
+		phpunit
 
 # Turn off daemon mode
 # Reference: http://stackoverflow.com/questions/18861300/how-to-run-nginx-within-docker-container-without-halting

@@ -11,8 +11,23 @@ perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \
 perl -pi -e "s/(?=('DB_PASSWORD', ))'.*'/\\1'$MYSQL_PASS'/" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
+##### Gateway stuff #####
+# I need to get the IP of the machine running docker, so it can be accessed internally by swift
+GWIP=$(ip route show scope global|grep -oP '(?<=src\s)\d+(\.\d+){3}')
+
+if [ -z "$GWIP" ]; then
+		echo "Unable to get GW IP address"
+		exit 1
+fi
+
+echo "GWIP=$GWIP" >> .env
+
 ##### Xdebug stuff #####
-HOSTIP=$(ip route show scope global|grep -oP '(?<=src\s)\d+(\.\d+){3}')
+# I need to get the IP of my Windows development machine where PHPStorm is installed.
+# I need the IP so KC inside the Docker container can establish a connection.
+# Since the network uses DHCP to get IPs, I only know the MAC address and I use the following
+# code to get the dynamic IP
+HOSTIP=$(arp -na |grep 00:0c:29:58:25:aa|grep -oP '\d+(\.\d+){3}')
 
 if [ -z "$HOSTIP" ]; then
 		echo "Unable to get host IP address"
@@ -45,7 +60,12 @@ done
 
 ##### Build it! #####
 if [ $# -gt 0 ]; then
-		docker-compose up --build -d
+		if [ "$1" = "f" ]; then
+				docker-compose build --no-cache
+				docker-compose up -d
+		else
+				docker-compose up --build -d
+		fi
 else
 		docker-compose up -d
 fi

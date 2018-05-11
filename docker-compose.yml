@@ -6,6 +6,8 @@ services:
       context: ./swift
       args:
         xdebug_host: ${XDEBUG_HOST}
+    extra_hosts:
+      kayako-dev: ${GWIP}
     ports:
      - "80:80"
     volumes:
