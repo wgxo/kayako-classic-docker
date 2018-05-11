@@ -6,6 +6,8 @@ The subdir branch was started to run KC and other tools from a path diferent fro
 
 This configuration assumes that: Drupal, Joomla, etc. exist on ../vendor directory.
 
+If you don't want to install tools from other vendors, remove the volumes from `docker-composer.yml`.
+
 The container depends on a external mysql instance named `aladdin_db_1`. Running on the `aladdin_default` network from TNK.
 
 If another MySQL instance is to be used, it needs to be declared in `docker-compose.yml` and in `build.sh`
