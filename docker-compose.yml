@@ -26,6 +26,16 @@ services:
     external_links:
       - aladdin_db_1
 
+  # my:
+  #   container_name: my
+  #   build:
+  #     context: ./my
+  #   extra_hosts:
+  #     my.kayako.com: 127.0.0.1
+  #     kayako-dev: ${GWIP}
+  #   ports:
+  #    - "443:443"
+
 networks:
   aladdin_default:
     external: true
