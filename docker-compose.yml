@@ -18,8 +18,32 @@ services:
      - ${WORDPRESS}:/var/www/wordpress
      - ${OAUTH2}:/var/www/oauth2
      - ${WHMCS}:/var/www/whmcs
+     - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
+      LINES: ${LINES}
+      COLUMNS: ${COLS}
+      TERM: linux
+    networks:
+      - default
+      - aladdin_default
+    external_links:
+      - aladdin_db_1
+
+  php54:
+    container_name: php54
+    build:
+      context: ./php54
+      args:
+        xdebug_host: ${XDEBUG_HOST}
+    extra_hosts:
+      kayako-dev: ${GWIP}
+    volumes:
+     - ${CODE_PATH}:/home/swift
+     - /home/wgarcia/kayako:/home/kayako
+    environment:
+      PHP_IDE_CONFIG: "serverName=default"
+      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_port=9001 remote_enable=1"
     networks:
       - default
       - aladdin_default

@@ -49,9 +49,10 @@ RUN apt-get install -y \
     php5.6-intl \
     php5.6-imap \
     php5.6-sqlite3 \
-		php5.6-xdebug \
-		composer \
-		phpunit
+		php5.6-xdebug
+
+# Install PEAR
+RUN apt-get install -y php-pear
 
 # Turn off daemon mode
 # Reference: http://stackoverflow.com/questions/18861300/how-to-run-nginx-within-docker-container-without-halting
@@ -62,11 +63,15 @@ RUN cp /etc/php/5.6/fpm/php.ini /etc/php/5.6/fpm/php.ini.original.bak
 RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.original
 
 # Configure PHP settings
-RUN perl -pi -e 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/allow_url_fopen = Off/allow_url_fopen = On/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/expose_php = On/expose_php = Off/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/upload_max_filesize = 2M/upload_max_filesize = 25M/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/max_execution_time = 30/max_execution_time = 300/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/;(?=cgi.fix_pathinfo=1)//g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/;(?=always_populate_raw_post_data = -1)//g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(?=allow_url_fopen = )Off/On/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(?=expose_php = )On/Off/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(?=upload_max_filesize = )2M/25M/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(?=max_execution_time = )30/300/g' /etc/php/5.6/fpm/php.ini
+
+# install composer
+RUN curl -Lso- https://getcomposer.org/installer|php -- --install-dir=/usr/local/bin --filename=composer
 
 ARG xdebug_host
 RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_port=9001\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
@@ -74,6 +79,8 @@ RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\n
 # Copy default site conf
 COPY server.conf /etc/nginx/nginx.conf
 COPY site.conf /etc/nginx/sites-available/default
+
+RUN chown -R www-data:www-data /var/www
 
 # Set the current working directory
 WORKDIR /var/www

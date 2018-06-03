@@ -2,8 +2,12 @@
 
 MYSQL_SERVER="aladdin_db_1"
 MYSQL_PASS="OGYxYmI1OTUzZmM"
+LINES=`tput lines`
+COLS=`tput cols`
 
 echo "COMPOSE_PROJECT_NAME=classic" > .env
+echo "LINES=$LINES" >> .env
+echo "COLS=$COLS" >> .env
 
 ##### MySQL Stuff #####
 perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \
