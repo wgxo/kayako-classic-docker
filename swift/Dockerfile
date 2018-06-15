@@ -91,5 +91,8 @@ EXPOSE 80
 # Replace index file
 RUN mv html/index.nginx-debian.html html/index.html
 
+RUN apt-get install -y sudo
+RUN echo "www-data ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
 # Boot up Nginx, and PHP5-FPM when container is started
 CMD service php5.6-fpm start && nginx

@@ -43,7 +43,7 @@ services:
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
-      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_port=9001 remote_enable=1"
+      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_port=9000 remote_enable=1"
     networks:
       - default
       - aladdin_default

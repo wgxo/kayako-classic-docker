@@ -2,6 +2,10 @@
 
 MYSQL_SERVER="aladdin_db_1"
 MYSQL_PASS="OGYxYmI1OTUzZmM"
+
+# PHPStorm development machine MAC address
+MAC="00:0c:29:58:25:aa"
+
 LINES=`tput lines`
 COLS=`tput cols`
 
@@ -17,7 +21,8 @@ perl -pi -e "s/(?=('DB_PASSWORD', ))'.*'/\\1'$MYSQL_PASS'/" \
 
 ##### Gateway stuff #####
 # I need to get the IP of the machine running docker, so it can be accessed internally by swift
-GWIP=$(ip route show scope global|grep -oP '(?<=src\s)\d+(\.\d+){3}')
+DEV=$(ip route show scope global|grep -Poe '(?<=dev )\w+')
+GWIP=$(ip addr show dev $DEV|grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 
 if [ -z "$GWIP" ]; then
 		echo "Unable to get GW IP address"
@@ -31,7 +36,7 @@ echo "GWIP=$GWIP" >> .env
 # I need the IP so KC inside the Docker container can establish a connection.
 # Since the network uses DHCP to get IPs, I only know the MAC address and I use the following
 # code to get the dynamic IP
-HOSTIP=$(arp -na |grep 00:0c:29:58:25:aa|grep -oP '\d+(\.\d+){3}')
+HOSTIP=$(arp -na |grep $MAC|grep -oP '\d+(\.\d+){3}')
 
 if [ -z "$HOSTIP" ]; then
 		echo "Unable to get host IP address"
