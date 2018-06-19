@@ -7,7 +7,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Update cache and install base packages
 RUN apt-get update && apt-get -y install \
     software-properties-common \
-    python-software-properties \
     debian-archive-keyring \
 		apt-utils \
 		libterm-readline-perl-perl \
