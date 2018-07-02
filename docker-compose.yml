@@ -10,6 +10,7 @@ services:
       kayako-dev: ${GWIP}
     ports:
      - "80:80"
+     - "443:443"
     volumes:
      - ${CODE_PATH}:/var/www/swift
      - ${JOOMLA}:/var/www/joomla
@@ -18,6 +19,7 @@ services:
      - ${WORDPRESS}:/var/www/wordpress
      - ${OAUTH2}:/var/www/oauth2
      - ${WHMCS}:/var/www/whmcs
+     - ${LOGGER}:/var/www/my
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
@@ -25,35 +27,46 @@ services:
       COLUMNS: ${COLS}
       TERM: linux
     networks:
-      - default
-      - aladdin_default
+      aladdin_default:
+      default:
+        aliases:
+          - my.kayako.com
     external_links:
       - aladdin_db_1
+    # extra_hosts:
+    #   - my.kayako.com:127.0.0.1
 
-  phpunit:
-    container_name: phpunit
-    image: swift:phpunit
-    build:
-      context: ./swift/kayako-SWIFT
-    extra_hosts:
-      aladdin_db_1: ${GWIP}
-    volumes:
-     - ${CODE_PATH}:/home/swift
-     - /home/wgarcia/kayako:/home/kayako
-    environment:
-      PHP_IDE_CONFIG: "serverName=default"
-      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_enable=1"
+  # phpunit:
+  #   container_name: phpunit
+  #   image: swift:phpunit
+  #   build:
+  #     context: ./swift/kayako-SWIFT
+  #   extra_hosts:
+  #     aladdin_db_1: ${GWIP}
+  #   volumes:
+  #    - ${CODE_PATH}:/home/swift
+  #    - /home/wgarcia/kayako:/home/kayako
+  #   environment:
+  #     PHP_IDE_CONFIG: "serverName=default"
+  #     XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_enable=1"
 
   # my:
   #   container_name: my
   #   build:
   #     context: ./my
   #   extra_hosts:
-  #     my.kayako.com: 127.0.0.1
   #     kayako-dev: ${GWIP}
   #   ports:
   #    - "443:443"
+  #   networks:
+  #     default:
+  #       aliases:
+  #        - my.kayako.com
 
+  # php:
+  #   container_name: php
+  #   image: "php:5.6-fpm"
+    
 networks:
   aladdin_default:
     external: true

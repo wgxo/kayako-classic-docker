@@ -61,6 +61,10 @@ RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 RUN cp /etc/php/5.6/fpm/php.ini /etc/php/5.6/fpm/php.ini.original.bak
 RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.original
 
+# forward request and error logs to docker log collector
+RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+    && ln -sf /dev/stderr /var/log/nginx/error.log
+    
 # Configure PHP settings
 RUN perl -pi -e 's/;(?=cgi.fix_pathinfo=1)//g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/;(?=always_populate_raw_post_data = -1)//g' /etc/php/5.6/fpm/php.ini
@@ -73,19 +77,28 @@ RUN perl -pi -e 's/(?=max_execution_time = )30/300/g' /etc/php/5.6/fpm/php.ini
 RUN curl -Lso- https://getcomposer.org/installer|php -- --install-dir=/usr/local/bin --filename=composer
 
 ARG xdebug_host
-RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_port=9001\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
+RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
 
 # Copy default site conf
+COPY server.crt /etc/nginx/conf.d/
+COPY server.crt server.key /etc/nginx/
 COPY server.conf /etc/nginx/nginx.conf
 COPY site.conf /etc/nginx/sites-available/default
+
+COPY my.conf /etc/nginx/sites-available/my.kayako.com
+RUN ln -s /etc/nginx/sites-available/my.kayako.com /etc/nginx/sites-enabled/my.kayako.com
+
+#RUN mkdir /var/www/my
+#RUN echo '<?php print_r($_SERVER);' > /var/www/my/index.php
+#RUN echo '<?php phpinfo();' > /var/www/my/info.php
 
 RUN chown -R www-data:www-data /var/www
 
 # Set the current working directory
 WORKDIR /var/www
 
-# Expose port 80
-EXPOSE 80
+# Expose ports
+EXPOSE 80 443
 
 # Replace index file
 RUN mv html/index.nginx-debian.html html/index.html
