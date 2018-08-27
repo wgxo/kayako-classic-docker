@@ -62,9 +62,9 @@ RUN cp /etc/php/5.6/fpm/php.ini /etc/php/5.6/fpm/php.ini.original.bak
 RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.original
 
 # forward request and error logs to docker log collector
-RUN ln -sf /dev/stdout /var/log/nginx/access.log \
-    && ln -sf /dev/stderr /var/log/nginx/error.log
-    
+#RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
+
 # Configure PHP settings
 RUN perl -pi -e 's/;(?=cgi.fix_pathinfo=1)//g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/;(?=always_populate_raw_post_data = -1)//g' /etc/php/5.6/fpm/php.ini
