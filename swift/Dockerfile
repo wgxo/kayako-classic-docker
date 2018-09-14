@@ -66,12 +66,12 @@ RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.ori
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Configure PHP settings
-RUN perl -pi -e 's/;(?=cgi.fix_pathinfo=1)//g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/;(?=always_populate_raw_post_data = -1)//g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(?=allow_url_fopen = )Off/On/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(?=expose_php = )On/Off/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(?=upload_max_filesize = )2M/25M/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(?=max_execution_time = )30/300/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/;cgi.fix_pathinfo.*//g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/;always_populate_raw_post_data.*//g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(allow_url_fopen =) Off/\1 On/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(expose_php =) On/\1 Off/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(upload_max_filesize =) 2M/\1 25M/g' /etc/php/5.6/fpm/php.ini
+RUN perl -pi -e 's/(max_execution_time =) 30/\1 300/g' /etc/php/5.6/fpm/php.ini
 
 # install composer
 RUN curl -Lso- https://getcomposer.org/installer|php -- --install-dir=/usr/local/bin --filename=composer
