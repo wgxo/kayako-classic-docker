@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DIR="./swift/kayako-SWIFT/trunk"
+
 # COLORS
 LIGHT_GRAY="\033[0;37m"; BLUE="\033[1;36m"; RED="\033[0;31m"; LIGHT_RED="\033[1;31m";
 GREEN="\033[1;32m"; WHITE="\033[1;37m"; LIGHT_GRAY="\033[0;37m"; YELLOW="\033[1;33m";
@@ -55,8 +57,6 @@ echo "XDEBUG_HOST=$HOSTIP" >> .env
 
 
 ##### Swift stuff #####
-DIR="./swift/kayako-SWIFT/trunk"
-#DIR="./swift/fusion-latest/upload"
 
 if [ ! -d $DIR ]; then
 		echo "$DIR does not exist!"
