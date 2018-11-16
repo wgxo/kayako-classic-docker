@@ -89,5 +89,7 @@ else
 fi
 
 echo "$GREEN*** Remember to check your database settings in $DIR/__swift/config/config.php ***$NOCOLOR"
-grep DB_ $DIR/__swift/config/config.php|head -4
+grep "DB_" $DIR/__swift/config/config.php|head -4
+grep "^define.*DEBUG" $DIR/__swift/config/config.php
+grep "^define.*ENVIRON" $DIR/__swift/config/config.php
 

@@ -3,6 +3,7 @@ services:
   swift:
     container_name: swift
     build:
+      dockerfile: Dockerfile
       context: ./swift
       args:
         xdebug_host: ${XDEBUG_HOST}
@@ -23,6 +24,7 @@ services:
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
+      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=192.168.0.20 remote_enable=1 remote_autostart=1"
       LINES: ${LINES}
       COLUMNS: ${COLS}
       TERM: linux
