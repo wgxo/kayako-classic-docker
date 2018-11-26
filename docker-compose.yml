@@ -21,6 +21,7 @@ services:
      - ${OAUTH2}:/var/www/oauth2
      - ${WHMCS}:/var/www/whmcs
      - ${LOGGER}:/var/www/my
+     - ${SAMLIDP}:/var/www/samlidp
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
