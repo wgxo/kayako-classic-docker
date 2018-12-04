@@ -1,5 +1,42 @@
 version: '3.0'
 services:
+  swift72:
+    container_name: swift72
+    build:
+      dockerfile: Dockerfile72
+      context: ./swift
+      args:
+        xdebug_host: ${XDEBUG_HOST}
+    extra_hosts:
+      kayako-dev: ${GWIP}
+    ports:
+     - "80:80"
+     - "443:443"
+    volumes:
+     - ${CODE_PATH}:/var/www/swift
+     - ${JOOMLA}:/var/www/joomla
+     - ${DRUPAL}:/var/www/drupal
+     - ${MAGENTO}:/var/www/magento
+     - ${WORDPRESS}:/var/www/wordpress
+     - ${OAUTH2}:/var/www/oauth2
+     - ${WHMCS}:/var/www/whmcs
+     - ${LOGGER}:/var/www/my
+     - ${SAMLIDP}:/var/www/samlidp
+     - /home/wgarcia/kayako:/home/kayako
+    environment:
+      PHP_IDE_CONFIG: "serverName=default"
+      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=192.168.0.20 remote_enable=1 remote_autostart=1"
+      LINES: ${LINES}
+      COLUMNS: ${COLS}
+      TERM: linux
+    networks:
+      aladdin_default:
+      default:
+        aliases:
+          - my.kayako.com
+    external_links:
+      - aladdin_db_1
+
   swift:
     container_name: swift
     build:
