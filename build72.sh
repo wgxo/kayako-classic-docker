@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# stop mysql docker container
+docker ps|grep swift_mysql && (docker ps|grep swift_mysql | awk '{print $1}'|xargs docker stop)
+
 DIR="./swift/kayako-SWIFT/trunk"
 
 # COLORS
