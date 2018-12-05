@@ -79,13 +79,13 @@ done
 ##### Build it! #####
 if [ $# -gt 0 ]; then
 		if [ "$1" = "f" ]; then
-				docker-compose build --no-cache swift
-				docker-compose up -d swift
+				docker-compose build --no-cache swift72
+				docker-compose up -d swift72
 		else
-				docker-compose up --build -d swift
+				docker-compose up --build -d swift72
 		fi
 else
-		docker-compose up -d swift
+		docker-compose up -d swift72
 fi
 
 echo "$GREEN*** Remember to check your database settings in $DIR/__swift/config/config.php ***$NOCOLOR"
