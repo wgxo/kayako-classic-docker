@@ -72,6 +72,14 @@ RUN perl -pi -e 's/(allow_url_fopen =) Off/\1 On/g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/(expose_php =) On/\1 Off/g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/(upload_max_filesize =) 2M/\1 25M/g' /etc/php/5.6/fpm/php.ini
 RUN perl -pi -e 's/(max_execution_time =) 30/\1 300/g' /etc/php/5.6/fpm/php.ini
+RUN for f in `grep -rl memory_limit /etc/php/*|grep ini`; do perl -pi -e 's[memory_limit = .*][memory_limit = 4G]' $f; done
+RUN perl -pi -e 's[ = 32M][ = 4G]' /etc/php/5.6/fpm/pool.d/www.conf
+
+#5.6/cli/php.ini:memory_limit = -1
+#5.6/fpm/pool.d/www.conf:;php_admin_value[memory_limit] = -1
+#5.6/fpm/php.ini:memory_limit = -1
+#5.6/fpm/php.ini.original.bak:memory_limit = -1
+#5.6/apache2/php.ini:memory_limit = -1
 
 # install composer
 RUN curl -Lso- https://getcomposer.org/installer|php -- --install-dir=/usr/local/bin --filename=composer
