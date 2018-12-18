@@ -1,118 +1,43 @@
-# Pull from the ubuntu:latest
-FROM ubuntu:latest
+FROM php:7.2-apache
 
-# Disable TERM warning during build
-ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Update cache and install base packages
-RUN apt-get update && apt-get -y install \
-    software-properties-common \
-    debian-archive-keyring \
-		apt-utils \
-		libterm-readline-perl-perl \
-    wget \
-    curl \
-    vim \
-    aptitude \
-    dialog \
-    net-tools \
-    mcrypt \
-    build-essential \
-    tcl8.5 \
-		zip \
-		unzip \
-    git
+RUN apt-get update \
+    && apt-get -y install build-essential apt-utils autoconf libreadline-dev ${PHPIZE_DEPS} \
+    libxpm4 libxpm-dev libjpeg-dev libfreetype6-dev libc-client-dev libssl-dev
 
-# Download Nginx signing key
-RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C300EE8C
+RUN apt install -y libc-client-dev libkrb5-dev && rm -r /var/lib/apt/lists/*
 
-# Add to repository sources list
-RUN add-apt-repository ppa:nginx/stable
-RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
+    && docker-php-ext-install imap
 
-# Update cache and install Nginx
-RUN apt-get update && apt-get -y install nginx php5.6
+RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir \
+    && docker-php-ext-install gd
+                                  
+RUN mkdir -p /usr/share/man/man1 && apt-get update \
+    && apt install -y mysql-client wget git procps unzip curl \
+                      libmcrypt-dev libpng-dev
 
-# Install PHP modules
-RUN apt-get install -y \
-    php5.6-fpm \
-    php5.6-cli \
-    php5.6-mysql \
-    php5.6-mysqli \
-    php5.6-mbstring \
-    php5.6-curl \
-    php5.6-mcrypt \
-    php5.6-gd \
-    php5.6-xml \
-    php5.6-zip \
-    php5.6-intl \
-    php5.6-imap \
-    php5.6-sqlite3 \
-		php5.6-xdebug
+RUN pecl install xdebug && docker-php-ext-enable xdebug \
+    && pecl install uopz && docker-php-ext-enable uopz \
+    && pecl install mcrypt-1.0.1 && docker-php-ext-enable mcrypt \
+    && docker-php-ext-install mysqli pdo_mysql zip opcache
+		
+RUN apt-get remove -y --purge ${PHPIZE_DEPS} \
+    && apt-get autoremove -y \
+    && apt-get clean -y
 
-# Install PEAR
-RUN apt-get install -y php-pear
+RUN curl -Lso- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; return 0
 
-# Turn off daemon mode
-# Reference: http://stackoverflow.com/questions/18861300/how-to-run-nginx-within-docker-container-without-halting
-RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
+RUN echo "memory_limit=-1\nlog_errors=On\nerror_log=/dev/stderr" > /usr/local/etc/php/conf.d/memory.ini
 
-# Backup the default configurations
-RUN cp /etc/php/5.6/fpm/php.ini /etc/php/5.6/fpm/php.ini.original.bak
-RUN mv /etc/nginx/sites-available/default /etc/nginx/sites-available/default.original
+RUN rm -rf /usr/src/* /tmp/*
 
-# forward request and error logs to docker log collector
-#RUN ln -sf /dev/stdout /var/log/nginx/access.log
-RUN ln -sf /dev/stderr /var/log/nginx/error.log
+RUN a2enmod proxy rewrite
 
-# Configure PHP settings
-RUN perl -pi -e 's/;cgi.fix_pathinfo.*//g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/;always_populate_raw_post_data.*//g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(allow_url_fopen =) Off/\1 On/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(expose_php =) On/\1 Off/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(upload_max_filesize =) 2M/\1 25M/g' /etc/php/5.6/fpm/php.ini
-RUN perl -pi -e 's/(max_execution_time =) 30/\1 300/g' /etc/php/5.6/fpm/php.ini
-RUN for f in `grep -rl memory_limit /etc/php/*|grep ini`; do perl -pi -e 's[memory_limit = .*][memory_limit = 4G]' $f; done
-RUN perl -pi -e 's[ = 32M][ = 4G]' /etc/php/5.6/fpm/pool.d/www.conf
+WORKDIR /home/swift
+ADD vhost.conf /etc/apache2/sites-enabled/000-default.conf
 
-#5.6/cli/php.ini:memory_limit = -1
-#5.6/fpm/pool.d/www.conf:;php_admin_value[memory_limit] = -1
-#5.6/fpm/php.ini:memory_limit = -1
-#5.6/fpm/php.ini.original.bak:memory_limit = -1
-#5.6/apache2/php.ini:memory_limit = -1
+RUN echo "[mysql]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\ndatabase=swift\n\n[mysqladmin]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\n\n[mysqldump]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\n" > ~/.my.cnf
 
-# install composer
-RUN curl -Lso- https://getcomposer.org/installer|php -- --install-dir=/usr/local/bin --filename=composer
-
-ARG xdebug_host
-RUN echo  "\n[xdebug]\nxdebug.idekey=PHPSTORM\nxdebug.remote_host=$xdebug_host\nxdebug.remote_enable=1" >> /etc/php/5.6/mods-available/xdebug.ini
-
-# Copy default site conf
-COPY server.crt /etc/nginx/conf.d/
-COPY server.crt server.key /etc/nginx/
-COPY server.conf /etc/nginx/nginx.conf
-COPY site.conf /etc/nginx/sites-available/default
-
-COPY my.conf /etc/nginx/sites-available/my.kayako.com
-RUN ln -s /etc/nginx/sites-available/my.kayako.com /etc/nginx/sites-enabled/my.kayako.com
-
-#RUN mkdir /var/www/my
-#RUN echo '<?php print_r($_SERVER);' > /var/www/my/index.php
-#RUN echo '<?php phpinfo();' > /var/www/my/info.php
-
-RUN chown -R www-data:www-data /var/www
-
-# Set the current working directory
-WORKDIR /var/www
-
-# Expose ports
-EXPOSE 80 443
-
-# Replace index file
-RUN mv html/index.nginx-debian.html html/index.html
-
-RUN apt-get install -y sudo
-RUN echo "www-data ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-# Boot up Nginx, and PHP5-FPM when container is started
-CMD service php5.6-fpm start && nginx
+RUN echo 'echo "*** TO INSTALL SWIFT USE ***\n\nphp ./console.setup.php Trilogy \"http%3A%2F%2Fkayako-dev%2F\" Kayako Admin admin admin virlatinus%40gmail.com\n\n"' > ~/.bashrc

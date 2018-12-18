@@ -1,94 +1,17 @@
 version: '3.0'
 services:
-  jenkins:
-    container_name: swift_jenkins
-    image: swift_jenkins:latest
-    build:
-      dockerfile: jenkins/Dockerfile
-      context: ./swift/kayako-SWIFT
-      args:
-        xdebug_host: ${XDEBUG_HOST}
-    extra_hosts:
-      kayako-dev: ${GWIP}
-    ports:
-     - "80:80"
-     - "443:443"
-    volumes:
-     - ${CODE_PATH}:/var/www/html
-     - /home/wgarcia/kayako:/home/kayako
-    environment:
-      PHP_IDE_CONFIG: "serverName=default"
-      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=192.168.0.20 remote_enable=1 remote_autostart=1"
-      LINES: ${LINES}
-      COLUMNS: ${COLS}
-      TERM: linux
-    networks:
-      aladdin_default:
-      default:
-        aliases:
-          - my.kayako.com
-    external_links:
-      - aladdin_db_1
-
-  swift72:
-    container_name: swift72
-    build:
-      dockerfile: Dockerfile72
-      context: ./swift
-      args:
-        xdebug_host: ${XDEBUG_HOST}
-    extra_hosts:
-      kayako-dev: ${GWIP}
-    ports:
-     - "80:80"
-     - "443:443"
-    volumes:
-     - ${CODE_PATH}:/var/www/html
-     - ${JOOMLA}:/var/www/joomla
-     - ${DRUPAL}:/var/www/drupal
-     - ${MAGENTO}:/var/www/magento
-     - ${WORDPRESS}:/var/www/wordpress
-     - ${OAUTH2}:/var/www/oauth2
-     - ${WHMCS}:/var/www/whmcs
-     - ${LOGGER}:/var/www/my
-     - ${SAMLIDP}:/var/www/samlidp
-     - /home/wgarcia/kayako:/home/kayako
-    environment:
-      PHP_IDE_CONFIG: "serverName=default"
-      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=192.168.0.20 remote_enable=1 remote_autostart=1"
-      LINES: ${LINES}
-      COLUMNS: ${COLS}
-      TERM: linux
-    networks:
-      aladdin_default:
-      default:
-        aliases:
-          - my.kayako.com
-    external_links:
-      - aladdin_db_1
-
   swift:
     container_name: swift
     build:
       dockerfile: Dockerfile
       context: ./swift
-      args:
-        xdebug_host: ${XDEBUG_HOST}
     extra_hosts:
       kayako-dev: ${GWIP}
     ports:
      - "80:80"
      - "443:443"
     volumes:
-     - ${CODE_PATH}:/var/www/swift
-     - ${JOOMLA}:/var/www/joomla
-     - ${DRUPAL}:/var/www/drupal
-     - ${MAGENTO}:/var/www/magento
-     - ${WORDPRESS}:/var/www/wordpress
-     - ${OAUTH2}:/var/www/oauth2
-     - ${WHMCS}:/var/www/whmcs
-     - ${LOGGER}:/var/www/my
-     - ${SAMLIDP}:/var/www/samlidp
+     - ${CODE_PATH}:/home/swift
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
@@ -96,47 +19,19 @@ services:
       LINES: ${LINES}
       COLUMNS: ${COLS}
       TERM: linux
-    networks:
-      aladdin_default:
-      default:
-        aliases:
-          - my.kayako.com
-    external_links:
-      - aladdin_db_1
-    # extra_hosts:
-    #   - my.kayako.com:127.0.0.1
+    links:
+      - mysql
 
-  # phpunit:
-  #   container_name: phpunit
-  #   image: swift:phpunit
-  #   build:
-  #     context: ./swift/kayako-SWIFT
-  #   extra_hosts:
-  #     aladdin_db_1: ${GWIP}
-  #   volumes:
-  #    - ${CODE_PATH}:/home/swift
-  #    - /home/wgarcia/kayako:/home/kayako
-  #   environment:
-  #     PHP_IDE_CONFIG: "serverName=default"
-  #     XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=${XDEBUG_HOST} remote_enable=1"
-
-  # my:
-  #   container_name: my
-  #   build:
-  #     context: ./my
-  #   extra_hosts:
-  #     kayako-dev: ${GWIP}
-  #   ports:
-  #    - "443:443"
-  #   networks:
-  #     default:
-  #       aliases:
-  #        - my.kayako.com
-
-  # php:
-  #   container_name: php
-  #   image: "php:5.6-fpm"
-    
-networks:
-  aladdin_default:
-    external: true
+  mysql:
+    image: "mysql:5.7"
+    container_name: mysql
+    volumes:
+     - ./mysql/data:/var/lib/mysql
+     - ./mysql/config:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: OGYxYmI1OTUzZmM
+      MYSQL_DATABASE: swift
+      MYSQL_USER: root
+      MYSQL_PASSWORD: OGYxYmI1OTUzZmM
+    ports:
+     - "3306:3306"
