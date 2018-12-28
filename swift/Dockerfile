@@ -1,32 +1,29 @@
-FROM php:7.2-apache
+FROM php:7.3-apache
 
-ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND="noninteractive"
 
-RUN apt-get update \
-    && apt-get -y install build-essential apt-utils autoconf libreadline-dev ${PHPIZE_DEPS} \
-    libxpm4 libxpm-dev libjpeg-dev libfreetype6-dev libc-client-dev libssl-dev
+RUN mkdir -p /usr/share/man/man1 && apt-get update
+RUN apt-get install -y libreadline-dev libxpm4 libxpm-dev libjpeg-dev libfreetype6-dev libssl-dev \
+       mysql-server mysql-client openjdk-8-jre-headless wget git procps unzip curl \
+       ${PHPIZE_DEPS} libmcrypt-dev libpng-dev libc-client-dev libkrb5-dev libzip-dev \
+       gnupg1 apt-transport-https sudo python3 python3-pip
 
-RUN apt install -y libc-client-dev libkrb5-dev && rm -r /var/lib/apt/lists/*
-
-RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
-    && docker-php-ext-install imap
-
-RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir \
-    && docker-php-ext-install gd
-                                  
-RUN mkdir -p /usr/share/man/man1 && apt-get update \
-    && apt install -y mysql-client wget git procps unzip curl \
-                      libmcrypt-dev libpng-dev
-
-RUN pecl install xdebug && docker-php-ext-enable xdebug \
-    && pecl install uopz && docker-php-ext-enable uopz \
-    && pecl install mcrypt-1.0.1 && docker-php-ext-enable mcrypt \
-    && docker-php-ext-install mysqli pdo_mysql zip opcache
-		
-RUN apt-get remove -y --purge ${PHPIZE_DEPS} \
-    && apt-get autoremove -y \
-    && apt-get clean -y
-
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+RUN echo "deb https://download.docker.com/linux/debian stretch stable" > /etc/apt/sources.list.d/docker.list
+RUN apt-get update && apt-get install -y docker-ce
+RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir
+RUN pecl install xdebug-2.7.0beta1 && docker-php-ext-enable xdebug
+RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
+    && cd /tmp/uopz && phpize && ./configure && make && make install \
+    && docker-php-ext-enable uopz
+RUN docker-php-ext-install mysqli pdo_mysql gd zip opcache
+RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl
+RUN docker-php-ext-install imap
+RUN mkdir /code
+RUN apt-get remove -y --purge ${PHPIZE_DEPS}
+RUN apt-get autoremove -y
+RUN apt-get clean -y
+RUN rm -rf /tmp/*
 RUN curl -Lso- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; return 0
 
 RUN echo "memory_limit=-1\nlog_errors=On\nerror_log=/dev/stderr" > /usr/local/etc/php/conf.d/memory.ini
