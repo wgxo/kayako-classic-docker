@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:7.2-apache
 
 ENV DEBIAN_FRONTEND="noninteractive"
 
@@ -12,7 +12,7 @@ RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 RUN echo "deb https://download.docker.com/linux/debian stretch stable" > /etc/apt/sources.list.d/docker.list
 RUN apt-get update && apt-get install -y docker-ce
 RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir
-RUN pecl install xdebug-2.7.0beta1 && docker-php-ext-enable xdebug
+RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
     && cd /tmp/uopz && phpize && ./configure && make && make install \
     && docker-php-ext-enable uopz
@@ -26,7 +26,7 @@ RUN apt-get clean -y
 RUN rm -rf /tmp/*
 RUN curl -Lso- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; return 0
 
-RUN echo "memory_limit=-1\nlog_errors=On\nerror_log=/dev/stderr" > /usr/local/etc/php/conf.d/memory.ini
+RUN echo "output_buffering=On\nmemory_limit=-1\nlog_errors=On\nerror_log=/dev/stderr" > /usr/local/etc/php/conf.d/memory.ini
 
 RUN rm -rf /usr/src/* /tmp/*
 
@@ -40,3 +40,4 @@ RUN echo "[mysql]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\ndatabase=swi
 RUN echo 'echo "*** TO INSTALL SWIFT USE ***\n\nphp ./console.setup.php Trilogy \"http%3A%2F%2Fkayako-dev%2F\" Kayako Admin admin admin virlatinus%40gmail.com\n\n"' > ~/.bashrc
 
 RUN useradd -G www-data -u 1000 wgarcia
+RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
