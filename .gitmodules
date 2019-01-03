@@ -3,3 +3,6 @@
     url = git@github.com:trilogy-group/kayako-SWIFT.git
     branch = master
     ignore = all
+[submodule "docker-library-php"]
+	path = docker-library-php
+	url = ./docker-library-php

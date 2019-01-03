@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.3-apache-debug
 
 ENV DEBIAN_FRONTEND="noninteractive"
 
@@ -10,25 +10,20 @@ RUN apt-get install -y libreadline-dev libxpm4 libxpm-dev libjpeg-dev libfreetyp
 
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 RUN echo "deb https://download.docker.com/linux/debian stretch stable" > /etc/apt/sources.list.d/docker.list
-RUN apt-get update && apt-get install -y docker-ce
+RUN apt-get update && apt-get install -y docker-ce \
+       file binutils gdb apache2-dbg
 RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir
-RUN pecl install xdebug && docker-php-ext-enable xdebug
-RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
-    && cd /tmp/uopz && phpize && ./configure && make && make install \
-    && docker-php-ext-enable uopz
 RUN docker-php-ext-install mysqli pdo_mysql gd zip opcache
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-install imap
-RUN mkdir /code
-RUN apt-get remove -y --purge ${PHPIZE_DEPS}
-RUN apt-get autoremove -y
-RUN apt-get clean -y
-RUN rm -rf /tmp/*
+
+RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
+    && cd /tmp/uopz && phpize && ./configure && make && make install 
+RUN pecl install xdebug-beta
+
 RUN curl -Lso- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; return 0
 
-RUN echo "output_buffering=On\nmemory_limit=-1\nlog_errors=On\nerror_log=/dev/stderr" > /usr/local/etc/php/conf.d/memory.ini
-
-RUN rm -rf /usr/src/* /tmp/*
+RUN echo "memory_limit=-1\nlog_errors=On\nerror_log=/var/log/php.log" > /usr/local/etc/php/conf.d/memory.ini
 
 RUN a2enmod proxy rewrite
 
@@ -41,3 +36,22 @@ RUN echo 'echo "*** TO INSTALL SWIFT USE ***\n\nphp ./console.setup.php Trilogy 
 
 RUN useradd -G www-data -u 1000 wgarcia
 RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
+
+# Debugging helpers
+RUN mkdir /var/coredumps && touch /var/log/php.log && chown www-data:www-data /var/coredumps /var/log/php.log && chmod 777 /var/coredumps
+VOLUME /var/coredumps
+RUN echo "CoreDumpDirectory /var/coredumps" >> /etc/apache2/apache2.conf
+
+RUN ln -s /usr/src/php/.gdbinit ~/.gdbinit
+
+## Clean up
+RUN apt-get remove -y --purge ${PHPIZE_DEPS}
+RUN apt-get autoremove -y
+RUN apt-get clean -y
+
+## Do not remove php source for debugging symbols
+#RUN rm -rf /usr/src/* /tmp/*
+
+# Enable debug extensions: 
+RUN docker-php-ext-enable uopz 
+#RUN docker-php-ext-enable xdebug
