@@ -18,8 +18,6 @@ RUN docker-php-ext-install mysqli pdo_mysql gd zip
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-install imap
 
-#RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
-#    && cd /tmp/uopz && phpize && ./configure && make && make install 
 RUN pecl install uopz-beta
 RUN pecl install xdebug-beta
 
