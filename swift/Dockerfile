@@ -13,12 +13,14 @@ RUN echo "deb https://download.docker.com/linux/debian stretch stable" > /etc/ap
 RUN apt-get update && apt-get install -y docker-ce \
        file binutils gdb apache2-dbg
 RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir
-RUN docker-php-ext-install mysqli pdo_mysql gd zip opcache
+RUN docker-php-ext-install mysqli pdo_mysql gd zip
+#RUN docker-php-ext-install opcache
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-install imap
 
-RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
-    && cd /tmp/uopz && phpize && ./configure && make && make install 
+#RUN git clone https://github.com/krakjoe/uopz /tmp/uopz \
+#    && cd /tmp/uopz && phpize && ./configure && make && make install 
+RUN pecl install uopz-beta
 RUN pecl install xdebug-beta
 
 RUN curl -Lso- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; return 0
@@ -54,4 +56,4 @@ RUN apt-get clean -y
 
 # Enable debug extensions: 
 RUN docker-php-ext-enable uopz 
-#RUN docker-php-ext-enable xdebug
+RUN docker-php-ext-enable xdebug
