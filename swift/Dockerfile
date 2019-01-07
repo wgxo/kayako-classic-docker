@@ -23,7 +23,7 @@ RUN pecl install xdebug-beta
 
 RUN curl -Lso- https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer; return 0
 
-RUN echo "memory_limit=-1\nlog_errors=On\nerror_log=/var/log/php.log" > /usr/local/etc/php/conf.d/memory.ini
+RUN echo "memory_limit=512M\nlog_errors=On\nerror_log=/var/log/php.log" > /usr/local/etc/php/conf.d/memory.ini
 
 RUN a2enmod proxy rewrite
 

@@ -1,0 +1,95 @@
+[36m#!/bin/sh[m
+
+[32mDIR[m[31m=[m[31m"./swift/kayako-SWIFT/trunk"[m
+
+[36m# COLORS[m
+[32mLIGHT_GRAY[m[31m=[m[31m"[m[35m\0[m[31m33[0;37m"[m[31m;[m [32mBLUE[m[31m=[m[31m"[m[35m\0[m[31m33[1;36m"[m[31m;[m [32mRED[m[31m=[m[31m"[m[35m\0[m[31m33[0;31m"[m[31m;[m [32mLIGHT_RED[m[31m=[m[31m"[m[35m\0[m[31m33[1;31m"[m[31m;[m
+[32mGREEN[m[31m=[m[31m"[m[35m\0[m[31m33[1;32m"[m[31m;[m [32mWHITE[m[31m=[m[31m"[m[35m\0[m[31m33[1;37m"[m[31m;[m [32mLIGHT_GRAY[m[31m=[m[31m"[m[35m\0[m[31m33[0;37m"[m[31m;[m [32mYELLOW[m[31m=[m[31m"[m[35m\0[m[31m33[1;33m"[m[31m;[m
+[32mNOCOLOR[m[31m=[m[31m"[m[35m\0[m[31m33[0m"[m
+
+[32mMYSQL_SERVER[m[31m=[m[31m"mysql"[m
+[32mMYSQL_PASS[m[31m=[m[31m"OGYxYmI1OTUzZmM"[m
+
+[36m# start mysql if is not running[m
+[36m#(docker ps | grep -q $MYSQL_SERVER) || (cd ~/kayako/aladdin; docker-compose up -d db)[m
+
+[36m# PHPStorm development machine MAC address[m
+[32mMAC[m[31m=[m[31m"00:0c:29:58:25:aa"[m
+
+[32mLINES[m[31m=[m`tput lines`
+[32mCOLS[m[31m=[m`tput cols`
+
+echo [31m"COMPOSE_PROJECT_NAME=classic"[m [31m>[m [31m.[menv
+echo [31m"LINES=$LINES"[m [31m>>[m [31m.[menv
+echo [31m"COLS=$COLS"[m [31m>>[m [31m.[menv
+
+[36m##### MySQL Stuff #####[m
+perl -pi -e [31m"s/(?=('DB_HOSTNAME', ))'.*'/[m[35m\\[m[31m1'$MYSQL_SERVER'/"[m [31m\[m
+        [31m.[m/swift/kayako-SWIFT/trunk[31m/[m__swift/config/config[31m.[mphp
+perl -pi -e [31m"s/(?=('DB_PASSWORD', ))'.*'/[m[35m\\[m[31m1'$MYSQL_PASS'/"[m [31m\[m
+        [31m.[m/swift/kayako-SWIFT/trunk[31m/[m__swift/config/config[31m.[mphp
+
+[36m##### Gateway stuff #####[m
+[36m# I need to get the IP of the machine running docker, so it can be accessed internally by swift[m
+[32mDEV[m[31m=[m[32m$([mip route show scope global[31m|[mgrep -Poe [31m'(?<=dev )[m[35m\w[m[31m+'[m[31m)[m
+[32mGWIP[m[31m=[m[32m$([mip addr show dev [32m$DEV[m[31m|[mgrep -oP [31m'(?<=inet[m[35m\s[m[31m)[m[35m\d[m[31m+([m[35m\.\d[m[31m+){3}'[m[31m)[m
+
+[01;34mif[m [31m[[m -z [31m"$GWIP"[m [31m];[m [01;34mthen[m
+		echo [31m"Unable to get GW IP address"[m
+		[01;34mexit[m [35m1[m
+[01;34mfi[m
+
+echo [31m"GWIP=$GWIP"[m [31m>>[m [31m.[menv
+
+[36m##### Xdebug stuff #####[m
+[36m# I need to get the IP of my Windows development machine where PHPStorm is installed.[m
+[36m# I need the IP so KC inside the Docker container can establish a connection.[m
+[36m# Since the network uses DHCP to get IPs, I only know the MAC address and I use the following[m
+[36m# code to get the dynamic IP[m
+[32mHOSTIP[m[31m=[m[32m$([marp -na [31m|[mgrep [32m$MAC[m[31m|[mgrep -oP [31m'[m[35m\d[m[31m+([m[35m\.\d[m[31m+){3}'[m[31m)[m
+
+[01;34mif[m [31m[[m -z [31m"$HOSTIP"[m [31m];[m [01;34mthen[m
+		echo [31m"Unable to get host IP address"[m
+		[01;34mexit[m [35m1[m
+[01;34mfi[m
+
+echo [31m"XDEBUG_HOST=$HOSTIP"[m [31m>>[m [31m.[menv
+
+
+[36m##### Swift stuff #####[m
+
+[01;34mif[m [31m[[m [31m![m -d [32m$DIR[m [31m];[m [01;34mthen[m
+		echo [31m"$DIR does not exist!"[m
+		[01;34mexit[m [35m1[m
+[01;34mfi[m
+
+[32mDEST[m[31m=[m[32m$([mreadlink -f [32m$DIR[m[31m)[m
+
+[01;34mprintf[m [31m"CODE_PATH=%s[m[35m\n[m[31m"[m [32m$DEST[m [31m>>[m [31m.[menv
+
+
+[36m##### Vendor stuff #####[m
+[01;34mfor[m d [01;34min[m [31m..[m/vendor[31m/*;[m [01;34mdo[m
+		[32mAPP[m[31m=[m[32m$([mbasename [32m$d[m [31m|[m sed [31m's/-.*$//'[m [31m|[m awk [31m'{print toupper($0)}'[m [31m)[m
+		[32mDEST[m[31m=[m[32m$([mreadlink -f [32m$d[m[31m)[m
+		[01;34mprintf[m [31m"%s=%s[m[35m\n[m[31m"[m [32m$APP[m [32m$DEST[m [31m>>[m [31m.[menv
+[01;34mdone[m
+
+
+[36m##### Build it! #####[m
+[01;34mif[m [31m[[m [32m$#[m -gt [35m0[m [31m];[m [01;34mthen[m
+		[01;34mif[m [31m[[m [31m"$1"[m [31m=[m [31m"f"[m [31m];[m [01;34mthen[m
+				docker-compose build --no-cache swift
+				docker-compose up -d swift
+		[01;34melse[m
+				docker-compose up --build -d swift
+		[01;34mfi[m
+[01;34melse[m
+		docker-compose up -d swift
+[01;34mfi[m
+
+echo [31m"$GREEN*** Remember to check your database settings in $DIR/__swift/config/config.php ***$NOCOLOR"[m
+grep [31m"DB_"[m [32m$DIR[m[31m/[m__swift/config/config[31m.[mphp[31m|[mhead -[35m4[m
+grep [31m"^define.*DEBUG"[m [32m$DIR[m[31m/[m__swift/config/config[31m.[mphp
+grep [31m"^define.*ENVIRON"[m [32m$DIR[m[31m/[m__swift/config/config[31m.[mphp
+

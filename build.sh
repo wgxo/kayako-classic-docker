@@ -55,6 +55,7 @@ fi
 
 echo "XDEBUG_HOST=$HOSTIP" >> .env
 
+perl -pi -e "s/PHPSTORM remote_host=[^ ]+/PHPSTORM remote_host=$HOSTIP/" docker-compose.yml
 
 ##### Swift stuff #####
 
