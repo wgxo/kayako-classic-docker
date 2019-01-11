@@ -44,6 +44,10 @@ RUN echo "CoreDumpDirectory /var/coredumps" >> /etc/apache2/apache2.conf
 
 RUN ln -s /usr/src/php/.gdbinit ~/.gdbinit
 
+## Install internationalization
+RUN apt-get install -y icu-devtools libicu-dev
+RUN docker-php-ext-install intl
+
 ## Clean up
 RUN apt-get remove -y --purge ${PHPIZE_DEPS}
 RUN apt-get autoremove -y

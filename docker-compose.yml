@@ -15,7 +15,7 @@ services:
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
-      XDEBUG_CONFIG: "idekey=PHPSTORM remote_host=192.168.0.20 remote_enable=1 remote_autostart=1"
+      XDEBUG_CONFIG: "${XDEBUG_CONFIG}"
       LINES: ${LINES}
       COLUMNS: ${COLS}
       TERM: linux

@@ -46,16 +46,14 @@ echo "GWIP=$GWIP" >> .env
 # I need the IP so KC inside the Docker container can establish a connection.
 # Since the network uses DHCP to get IPs, I only know the MAC address and I use the following
 # code to get the dynamic IP
-HOSTIP=$(arp -na |grep $MAC|grep -oP '\d+(\.\d+){3}')
+HOSTIP=$(arp -na |grep $MAC|grep -oP '\d+(\.\d+){3}'|head -1)
 
 if [ -z "$HOSTIP" ]; then
 		echo "Unable to get host IP address"
 		exit 1
 fi
 
-echo "XDEBUG_HOST=$HOSTIP" >> .env
-
-perl -pi -e "s/PHPSTORM remote_host=[^ ]+/PHPSTORM remote_host=$HOSTIP/" docker-compose.yml
+echo "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=$HOSTIP remote_enable=1 remote_autostart=1" >> .env
 
 ##### Swift stuff #####
 
