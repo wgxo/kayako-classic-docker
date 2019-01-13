@@ -27,7 +27,7 @@ RUN echo "memory_limit=512M\nlog_errors=On\nerror_log=/var/log/php.log" > /usr/l
 
 RUN a2enmod proxy rewrite
 
-WORKDIR /home/swift
+WORKDIR /home/swift/trunk
 ADD vhost.conf /etc/apache2/sites-enabled/000-default.conf
 
 RUN echo "[mysql]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\ndatabase=swift\n\n[mysqladmin]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\n\n[mysqldump]\nhost=mysql\nuser=root\npassword=OGYxYmI1OTUzZmM\n" > ~/.my.cnf

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DIR="./swift/kayako-SWIFT/trunk"
+DIR="./swift/kayako-SWIFT"
 
 # COLORS
 LIGHT_GRAY="\033[0;37m"; BLUE="\033[1;36m"; RED="\033[0;31m"; LIGHT_RED="\033[1;31m";
@@ -87,8 +87,8 @@ else
 		docker-compose up -d swift
 fi
 
-echo "$GREEN*** Remember to check your database settings in $DIR/__swift/config/config.php ***$NOCOLOR"
-grep "DB_" $DIR/__swift/config/config.php|head -4
-grep "^define.*DEBUG" $DIR/__swift/config/config.php
-grep "^define.*ENVIRON" $DIR/__swift/config/config.php
+echo "$GREEN*** Remember to check your database settings in $DIR/trunk/__swift/config/config.php ***$NOCOLOR"
+grep "DB_" $DIR/trunk/__swift/config/config.php|head -4
+grep "^define.*DEBUG" $DIR/trunk/__swift/config/config.php
+grep "^define.*ENVIRON" $DIR/trunk/__swift/config/config.php
 
