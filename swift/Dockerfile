@@ -48,6 +48,9 @@ RUN ln -s /usr/src/php/.gdbinit ~/.gdbinit
 RUN apt-get install -y icu-devtools libicu-dev
 RUN docker-php-ext-install intl
 
+RUN apt-get install -y html2text
+RUN mkdir ~/bin; echo "cd /home/swift/trunk/staff; PATH_INFO=/Core/Default/RebuildCache php index.php|html2text" > ~/bin/rebuildcache && chmod +x ~/bin/rebuildcache && echo 'PATH=$PATH:~/bin' >> ~/.bashrc
+
 ## Clean up
 RUN apt-get remove -y --purge ${PHPIZE_DEPS}
 RUN apt-get autoremove -y
