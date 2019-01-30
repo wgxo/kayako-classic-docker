@@ -25,6 +25,8 @@ table_open_cache_instances = 16
 tmp_table_size = 1073741824
 wait_timeout = 604800
 skip_name_resolve=on
+secure_file_priv=''
+local-infile = 1
 
 ; Innodb specific configuration
 innodb_file_format = 'Barracuda'
