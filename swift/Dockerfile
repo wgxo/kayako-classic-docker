@@ -62,3 +62,6 @@ RUN apt-get clean -y
 # Enable debug extensions: 
 RUN docker-php-ext-enable uopz 
 RUN docker-php-ext-enable xdebug
+
+RUN echo "alias xdebug-on=\"docker-php-ext-enable xdebug\"" >> ~/.bashrc
+RUN echo "alias xdebug-off=\"php -i|grep xdebug.ini|sed 's/.$//'|xargs rm\"" >> ~/.bashrc
