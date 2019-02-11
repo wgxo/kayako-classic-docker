@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 RUN mkdir -p /usr/share/man/man1 && apt-get update
 RUN apt-get install -y libreadline-dev libxpm4 libxpm-dev libjpeg-dev libfreetype6-dev libssl-dev \
-       mysql-server mysql-client openjdk-8-jre-headless wget git procps unzip curl \
+       mysql-client wget git procps unzip curl \
        ${PHPIZE_DEPS} libmcrypt-dev libpng-dev libc-client-dev libkrb5-dev libzip-dev \
        gnupg1 apt-transport-https sudo python3 python3-pip
 
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y docker-ce \
        file binutils gdb apache2-dbg
 RUN docker-php-ext-configure gd --with-gd --with-jpeg-dir --with-freetype-dir
 RUN docker-php-ext-install mysqli pdo_mysql gd zip
-#RUN docker-php-ext-install opcache
+RUN docker-php-ext-install opcache
 RUN docker-php-ext-configure imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-install imap
 
