@@ -1,17 +1,24 @@
 version: '3.0'
+volumes:
+  database:
+
 services:
   swift:
-    container_name: swift
+    container_name: swiftnew
     build:
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.phpenv
       context: ./swift
     extra_hosts:
       kayako-dev: ${GWIP}
+      swift.kayako-dev.com: ${GWIP}
     ports:
      - "80:80"
      - "443:443"
     volumes:
      - ${CODE_PATH}:/home/swift
+     - /home/wgarcia/kayako/classic/vendor/samlidp:/var/www/html/samlidp
+     - /home/wgarcia/kayako/classic/vendor/magento-1.9.2.4:/var/www/html/magento1
+     - /home/wgarcia/kayako/classic/vendor/magento-2.2.7:/var/www/html/magento2
      - /home/wgarcia/kayako:/home/kayako
     environment:
       PHP_IDE_CONFIG: "serverName=default"
@@ -26,7 +33,7 @@ services:
     image: "mysql:5.7"
     container_name: mysql
     volumes:
-     - /var/lib/mysql
+     - database:/var/lib/mysql
      - ./mysql/config:/etc/mysql/conf.d
     environment:
       MYSQL_ROOT_PASSWORD: OGYxYmI1OTUzZmM
