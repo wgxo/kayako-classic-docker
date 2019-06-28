@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/swift/trunk/__apps/livechat/admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../../.css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../index.html">/home/swift/trunk</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">__apps</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">livechat</a></li>
+         <li class="breadcrumb-item"><a href="index.html">admin</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class.Controller_Ban.php.html#34">LiveChat\Admin\Controller_Ban</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#34">LiveChat\Admin\Controller_Group</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#32">LiveChat\Admin\Controller_MessageRouting</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#32">LiveChat\Admin\Controller_OnlineStatus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#36">LiveChat\Admin\Controller_Rule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_SettingsManager.php.html#30">LiveChat\Admin\Controller_SettingsManager</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#34">LiveChat\Admin\Controller_Skill</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#32">LiveChat\Admin\Controller_TagGenerator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#36">LiveChat\Admin\View_Ban</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Group.php.html#36">LiveChat\Admin\View_Group</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_MessageRouting.php.html#32">LiveChat\Admin\View_MessageRouting</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_OnlineStatus.php.html#33">LiveChat\Admin\View_OnlineStatus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#39">LiveChat\Admin\View_Rule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#36">LiveChat\Admin\View_Skill</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_TagGenerator.php.html#35">LiveChat\Admin\View_TagGenerator</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#32">LiveChat\Admin\Controller_TagGenerator</a></td><td class="text-right">8930</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#36">LiveChat\Admin\Controller_Rule</a></td><td class="text-right">5700</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#34">LiveChat\Admin\Controller_Skill</a></td><td class="text-right">2652</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#34">LiveChat\Admin\Controller_Group</a></td><td class="text-right">1806</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#34">LiveChat\Admin\Controller_Ban</a></td><td class="text-right">1722</td></tr>
+       <tr><td><a href="class.View_TagGenerator.php.html#35">LiveChat\Admin\View_TagGenerator</a></td><td class="text-right">1482</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#32">LiveChat\Admin\Controller_MessageRouting</a></td><td class="text-right">1122</td></tr>
+       <tr><td><a href="class.View_MessageRouting.php.html#32">LiveChat\Admin\View_MessageRouting</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#39">LiveChat\Admin\View_Rule</a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#36">LiveChat\Admin\View_Skill</a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#36">LiveChat\Admin\View_Ban</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="class.View_Group.php.html#36">LiveChat\Admin\View_Group</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#32">LiveChat\Admin\Controller_OnlineStatus</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="class.View_OnlineStatus.php.html#33">LiveChat\Admin\View_OnlineStatus</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class.Controller_SettingsManager.php.html#30">LiveChat\Admin\Controller_SettingsManager</a></td><td class="text-right">20</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class.Controller_Ban.php.html#45"><abbr title="LiveChat\Admin\Controller_Ban::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#274"><abbr title="LiveChat\Admin\Controller_Skill::Edit">Edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#151"><abbr title="LiveChat\Admin\Controller_TagGenerator::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#134"><abbr title="LiveChat\Admin\Controller_TagGenerator::IsValidTagType">IsValidTagType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#95"><abbr title="LiveChat\Admin\Controller_TagGenerator::_GetTagLabel">_GetTagLabel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#62"><abbr title="LiveChat\Admin\Controller_TagGenerator::Index">Index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#48"><abbr title="LiveChat\Admin\Controller_TagGenerator::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#321"><abbr title="LiveChat\Admin\Controller_Skill::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#239"><abbr title="LiveChat\Admin\Controller_Skill::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#46"><abbr title="LiveChat\Admin\View_Ban::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#217"><abbr title="LiveChat\Admin\Controller_Skill::_GetAssignedStaffIDList">_GetAssignedStaffIDList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#191"><abbr title="LiveChat\Admin\Controller_Skill::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#146"><abbr title="LiveChat\Admin\Controller_Skill::RunChecks">RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#118"><abbr title="LiveChat\Admin\Controller_Skill::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#99"><abbr title="LiveChat\Admin\Controller_Skill::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#60"><abbr title="LiveChat\Admin\Controller_Skill::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#433"><abbr title="LiveChat\Admin\Controller_TagGenerator::_GetIcon">_GetIcon</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#91"><abbr title="LiveChat\Admin\View_Ban::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_SettingsManager.php.html#59"><abbr title="LiveChat\Admin\Controller_SettingsManager::Index">Index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#211"><abbr title="LiveChat\Admin\View_Rule::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_TagGenerator.php.html#45"><abbr title="LiveChat\Admin\View_TagGenerator::RenderGenerateTag">RenderGenerateTag</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#162"><abbr title="LiveChat\Admin\View_Skill::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#124"><abbr title="LiveChat\Admin\View_Skill::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#47"><abbr title="LiveChat\Admin\View_Skill::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#272"><abbr title="LiveChat\Admin\View_Rule::DispatchMenu">DispatchMenu</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#250"><abbr title="LiveChat\Admin\View_Rule::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#49"><abbr title="LiveChat\Admin\View_Rule::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#131"><abbr title="LiveChat\Admin\View_Ban::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_OnlineStatus.php.html#80"><abbr title="LiveChat\Admin\View_OnlineStatus::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_OnlineStatus.php.html#41"><abbr title="LiveChat\Admin\View_OnlineStatus::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_MessageRouting.php.html#41"><abbr title="LiveChat\Admin\View_MessageRouting::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Group.php.html#127"><abbr title="LiveChat\Admin\View_Group::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Group.php.html#89"><abbr title="LiveChat\Admin\View_Group::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_Group.php.html#46"><abbr title="LiveChat\Admin\View_Group::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#45"><abbr title="LiveChat\Admin\Controller_Skill::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_SettingsManager.php.html#43"><abbr title="LiveChat\Admin\Controller_SettingsManager::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#60"><abbr title="LiveChat\Admin\Controller_Ban::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#45"><abbr title="LiveChat\Admin\Controller_Group::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#218"><abbr title="LiveChat\Admin\Controller_Group::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#191"><abbr title="LiveChat\Admin\Controller_Group::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#146"><abbr title="LiveChat\Admin\Controller_Group::RunChecks">RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#118"><abbr title="LiveChat\Admin\Controller_Group::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#99"><abbr title="LiveChat\Admin\Controller_Group::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#60"><abbr title="LiveChat\Admin\Controller_Group::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#286"><abbr title="LiveChat\Admin\Controller_Ban::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#285"><abbr title="LiveChat\Admin\Controller_Group::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#253"><abbr title="LiveChat\Admin\Controller_Ban::Edit">Edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#218"><abbr title="LiveChat\Admin\Controller_Ban::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#191"><abbr title="LiveChat\Admin\Controller_Ban::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#146"><abbr title="LiveChat\Admin\Controller_Ban::RunChecks">RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#118"><abbr title="LiveChat\Admin\Controller_Ban::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#99"><abbr title="LiveChat\Admin\Controller_Ban::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#252"><abbr title="LiveChat\Admin\Controller_Group::Edit">Edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#46"><abbr title="LiveChat\Admin\Controller_MessageRouting::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#374"><abbr title="LiveChat\Admin\Controller_Rule::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#102"><abbr title="LiveChat\Admin\Controller_Rule::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#325"><abbr title="LiveChat\Admin\Controller_Rule::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#281"><abbr title="LiveChat\Admin\Controller_Rule::Edit">Edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#242"><abbr title="LiveChat\Admin\Controller_Rule::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#212"><abbr title="LiveChat\Admin\Controller_Rule::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#155"><abbr title="LiveChat\Admin\Controller_Rule::_RunChecks">_RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#124"><abbr title="LiveChat\Admin\Controller_Rule::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#62"><abbr title="LiveChat\Admin\Controller_Rule::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#61"><abbr title="LiveChat\Admin\Controller_MessageRouting::Index">Index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#47"><abbr title="LiveChat\Admin\Controller_Rule::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#110"><abbr title="LiveChat\Admin\Controller_OnlineStatus::Index">Index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#57"><abbr title="LiveChat\Admin\Controller_OnlineStatus::DisconnectList">DisconnectList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#43"><abbr title="LiveChat\Admin\Controller_OnlineStatus::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#153"><abbr title="LiveChat\Admin\Controller_MessageRouting::IndexSubmit">IndexSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#109"><abbr title="LiveChat\Admin\Controller_MessageRouting::_PrepeareMessageRoutingTable">_PrepeareMessageRoutingTable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#88"><abbr title="LiveChat\Admin\Controller_MessageRouting::_GetMessageRoutingData">_GetMessageRoutingData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="class.View_TagGenerator.php.html#87"><abbr title="LiveChat\Admin\View_TagGenerator::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#151"><abbr title="LiveChat\Admin\Controller_TagGenerator::Generate">Generate</abbr></a></td><td class="text-right">4692</td></tr>
+       <tr><td><a href="class.View_TagGenerator.php.html#87"><abbr title="LiveChat\Admin\View_TagGenerator::Render">Render</abbr></a></td><td class="text-right">1332</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#374"><abbr title="LiveChat\Admin\Controller_Rule::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">870</td></tr>
+       <tr><td><a href="class.View_MessageRouting.php.html#41"><abbr title="LiveChat\Admin\View_MessageRouting::Render">Render</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#109"><abbr title="LiveChat\Admin\Controller_MessageRouting::_PrepeareMessageRoutingTable">_PrepeareMessageRoutingTable</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#47"><abbr title="LiveChat\Admin\View_Skill::Render">Render</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#49"><abbr title="LiveChat\Admin\View_Rule::Render">Render</abbr></a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#155"><abbr title="LiveChat\Admin\Controller_Rule::_RunChecks">_RunChecks</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#146"><abbr title="LiveChat\Admin\Controller_Skill::RunChecks">RunChecks</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#146"><abbr title="LiveChat\Admin\Controller_Ban::RunChecks">RunChecks</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#146"><abbr title="LiveChat\Admin\Controller_Group::RunChecks">RunChecks</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#274"><abbr title="LiveChat\Admin\Controller_Skill::Edit">Edit</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#433"><abbr title="LiveChat\Admin\Controller_TagGenerator::_GetIcon">_GetIcon</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#286"><abbr title="LiveChat\Admin\Controller_Ban::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class.View_Group.php.html#46"><abbr title="LiveChat\Admin\View_Group::Render">Render</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#46"><abbr title="LiveChat\Admin\View_Ban::Render">Render</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#285"><abbr title="LiveChat\Admin\Controller_Group::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#321"><abbr title="LiveChat\Admin\Controller_Skill::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#325"><abbr title="LiveChat\Admin\Controller_Rule::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#95"><abbr title="LiveChat\Admin\Controller_TagGenerator::_GetTagLabel">_GetTagLabel</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#217"><abbr title="LiveChat\Admin\Controller_Skill::_GetAssignedStaffIDList">_GetAssignedStaffIDList</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#62"><abbr title="LiveChat\Admin\Controller_TagGenerator::Index">Index</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#281"><abbr title="LiveChat\Admin\Controller_Rule::Edit">Edit</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#60"><abbr title="LiveChat\Admin\Controller_Skill::DeleteList">DeleteList</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#60"><abbr title="LiveChat\Admin\Controller_Ban::DeleteList">DeleteList</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#57"><abbr title="LiveChat\Admin\Controller_OnlineStatus::DisconnectList">DisconnectList</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#253"><abbr title="LiveChat\Admin\Controller_Ban::Edit">Edit</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#60"><abbr title="LiveChat\Admin\Controller_Group::DeleteList">DeleteList</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#62"><abbr title="LiveChat\Admin\Controller_Rule::DeleteList">DeleteList</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#252"><abbr title="LiveChat\Admin\Controller_Group::Edit">Edit</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#153"><abbr title="LiveChat\Admin\Controller_MessageRouting::IndexSubmit">IndexSubmit</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="class.Controller_TagGenerator.php.html#134"><abbr title="LiveChat\Admin\Controller_TagGenerator::IsValidTagType">IsValidTagType</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#218"><abbr title="LiveChat\Admin\Controller_Group::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#242"><abbr title="LiveChat\Admin\Controller_Rule::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#218"><abbr title="LiveChat\Admin\Controller_Ban::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#239"><abbr title="LiveChat\Admin\Controller_Skill::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#124"><abbr title="LiveChat\Admin\Controller_Rule::Manage">Manage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#118"><abbr title="LiveChat\Admin\Controller_Group::Manage">Manage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.View_Skill.php.html#124"><abbr title="LiveChat\Admin\View_Skill::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#211"><abbr title="LiveChat\Admin\View_Rule::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#212"><abbr title="LiveChat\Admin\Controller_Rule::Insert">Insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.View_OnlineStatus.php.html#41"><abbr title="LiveChat\Admin\View_OnlineStatus::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.View_Group.php.html#89"><abbr title="LiveChat\Admin\View_Group::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#118"><abbr title="LiveChat\Admin\Controller_Skill::Manage">Manage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#91"><abbr title="LiveChat\Admin\View_Ban::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#191"><abbr title="LiveChat\Admin\Controller_Group::Insert">Insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#118"><abbr title="LiveChat\Admin\Controller_Ban::Manage">Manage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_OnlineStatus.php.html#110"><abbr title="LiveChat\Admin\Controller_OnlineStatus::Index">Index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#61"><abbr title="LiveChat\Admin\Controller_MessageRouting::Index">Index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_MessageRouting.php.html#88"><abbr title="LiveChat\Admin\Controller_MessageRouting::_GetMessageRoutingData">_GetMessageRoutingData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_SettingsManager.php.html#59"><abbr title="LiveChat\Admin\Controller_SettingsManager::Index">Index</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#191"><abbr title="LiveChat\Admin\Controller_Skill::Insert">Insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#191"><abbr title="LiveChat\Admin\Controller_Ban::Insert">Insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="class.View_Ban.php.html#131"><abbr title="LiveChat\Admin\View_Ban::GridRender">GridRender</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.Controller_Group.php.html#99"><abbr title="LiveChat\Admin\Controller_Group::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.Controller_Rule.php.html#102"><abbr title="LiveChat\Admin\Controller_Rule::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.Controller_Ban.php.html#99"><abbr title="LiveChat\Admin\Controller_Ban::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.View_OnlineStatus.php.html#80"><abbr title="LiveChat\Admin\View_OnlineStatus::GridRender">GridRender</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.View_Rule.php.html#250"><abbr title="LiveChat\Admin\View_Rule::GridRender">GridRender</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.View_TagGenerator.php.html#45"><abbr title="LiveChat\Admin\View_TagGenerator::RenderGenerateTag">RenderGenerateTag</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="class.Controller_Skill.php.html#99"><abbr title="LiveChat\Admin\Controller_Skill::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.26</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 7.5.7</a> at Sun Jun 23 1:22:47 CST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([15,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([72,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,41,"<a href=\"class.Controller_Ban.php.html#34\">LiveChat\\Admin\\Controller_Ban<\/a>"],[0,42,"<a href=\"class.Controller_Group.php.html#34\">LiveChat\\Admin\\Controller_Group<\/a>"],[0,33,"<a href=\"class.Controller_MessageRouting.php.html#32\">LiveChat\\Admin\\Controller_MessageRouting<\/a>"],[0,10,"<a href=\"class.Controller_OnlineStatus.php.html#32\">LiveChat\\Admin\\Controller_OnlineStatus<\/a>"],[0,75,"<a href=\"class.Controller_Rule.php.html#36\">LiveChat\\Admin\\Controller_Rule<\/a>"],[0,4,"<a href=\"class.Controller_SettingsManager.php.html#30\">LiveChat\\Admin\\Controller_SettingsManager<\/a>"],[0,51,"<a href=\"class.Controller_Skill.php.html#34\">LiveChat\\Admin\\Controller_Skill<\/a>"],[0,94,"<a href=\"class.Controller_TagGenerator.php.html#32\">LiveChat\\Admin\\Controller_TagGenerator<\/a>"],[0,12,"<a href=\"class.View_Ban.php.html#36\">LiveChat\\Admin\\View_Ban<\/a>"],[0,11,"<a href=\"class.View_Group.php.html#36\">LiveChat\\Admin\\View_Group<\/a>"],[0,26,"<a href=\"class.View_MessageRouting.php.html#32\">LiveChat\\Admin\\View_MessageRouting<\/a>"],[0,5,"<a href=\"class.View_OnlineStatus.php.html#33\">LiveChat\\Admin\\View_OnlineStatus<\/a>"],[0,23,"<a href=\"class.View_Rule.php.html#39\">LiveChat\\Admin\\View_Rule<\/a>"],[0,23,"<a href=\"class.View_Skill.php.html#36\">LiveChat\\Admin\\View_Skill<\/a>"],[0,38,"<a href=\"class.View_TagGenerator.php.html#35\">LiveChat\\Admin\\View_TagGenerator<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"class.Controller_Ban.php.html#45\">LiveChat\\Admin\\Controller_Ban::__construct<\/a>"],[0,6,"<a href=\"class.Controller_Ban.php.html#60\">LiveChat\\Admin\\Controller_Ban::DeleteList<\/a>"],[0,2,"<a href=\"class.Controller_Ban.php.html#99\">LiveChat\\Admin\\Controller_Ban::Delete<\/a>"],[0,3,"<a href=\"class.Controller_Ban.php.html#118\">LiveChat\\Admin\\Controller_Ban::Manage<\/a>"],[0,9,"<a href=\"class.Controller_Ban.php.html#146\">LiveChat\\Admin\\Controller_Ban::RunChecks<\/a>"],[0,3,"<a href=\"class.Controller_Ban.php.html#191\">LiveChat\\Admin\\Controller_Ban::Insert<\/a>"],[0,4,"<a href=\"class.Controller_Ban.php.html#218\">LiveChat\\Admin\\Controller_Ban::InsertSubmit<\/a>"],[0,6,"<a href=\"class.Controller_Ban.php.html#253\">LiveChat\\Admin\\Controller_Ban::Edit<\/a>"],[0,7,"<a href=\"class.Controller_Ban.php.html#286\">LiveChat\\Admin\\Controller_Ban::EditSubmit<\/a>"],[0,1,"<a href=\"class.Controller_Group.php.html#45\">LiveChat\\Admin\\Controller_Group::__construct<\/a>"],[0,6,"<a href=\"class.Controller_Group.php.html#60\">LiveChat\\Admin\\Controller_Group::DeleteList<\/a>"],[0,2,"<a href=\"class.Controller_Group.php.html#99\">LiveChat\\Admin\\Controller_Group::Delete<\/a>"],[0,3,"<a href=\"class.Controller_Group.php.html#118\">LiveChat\\Admin\\Controller_Group::Manage<\/a>"],[0,9,"<a href=\"class.Controller_Group.php.html#146\">LiveChat\\Admin\\Controller_Group::RunChecks<\/a>"],[0,3,"<a href=\"class.Controller_Group.php.html#191\">LiveChat\\Admin\\Controller_Group::Insert<\/a>"],[0,5,"<a href=\"class.Controller_Group.php.html#218\">LiveChat\\Admin\\Controller_Group::InsertSubmit<\/a>"],[0,6,"<a href=\"class.Controller_Group.php.html#252\">LiveChat\\Admin\\Controller_Group::Edit<\/a>"],[0,7,"<a href=\"class.Controller_Group.php.html#285\">LiveChat\\Admin\\Controller_Group::EditSubmit<\/a>"],[0,1,"<a href=\"class.Controller_MessageRouting.php.html#46\">LiveChat\\Admin\\Controller_MessageRouting::__construct<\/a>"],[0,3,"<a href=\"class.Controller_MessageRouting.php.html#61\">LiveChat\\Admin\\Controller_MessageRouting::Index<\/a>"],[0,3,"<a href=\"class.Controller_MessageRouting.php.html#88\">LiveChat\\Admin\\Controller_MessageRouting::_GetMessageRoutingData<\/a>"],[0,20,"<a href=\"class.Controller_MessageRouting.php.html#109\">LiveChat\\Admin\\Controller_MessageRouting::_PrepeareMessageRoutingTable<\/a>"],[0,6,"<a href=\"class.Controller_MessageRouting.php.html#153\">LiveChat\\Admin\\Controller_MessageRouting::IndexSubmit<\/a>"],[0,1,"<a href=\"class.Controller_OnlineStatus.php.html#43\">LiveChat\\Admin\\Controller_OnlineStatus::__construct<\/a>"],[0,6,"<a href=\"class.Controller_OnlineStatus.php.html#57\">LiveChat\\Admin\\Controller_OnlineStatus::DisconnectList<\/a>"],[0,3,"<a href=\"class.Controller_OnlineStatus.php.html#110\">LiveChat\\Admin\\Controller_OnlineStatus::Index<\/a>"],[0,1,"<a href=\"class.Controller_Rule.php.html#47\">LiveChat\\Admin\\Controller_Rule::__construct<\/a>"],[0,6,"<a href=\"class.Controller_Rule.php.html#62\">LiveChat\\Admin\\Controller_Rule::DeleteList<\/a>"],[0,2,"<a href=\"class.Controller_Rule.php.html#102\">LiveChat\\Admin\\Controller_Rule::Delete<\/a>"],[0,3,"<a href=\"class.Controller_Rule.php.html#124\">LiveChat\\Admin\\Controller_Rule::Manage<\/a>"],[0,14,"<a href=\"class.Controller_Rule.php.html#155\">LiveChat\\Admin\\Controller_Rule::_RunChecks<\/a>"],[0,3,"<a href=\"class.Controller_Rule.php.html#212\">LiveChat\\Admin\\Controller_Rule::Insert<\/a>"],[0,5,"<a href=\"class.Controller_Rule.php.html#242\">LiveChat\\Admin\\Controller_Rule::InsertSubmit<\/a>"],[0,6,"<a href=\"class.Controller_Rule.php.html#281\">LiveChat\\Admin\\Controller_Rule::Edit<\/a>"],[0,6,"<a href=\"class.Controller_Rule.php.html#325\">LiveChat\\Admin\\Controller_Rule::EditSubmit<\/a>"],[0,29,"<a href=\"class.Controller_Rule.php.html#374\">LiveChat\\Admin\\Controller_Rule::_RenderConfirmation<\/a>"],[0,1,"<a href=\"class.Controller_SettingsManager.php.html#43\">LiveChat\\Admin\\Controller_SettingsManager::__construct<\/a>"],[0,3,"<a href=\"class.Controller_SettingsManager.php.html#59\">LiveChat\\Admin\\Controller_SettingsManager::Index<\/a>"],[0,1,"<a href=\"class.Controller_Skill.php.html#45\">LiveChat\\Admin\\Controller_Skill::__construct<\/a>"],[0,6,"<a href=\"class.Controller_Skill.php.html#60\">LiveChat\\Admin\\Controller_Skill::DeleteList<\/a>"],[0,2,"<a href=\"class.Controller_Skill.php.html#99\">LiveChat\\Admin\\Controller_Skill::Delete<\/a>"],[0,3,"<a href=\"class.Controller_Skill.php.html#118\">LiveChat\\Admin\\Controller_Skill::Manage<\/a>"],[0,10,"<a href=\"class.Controller_Skill.php.html#146\">LiveChat\\Admin\\Controller_Skill::RunChecks<\/a>"],[0,3,"<a href=\"class.Controller_Skill.php.html#191\">LiveChat\\Admin\\Controller_Skill::Insert<\/a>"],[0,6,"<a href=\"class.Controller_Skill.php.html#217\">LiveChat\\Admin\\Controller_Skill::_GetAssignedStaffIDList<\/a>"],[0,4,"<a href=\"class.Controller_Skill.php.html#239\">LiveChat\\Admin\\Controller_Skill::InsertSubmit<\/a>"],[0,9,"<a href=\"class.Controller_Skill.php.html#274\">LiveChat\\Admin\\Controller_Skill::Edit<\/a>"],[0,7,"<a href=\"class.Controller_Skill.php.html#321\">LiveChat\\Admin\\Controller_Skill::EditSubmit<\/a>"],[0,1,"<a href=\"class.Controller_TagGenerator.php.html#48\">LiveChat\\Admin\\Controller_TagGenerator::__construct<\/a>"],[0,6,"<a href=\"class.Controller_TagGenerator.php.html#62\">LiveChat\\Admin\\Controller_TagGenerator::Index<\/a>"],[0,6,"<a href=\"class.Controller_TagGenerator.php.html#95\">LiveChat\\Admin\\Controller_TagGenerator::_GetTagLabel<\/a>"],[0,5,"<a href=\"class.Controller_TagGenerator.php.html#134\">LiveChat\\Admin\\Controller_TagGenerator::IsValidTagType<\/a>"],[0,68,"<a href=\"class.Controller_TagGenerator.php.html#151\">LiveChat\\Admin\\Controller_TagGenerator::Generate<\/a>"],[0,8,"<a href=\"class.Controller_TagGenerator.php.html#433\">LiveChat\\Admin\\Controller_TagGenerator::_GetIcon<\/a>"],[0,7,"<a href=\"class.View_Ban.php.html#46\">LiveChat\\Admin\\View_Ban::Render<\/a>"],[0,3,"<a href=\"class.View_Ban.php.html#91\">LiveChat\\Admin\\View_Ban::RenderGrid<\/a>"],[0,2,"<a href=\"class.View_Ban.php.html#131\">LiveChat\\Admin\\View_Ban::GridRender<\/a>"],[0,7,"<a href=\"class.View_Group.php.html#46\">LiveChat\\Admin\\View_Group::Render<\/a>"],[0,3,"<a href=\"class.View_Group.php.html#89\">LiveChat\\Admin\\View_Group::RenderGrid<\/a>"],[0,1,"<a href=\"class.View_Group.php.html#127\">LiveChat\\Admin\\View_Group::GridRender<\/a>"],[0,26,"<a href=\"class.View_MessageRouting.php.html#41\">LiveChat\\Admin\\View_MessageRouting::Render<\/a>"],[0,3,"<a href=\"class.View_OnlineStatus.php.html#41\">LiveChat\\Admin\\View_OnlineStatus::RenderGrid<\/a>"],[0,2,"<a href=\"class.View_OnlineStatus.php.html#80\">LiveChat\\Admin\\View_OnlineStatus::GridRender<\/a>"],[0,17,"<a href=\"class.View_Rule.php.html#49\">LiveChat\\Admin\\View_Rule::Render<\/a>"],[0,3,"<a href=\"class.View_Rule.php.html#211\">LiveChat\\Admin\\View_Rule::RenderGrid<\/a>"],[0,2,"<a href=\"class.View_Rule.php.html#250\">LiveChat\\Admin\\View_Rule::GridRender<\/a>"],[0,1,"<a href=\"class.View_Rule.php.html#272\">LiveChat\\Admin\\View_Rule::DispatchMenu<\/a>"],[0,19,"<a href=\"class.View_Skill.php.html#47\">LiveChat\\Admin\\View_Skill::Render<\/a>"],[0,3,"<a href=\"class.View_Skill.php.html#124\">LiveChat\\Admin\\View_Skill::RenderGrid<\/a>"],[0,1,"<a href=\"class.View_Skill.php.html#162\">LiveChat\\Admin\\View_Skill::GridRender<\/a>"],[0,2,"<a href=\"class.View_TagGenerator.php.html#45\">LiveChat\\Admin\\View_TagGenerator::RenderGenerateTag<\/a>"],[0,36,"<a href=\"class.View_TagGenerator.php.html#87\">LiveChat\\Admin\\View_TagGenerator::Render<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

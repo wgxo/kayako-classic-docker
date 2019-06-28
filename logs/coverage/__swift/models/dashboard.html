@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/swift/trunk/__swift/models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/home/swift/trunk</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">__swift</a></li>
+         <li class="breadcrumb-item"><a href="index.html">models</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#23">SWIFT_JobQueueMessage</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#23">SWIFT_JobQueueMessageLog</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#23">SWIFT_JobQueueMessagePacket</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#24">SWIFT_MailQueueManager</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#23">SWIFT_Registry</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#23">SWIFT_SettingsField</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#23">SWIFT_SettingsGroup</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#29">SWIFT_Session</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#24">SWIFT_FileManager</a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#23">SWIFT_AppLogData</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#26">SWIFT_ErrorLog</a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#23">SWIFT_Settings</a></td><td class="text-right">29%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#23">SWIFT_Cron</a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#23">SWIFT_CronLog</a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#23">SWIFT_AppLog</a></td><td class="text-right">44%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#29">SWIFT_Session</a></td><td class="text-right">45881</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#24">SWIFT_FileManager</a></td><td class="text-right">6401</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#23">SWIFT_JobQueueMessage</a></td><td class="text-right">3660</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#23">SWIFT_Registry</a></td><td class="text-right">3306</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#26">SWIFT_ErrorLog</a></td><td class="text-right">1508</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#23">SWIFT_Cron</a></td><td class="text-right">1253</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#23">SWIFT_Settings</a></td><td class="text-right">1193</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#23">SWIFT_JobQueueMessageLog</a></td><td class="text-right">812</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#23">SWIFT_JobQueueMessagePacket</a></td><td class="text-right">812</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#24">SWIFT_MailQueueManager</a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#23">SWIFT_CronLog</a></td><td class="text-right">267</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#23">SWIFT_SettingsField</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#23">SWIFT_SettingsGroup</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#23">SWIFT_AppLogData</a></td><td class="text-right">95</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#23">SWIFT_AppLog</a></td><td class="text-right">31</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#47"><abbr title="SWIFT_AppLog::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#240"><abbr title="SWIFT_Registry::GetKey">GetKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#70"><abbr title="SWIFT_Registry::GetLocalCache">GetLocalCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#93"><abbr title="SWIFT_Registry::UpdateLocalCache">UpdateLocalCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#113"><abbr title="SWIFT_Registry::DeleteLocalCache">DeleteLocalCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#133"><abbr title="SWIFT_Registry::InsertKey">InsertKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#158"><abbr title="SWIFT_Registry::UpdateKey">UpdateKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#195"><abbr title="SWIFT_Registry::DeleteKey">DeleteKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#214"><abbr title="SWIFT_Registry::DeleteKeyList">DeleteKeyList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#280"><abbr title="SWIFT_Registry::GetKeyList">GetKeyList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#171"><abbr title="SWIFT_MailQueueManager::SendQueueEmails">SendQueueEmails</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#346"><abbr title="SWIFT_Registry::LoadRegistryCache">LoadRegistryCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#401"><abbr title="SWIFT_Registry::RefreshRegistryCacheFile">RefreshRegistryCacheFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#82"><abbr title="SWIFT_Session::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#98"><abbr title="SWIFT_Session::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#112"><abbr title="SWIFT_Session::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#135"><abbr title="SWIFT_Session::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#167"><abbr title="SWIFT_Session::UpdateActivityCombined">UpdateActivityCombined</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#227"><abbr title="SWIFT_Session::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#48"><abbr title="SWIFT_Registry::HasLocalCache">HasLocalCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#128"><abbr title="SWIFT_MailQueueManager::ProcessMailQueue">ProcessMailQueue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#266"><abbr title="SWIFT_Session::GetSessionID">GetSessionID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#120"><abbr title="SWIFT_JobQueueMessagePacket::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#222"><abbr title="SWIFT_JobQueueMessageLog::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#245"><abbr title="SWIFT_JobQueueMessageLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#266"><abbr title="SWIFT_JobQueueMessageLog::Cleanup">Cleanup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#49"><abbr title="SWIFT_JobQueueMessagePacket::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#65"><abbr title="SWIFT_JobQueueMessagePacket::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#79"><abbr title="SWIFT_JobQueueMessagePacket::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#101"><abbr title="SWIFT_JobQueueMessagePacket::GetJobQueueMessagePacketID">GetJobQueueMessagePacketID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#140"><abbr title="SWIFT_JobQueueMessagePacket::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#104"><abbr title="SWIFT_MailQueueManager::DeleteMailQueueDataList">DeleteMailQueueDataList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#160"><abbr title="SWIFT_JobQueueMessagePacket::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#188"><abbr title="SWIFT_JobQueueMessagePacket::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#219"><abbr title="SWIFT_JobQueueMessagePacket::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#242"><abbr title="SWIFT_JobQueueMessagePacket::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#263"><abbr title="SWIFT_JobQueueMessagePacket::Cleanup">Cleanup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#36"><abbr title="SWIFT_MailQueueManager::ParseVariables">ParseVariables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#56"><abbr title="SWIFT_MailQueueManager::AddToQueue">AddToQueue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#82"><abbr title="SWIFT_MailQueueManager::RecountMailQueue">RecountMailQueue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#247"><abbr title="SWIFT_Session::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#291"><abbr title="SWIFT_Session::UpdateHeartbeatAndHitsOnTypeID">UpdateHeartbeatAndHitsOnTypeID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#137"><abbr title="SWIFT_JobQueueMessageLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#336"><abbr title="SWIFT_Settings::GetInt">GetInt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#108"><abbr title="SWIFT_Settings::DeleteLocalCacheSection">DeleteLocalCacheSection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#130"><abbr title="SWIFT_Settings::InsertKey">InsertKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#160"><abbr title="SWIFT_Settings::UpdateKey">UpdateKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#196"><abbr title="SWIFT_Settings::DeleteKey">DeleteKey</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#223"><abbr title="SWIFT_Settings::DeleteSection">DeleteSection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#291"><abbr title="SWIFT_Settings::GetSection">GetSection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#327"><abbr title="SWIFT_Settings::GetBool">GetBool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#345"><abbr title="SWIFT_Settings::GetString">GetString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#69"><abbr title="SWIFT_Settings::UpdateLocalCache">UpdateLocalCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#356"><abbr title="SWIFT_Settings::GetSettings">GetSettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#49"><abbr title="SWIFT_SettingsField::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#68"><abbr title="SWIFT_SettingsField::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#94"><abbr title="SWIFT_SettingsField::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#128"><abbr title="SWIFT_SettingsField::DeleteOnSettingGroup">DeleteOnSettingGroup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#46"><abbr title="SWIFT_SettingsGroup::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#62"><abbr title="SWIFT_SettingsGroup::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#87"><abbr title="SWIFT_SettingsGroup::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#89"><abbr title="SWIFT_Settings::DeleteLocalCache">DeleteLocalCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1427"><abbr title="SWIFT_Session::RetrieveSession">RetrieveSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#334"><abbr title="SWIFT_Session::UpdateHeartbeatAndHitsOnSessionID">UpdateHeartbeatAndHitsOnSessionID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#946"><abbr title="SWIFT_Session::Logout">Logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#372"><abbr title="SWIFT_Session::UpdateHeartbeatOnTypeID">UpdateHeartbeatOnTypeID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#394"><abbr title="SWIFT_Session::UpdateHeartbeatAndStatus">UpdateHeartbeatAndStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#436"><abbr title="SWIFT_Session::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#589"><abbr title="SWIFT_Session::InsertAndStart">InsertAndStart</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#807"><abbr title="SWIFT_Session::CheckAndGet">CheckAndGet</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#886"><abbr title="SWIFT_Session::End">End</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#921"><abbr title="SWIFT_Session::EndCustomSession">EndCustomSession</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1013"><abbr title="SWIFT_Session::Update">Update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1397"><abbr title="SWIFT_Session::DeleteOnTypeID">DeleteOnTypeID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1040"><abbr title="SWIFT_Session::UpdateStatus">UpdateStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1063"><abbr title="SWIFT_Session::UpdatePhoneStatus">UpdatePhoneStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1085"><abbr title="SWIFT_Session::UpdateLastActivity">UpdateLastActivity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1178"><abbr title="SWIFT_Session::SetCaptcha">SetCaptcha</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1249"><abbr title="SWIFT_Session::KillSessionList">KillSessionList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1299"><abbr title="SWIFT_Session::IsLoggedIn">IsLoggedIn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1352"><abbr title="SWIFT_Session::UpdateTicketView">UpdateTicketView</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1374"><abbr title="SWIFT_Session::ResetHitsOnSessionID">ResetHitsOnSessionID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#157"><abbr title="SWIFT_JobQueueMessageLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#185"><abbr title="SWIFT_JobQueueMessageLog::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#117"><abbr title="SWIFT_JobQueueMessageLog::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#88"><abbr title="SWIFT_ErrorLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#128"><abbr title="SWIFT_CronLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#146"><abbr title="SWIFT_CronLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#216"><abbr title="SWIFT_CronLog::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#237"><abbr title="SWIFT_CronLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#58"><abbr title="SWIFT_ErrorLog::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#74"><abbr title="SWIFT_ErrorLog::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#110"><abbr title="SWIFT_ErrorLog::GetErrorLogID">GetErrorLogID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#91"><abbr title="SWIFT_CronLog::GetCronLogID">GetCronLogID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#127"><abbr title="SWIFT_ErrorLog::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#147"><abbr title="SWIFT_ErrorLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#165"><abbr title="SWIFT_ErrorLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#98"><abbr title="SWIFT_JobQueueMessageLog::GetJobQueueMessageLogID">GetJobQueueMessageLogID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#257"><abbr title="SWIFT_ErrorLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#291"><abbr title="SWIFT_ErrorLog::GetErrorLabel">GetErrorLabel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#320"><abbr title="SWIFT_ErrorLog::GetDashboardContainer">GetDashboardContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#108"><abbr title="SWIFT_CronLog::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#68"><abbr title="SWIFT_CronLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#127"><abbr title="SWIFT_FileManager::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#177"><abbr title="SWIFT_Cron::UpdateNextRun">UpdateNextRun</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#101"><abbr title="SWIFT_AppLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#45"><abbr title="SWIFT_AppLogData::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#85"><abbr title="SWIFT_AppLogData::DeleteOnAppLog">DeleteOnAppLog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#116"><abbr title="SWIFT_AppLogData::CleanUp">CleanUp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#147"><abbr title="SWIFT_AppLogData::Daily">Daily</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#141"><abbr title="SWIFT_Cron::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#306"><abbr title="SWIFT_Cron::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#54"><abbr title="SWIFT_CronLog::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#327"><abbr title="SWIFT_Cron::Disable">Disable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#346"><abbr title="SWIFT_Cron::Enable">Enable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#365"><abbr title="SWIFT_Cron::Execute">Execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#439"><abbr title="SWIFT_Cron::DisableList">DisableList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#490"><abbr title="SWIFT_Cron::EnableList">EnableList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#541"><abbr title="SWIFT_Cron::ExecuteList">ExecuteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#42"><abbr title="SWIFT_CronLog::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#88"><abbr title="SWIFT_FileManager::GetFileID">GetFileID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#236"><abbr title="SWIFT_ErrorLog::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#110"><abbr title="SWIFT_SettingsGroup::DeleteOnApp">DeleteOnApp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#212"><abbr title="SWIFT_JobQueueMessage::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#82"><abbr title="SWIFT_JobQueueMessage::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#96"><abbr title="SWIFT_JobQueueMessage::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#175"><abbr title="SWIFT_FileManager::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#135"><abbr title="SWIFT_JobQueueMessage::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#155"><abbr title="SWIFT_JobQueueMessage::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#173"><abbr title="SWIFT_JobQueueMessage::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#192"><abbr title="SWIFT_JobQueueMessage::IsValidStatus">IsValidStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#311"><abbr title="SWIFT_JobQueueMessage::Update">Update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#675"><abbr title="SWIFT_FileManager::GetRemoteFileInfo">GetRemoteFileInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#343"><abbr title="SWIFT_JobQueueMessage::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#364"><abbr title="SWIFT_JobQueueMessage::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#385"><abbr title="SWIFT_JobQueueMessage::Cleanup">Cleanup</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#414"><abbr title="SWIFT_JobQueueMessage::RetrieveOnUUID">RetrieveOnUUID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#441"><abbr title="SWIFT_JobQueueMessage::GetMessageStatusLabel">GetMessageStatusLabel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#48"><abbr title="SWIFT_JobQueueMessageLog::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#62"><abbr title="SWIFT_JobQueueMessageLog::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#76"><abbr title="SWIFT_JobQueueMessageLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#66"><abbr title="SWIFT_JobQueueMessage::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#118"><abbr title="SWIFT_JobQueueMessage::GetJobQueueMessageID">GetJobQueueMessageID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#653"><abbr title="SWIFT_FileManager::HasRemoteFile">HasRemoteFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#306"><abbr title="SWIFT_FileManager::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#562"><abbr title="SWIFT_FileManager::Dispatch">Dispatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#233"><abbr title="SWIFT_FileManager::CreateExtended">CreateExtended</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#527"><abbr title="SWIFT_FileManager::GetRemoteInfo">GetRemoteInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#500"><abbr title="SWIFT_FileManager::HasRemote">HasRemote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#467"><abbr title="SWIFT_FileManager::GetFileSize">GetFileSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#258"><abbr title="SWIFT_FileManager::GetNewFileName">GetNewFileName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#425"><abbr title="SWIFT_FileManager::GetURL">GetURL</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#391"><abbr title="SWIFT_FileManager::DeleteOnFileNameList">DeleteOnFileNameList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#361"><abbr title="SWIFT_FileManager::DeleteExpired">DeleteExpired</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#284"><abbr title="SWIFT_FileManager::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#617"><abbr title="SWIFT_Session::Start">Start</abbr></a></td><td class="text-right">13%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#81"><abbr title="SWIFT_Cron::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#68"><abbr title="SWIFT_FileManager::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#249"><abbr title="SWIFT_Settings::ReplaceLocalCache">ReplaceLocalCache</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1202"><abbr title="SWIFT_Session::DeleteList">DeleteList</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#269"><abbr title="SWIFT_Settings::GetKey">GetKey</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#446"><abbr title="SWIFT_FileManager::GetPath">GetPath</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#147"><abbr title="SWIFT_FileManager::GetProperty">GetProperty</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#313"><abbr title="SWIFT_Settings::Get">Get</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#159"><abbr title="SWIFT_Cron::GetProperty">GetProperty</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#104"><abbr title="SWIFT_Cron::GetCronID">GetCronID</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#629"><abbr title="SWIFT_FileManager::GetBase64">GetBase64</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#279"><abbr title="SWIFT_CronLog::CleanUp">CleanUp</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#361"><abbr title="SWIFT_ErrorLog::CleanUp">CleanUp</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#202"><abbr title="SWIFT_Cron::Retrieve">Retrieve</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#184"><abbr title="SWIFT_ErrorLog::IsValidType">IsValidType</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#51"><abbr title="SWIFT_Cron::__construct">__construct</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#59"><abbr title="SWIFT_AppLogData::Create">Create</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#74"><abbr title="SWIFT_AppLog::Create">Create</abbr></a></td><td class="text-right">77%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#436"><abbr title="SWIFT_Session::Insert">Insert</abbr></a></td><td class="text-right">1640</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#617"><abbr title="SWIFT_Session::Start">Start</abbr></a></td><td class="text-right">1239</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#807"><abbr title="SWIFT_Session::CheckAndGet">CheckAndGet</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1299"><abbr title="SWIFT_Session::IsLoggedIn">IsLoggedIn</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#167"><abbr title="SWIFT_Session::UpdateActivityCombined">UpdateActivityCombined</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#946"><abbr title="SWIFT_Session::Logout">Logout</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#280"><abbr title="SWIFT_Registry::GetKeyList">GetKeyList</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#212"><abbr title="SWIFT_JobQueueMessage::Create">Create</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#527"><abbr title="SWIFT_FileManager::GetRemoteInfo">GetRemoteInfo</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#175"><abbr title="SWIFT_FileManager::Create">Create</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#441"><abbr title="SWIFT_JobQueueMessage::GetMessageStatusLabel">GetMessageStatusLabel</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#171"><abbr title="SWIFT_MailQueueManager::SendQueueEmails">SendQueueEmails</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#562"><abbr title="SWIFT_FileManager::Dispatch">Dispatch</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#306"><abbr title="SWIFT_FileManager::DeleteList">DeleteList</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#675"><abbr title="SWIFT_FileManager::GetRemoteFileInfo">GetRemoteFileInfo</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#541"><abbr title="SWIFT_Cron::ExecuteList">ExecuteList</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#192"><abbr title="SWIFT_JobQueueMessage::IsValidStatus">IsValidStatus</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#291"><abbr title="SWIFT_Session::UpdateHeartbeatAndHitsOnTypeID">UpdateHeartbeatAndHitsOnTypeID</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#240"><abbr title="SWIFT_Registry::GetKey">GetKey</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#291"><abbr title="SWIFT_ErrorLog::GetErrorLabel">GetErrorLabel</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#135"><abbr title="SWIFT_Session::LoadData">LoadData</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#160"><abbr title="SWIFT_Settings::UpdateKey">UpdateKey</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#346"><abbr title="SWIFT_Registry::LoadRegistryCache">LoadRegistryCache</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#467"><abbr title="SWIFT_FileManager::GetFileSize">GetFileSize</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1202"><abbr title="SWIFT_Session::DeleteList">DeleteList</abbr></a></td><td class="text-right">38</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#185"><abbr title="SWIFT_JobQueueMessageLog::Create">Create</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#500"><abbr title="SWIFT_FileManager::HasRemote">HasRemote</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#128"><abbr title="SWIFT_MailQueueManager::ProcessMailQueue">ProcessMailQueue</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#188"><abbr title="SWIFT_JobQueueMessagePacket::Create">Create</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#158"><abbr title="SWIFT_Registry::UpdateKey">UpdateKey</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#320"><abbr title="SWIFT_ErrorLog::GetDashboardContainer">GetDashboardContainer</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1397"><abbr title="SWIFT_Session::DeleteOnTypeID">DeleteOnTypeID</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#334"><abbr title="SWIFT_Session::UpdateHeartbeatAndHitsOnSessionID">UpdateHeartbeatAndHitsOnSessionID</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#394"><abbr title="SWIFT_Session::UpdateHeartbeatAndStatus">UpdateHeartbeatAndStatus</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#490"><abbr title="SWIFT_Cron::EnableList">EnableList</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#439"><abbr title="SWIFT_Cron::DisableList">DisableList</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#68"><abbr title="SWIFT_SettingsField::Create">Create</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#291"><abbr title="SWIFT_Settings::GetSection">GetSection</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#48"><abbr title="SWIFT_Registry::HasLocalCache">HasLocalCache</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#70"><abbr title="SWIFT_Registry::GetLocalCache">GetLocalCache</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#196"><abbr title="SWIFT_Settings::DeleteKey">DeleteKey</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#130"><abbr title="SWIFT_Settings::InsertKey">InsertKey</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#89"><abbr title="SWIFT_Settings::DeleteLocalCache">DeleteLocalCache</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#94"><abbr title="SWIFT_SettingsField::DeleteList">DeleteList</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#391"><abbr title="SWIFT_FileManager::DeleteOnFileNameList">DeleteOnFileNameList</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#85"><abbr title="SWIFT_AppLogData::DeleteOnAppLog">DeleteOnAppLog</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#311"><abbr title="SWIFT_JobQueueMessage::Update">Update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#69"><abbr title="SWIFT_Settings::UpdateLocalCache">UpdateLocalCache</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#214"><abbr title="SWIFT_Registry::DeleteKeyList">DeleteKeyList</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#414"><abbr title="SWIFT_JobQueueMessage::RetrieveOnUUID">RetrieveOnUUID</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#62"><abbr title="SWIFT_SettingsGroup::Create">Create</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#257"><abbr title="SWIFT_ErrorLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#160"><abbr title="SWIFT_JobQueueMessagePacket::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsField.php.html#128"><abbr title="SWIFT_SettingsField::DeleteOnSettingGroup">DeleteOnSettingGroup</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#120"><abbr title="SWIFT_JobQueueMessagePacket::LoadData">LoadData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#79"><abbr title="SWIFT_JobQueueMessagePacket::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#263"><abbr title="SWIFT_JobQueueMessagePacket::Cleanup">Cleanup</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#266"><abbr title="SWIFT_JobQueueMessageLog::Cleanup">Cleanup</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#56"><abbr title="SWIFT_MailQueueManager::AddToQueue">AddToQueue</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#266"><abbr title="SWIFT_Session::GetSessionID">GetSessionID</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#108"><abbr title="SWIFT_Settings::DeleteLocalCacheSection">DeleteLocalCacheSection</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#104"><abbr title="SWIFT_MailQueueManager::DeleteMailQueueDataList">DeleteMailQueueDataList</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#223"><abbr title="SWIFT_Settings::DeleteSection">DeleteSection</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#247"><abbr title="SWIFT_Session::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#93"><abbr title="SWIFT_Registry::UpdateLocalCache">UpdateLocalCache</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#113"><abbr title="SWIFT_Registry::DeleteLocalCache">DeleteLocalCache</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#133"><abbr title="SWIFT_Registry::InsertKey">InsertKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#195"><abbr title="SWIFT_Registry::DeleteKey">DeleteKey</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1013"><abbr title="SWIFT_Session::Update">Update</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#589"><abbr title="SWIFT_Session::InsertAndStart">InsertAndStart</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Registry/class.SWIFT_Registry.php.html#401"><abbr title="SWIFT_Registry::RefreshRegistryCacheFile">RefreshRegistryCacheFile</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#112"><abbr title="SWIFT_Session::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#117"><abbr title="SWIFT_JobQueueMessageLog::LoadData">LoadData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#372"><abbr title="SWIFT_Session::UpdateHeartbeatOnTypeID">UpdateHeartbeatOnTypeID</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#157"><abbr title="SWIFT_JobQueueMessageLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#110"><abbr title="SWIFT_SettingsGroup::DeleteOnApp">DeleteOnApp</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#127"><abbr title="SWIFT_ErrorLog::LoadData">LoadData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#173"><abbr title="SWIFT_JobQueueMessage::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#165"><abbr title="SWIFT_ErrorLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#146"><abbr title="SWIFT_CronLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#108"><abbr title="SWIFT_CronLog::LoadData">LoadData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#258"><abbr title="SWIFT_FileManager::GetNewFileName">GetNewFileName</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#361"><abbr title="SWIFT_FileManager::DeleteExpired">DeleteExpired</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#425"><abbr title="SWIFT_FileManager::GetURL">GetURL</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#653"><abbr title="SWIFT_FileManager::HasRemoteFile">HasRemoteFile</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#88"><abbr title="SWIFT_ErrorLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#96"><abbr title="SWIFT_JobQueueMessage::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#135"><abbr title="SWIFT_JobQueueMessage::LoadData">LoadData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#68"><abbr title="SWIFT_CronLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#76"><abbr title="SWIFT_JobQueueMessageLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#177"><abbr title="SWIFT_Cron::UpdateNextRun">UpdateNextRun</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#385"><abbr title="SWIFT_JobQueueMessage::Cleanup">Cleanup</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#116"><abbr title="SWIFT_AppLogData::CleanUp">CleanUp</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#269"><abbr title="SWIFT_Settings::GetKey">GetKey</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#184"><abbr title="SWIFT_ErrorLog::IsValidType">IsValidType</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#81"><abbr title="SWIFT_Cron::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#327"><abbr title="SWIFT_Cron::Disable">Disable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1063"><abbr title="SWIFT_Session::UpdatePhoneStatus">UpdatePhoneStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#237"><abbr title="SWIFT_CronLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#216"><abbr title="SWIFT_CronLog::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_SettingsGroup.php.html#87"><abbr title="SWIFT_SettingsGroup::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#886"><abbr title="SWIFT_Session::End">End</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#921"><abbr title="SWIFT_Session::EndCustomSession">EndCustomSession</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#128"><abbr title="SWIFT_CronLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1040"><abbr title="SWIFT_Session::UpdateStatus">UpdateStatus</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1178"><abbr title="SWIFT_Session::SetCaptcha">SetCaptcha</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1085"><abbr title="SWIFT_Session::UpdateLastActivity">UpdateLastActivity</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#346"><abbr title="SWIFT_Cron::Enable">Enable</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#356"><abbr title="SWIFT_Settings::GetSettings">GetSettings</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#91"><abbr title="SWIFT_CronLog::GetCronLogID">GetCronLogID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1249"><abbr title="SWIFT_Session::KillSessionList">KillSessionList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#141"><abbr title="SWIFT_Cron::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1352"><abbr title="SWIFT_Session::UpdateTicketView">UpdateTicketView</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1374"><abbr title="SWIFT_Session::ResetHitsOnSessionID">ResetHitsOnSessionID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#306"><abbr title="SWIFT_Cron::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#365"><abbr title="SWIFT_Cron::Execute">Execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#1427"><abbr title="SWIFT_Session::RetrieveSession">RetrieveSession</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#58"><abbr title="SWIFT_ErrorLog::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#98"><abbr title="SWIFT_JobQueueMessageLog::GetJobQueueMessageLogID">GetJobQueueMessageLogID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#110"><abbr title="SWIFT_ErrorLog::GetErrorLogID">GetErrorLogID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#118"><abbr title="SWIFT_JobQueueMessage::GetJobQueueMessageID">GetJobQueueMessageID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#101"><abbr title="SWIFT_AppLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#222"><abbr title="SWIFT_JobQueueMessageLog::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#245"><abbr title="SWIFT_JobQueueMessageLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#48"><abbr title="SWIFT_JobQueueMessageLog::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#49"><abbr title="SWIFT_JobQueueMessagePacket::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#101"><abbr title="SWIFT_JobQueueMessagePacket::GetJobQueueMessagePacketID">GetJobQueueMessagePacketID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#364"><abbr title="SWIFT_JobQueueMessage::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#140"><abbr title="SWIFT_JobQueueMessagePacket::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#343"><abbr title="SWIFT_JobQueueMessage::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#219"><abbr title="SWIFT_JobQueueMessagePacket::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessagePacket.php.html#242"><abbr title="SWIFT_JobQueueMessagePacket::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessageLog.php.html#137"><abbr title="SWIFT_JobQueueMessageLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Mail/class.SWIFT_MailQueueManager.php.html#82"><abbr title="SWIFT_MailQueueManager::RecountMailQueue">RecountMailQueue</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#155"><abbr title="SWIFT_JobQueueMessage::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="JobQueue/class.SWIFT_JobQueueMessage.php.html#66"><abbr title="SWIFT_JobQueueMessage::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#88"><abbr title="SWIFT_FileManager::GetFileID">GetFileID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#147"><abbr title="SWIFT_ErrorLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#227"><abbr title="SWIFT_Session::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#236"><abbr title="SWIFT_ErrorLog::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Session/class.SWIFT_Session.php.html#82"><abbr title="SWIFT_Session::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#127"><abbr title="SWIFT_FileManager::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#233"><abbr title="SWIFT_FileManager::CreateExtended">CreateExtended</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#284"><abbr title="SWIFT_FileManager::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLog.php.html#74"><abbr title="SWIFT_AppLog::Create">Create</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#202"><abbr title="SWIFT_Cron::Retrieve">Retrieve</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#147"><abbr title="SWIFT_FileManager::GetProperty">GetProperty</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#446"><abbr title="SWIFT_FileManager::GetPath">GetPath</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#159"><abbr title="SWIFT_Cron::GetProperty">GetProperty</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#629"><abbr title="SWIFT_FileManager::GetBase64">GetBase64</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#313"><abbr title="SWIFT_Settings::Get">Get</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="ErrorLog/class.SWIFT_ErrorLog.php.html#361"><abbr title="SWIFT_ErrorLog::CleanUp">CleanUp</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_CronLog.php.html#279"><abbr title="SWIFT_CronLog::CleanUp">CleanUp</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="App/class.SWIFT_AppLogData.php.html#59"><abbr title="SWIFT_AppLogData::Create">Create</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="FileManager/class.SWIFT_FileManager.php.html#68"><abbr title="SWIFT_FileManager::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Settings/class.SWIFT_Settings.php.html#249"><abbr title="SWIFT_Settings::ReplaceLocalCache">ReplaceLocalCache</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#104"><abbr title="SWIFT_Cron::GetCronID">GetCronID</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Cron/class.SWIFT_Cron.php.html#51"><abbr title="SWIFT_Cron::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.26</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 7.5.7</a> at Sun Jun 23 1:22:47 CST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,1,3,1,2,1,0,0,0,0,0,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([155,0,1,1,0,1,2,7,7,10,2,8], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[44.44444444444444,11,"<a href=\"App\/class.SWIFT_AppLog.php.html#23\">SWIFT_AppLog<\/a>"],[16.666666666666664,12,"<a href=\"App\/class.SWIFT_AppLogData.php.html#23\">SWIFT_AppLogData<\/a>"],[35.15151515151515,66,"<a href=\"Cron\/class.SWIFT_Cron.php.html#23\">SWIFT_Cron<\/a>"],[35.82089552238806,30,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#23\">SWIFT_CronLog<\/a>"],[18.627450980392158,52,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#26\">SWIFT_ErrorLog<\/a>"],[100,0,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog_Exception.php.html#23\">SWIFT_ErrorLog_Exception<\/a>"],[11.881188118811881,96,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#24\">SWIFT_FileManager<\/a>"],[100,0,"<a href=\"FileManager\/class.SWIFT_FileManager_Exception.php.html#23\">SWIFT_FileManager_Exception<\/a>"],[0,60,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#23\">SWIFT_JobQueueMessage<\/a>"],[0,28,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#23\">SWIFT_JobQueueMessageLog<\/a>"],[0,28,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#23\">SWIFT_JobQueueMessagePacket<\/a>"],[0,23,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#24\">SWIFT_MailQueueManager<\/a>"],[0,57,"<a href=\"Registry\/class.SWIFT_Registry.php.html#23\">SWIFT_Registry<\/a>"],[9.713024282560706,249,"<a href=\"Session\/class.SWIFT_Session.php.html#29\">SWIFT_Session<\/a>"],[29.545454545454547,57,"<a href=\"Settings\/class.SWIFT_Settings.php.html#23\">SWIFT_Settings<\/a>"],[0,13,"<a href=\"Settings\/class.SWIFT_SettingsField.php.html#23\">SWIFT_SettingsField<\/a>"],[0,10,"<a href=\"Settings\/class.SWIFT_SettingsGroup.php.html#23\">SWIFT_SettingsGroup<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"App\/class.SWIFT_AppLog.php.html#47\">SWIFT_AppLog::__construct<\/a>"],[100,3,"<a href=\"App\/class.SWIFT_AppLog.php.html#59\">SWIFT_AppLog::IsValidType<\/a>"],[77.77777777777779,5,"<a href=\"App\/class.SWIFT_AppLog.php.html#74\">SWIFT_AppLog::Create<\/a>"],[0,2,"<a href=\"App\/class.SWIFT_AppLog.php.html#101\">SWIFT_AppLog::DeleteList<\/a>"],[0,1,"<a href=\"App\/class.SWIFT_AppLogData.php.html#45\">SWIFT_AppLogData::__construct<\/a>"],[75,3,"<a href=\"App\/class.SWIFT_AppLogData.php.html#59\">SWIFT_AppLogData::Create<\/a>"],[0,4,"<a href=\"App\/class.SWIFT_AppLogData.php.html#85\">SWIFT_AppLogData::DeleteOnAppLog<\/a>"],[0,3,"<a href=\"App\/class.SWIFT_AppLogData.php.html#116\">SWIFT_AppLogData::CleanUp<\/a>"],[0,1,"<a href=\"App\/class.SWIFT_AppLogData.php.html#147\">SWIFT_AppLogData::Daily<\/a>"],[75,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#51\">SWIFT_Cron::__construct<\/a>"],[100,1,"<a href=\"Cron\/class.SWIFT_Cron.php.html#67\">SWIFT_Cron::__destruct<\/a>"],[28.57142857142857,3,"<a href=\"Cron\/class.SWIFT_Cron.php.html#81\">SWIFT_Cron::ProcessUpdatePool<\/a>"],[66.66666666666666,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#104\">SWIFT_Cron::GetCronID<\/a>"],[80,3,"<a href=\"Cron\/class.SWIFT_Cron.php.html#121\">SWIFT_Cron::LoadData<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#141\">SWIFT_Cron::GetDataStore<\/a>"],[66.66666666666666,3,"<a href=\"Cron\/class.SWIFT_Cron.php.html#159\">SWIFT_Cron::GetProperty<\/a>"],[0,3,"<a href=\"Cron\/class.SWIFT_Cron.php.html#177\">SWIFT_Cron::UpdateNextRun<\/a>"],[75,4,"<a href=\"Cron\/class.SWIFT_Cron.php.html#202\">SWIFT_Cron::Retrieve<\/a>"],[83.33333333333334,3,"<a href=\"Cron\/class.SWIFT_Cron.php.html#228\">SWIFT_Cron::RetrievePendingTask<\/a>"],[80,8,"<a href=\"Cron\/class.SWIFT_Cron.php.html#256\">SWIFT_Cron::Create<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#306\">SWIFT_Cron::Delete<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#327\">SWIFT_Cron::Disable<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#346\">SWIFT_Cron::Enable<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#365\">SWIFT_Cron::Execute<\/a>"],[83.33333333333334,2,"<a href=\"Cron\/class.SWIFT_Cron.php.html#384\">SWIFT_Cron::DeleteList<\/a>"],[90.9090909090909,4,"<a href=\"Cron\/class.SWIFT_Cron.php.html#408\">SWIFT_Cron::DeleteOnName<\/a>"],[0,5,"<a href=\"Cron\/class.SWIFT_Cron.php.html#439\">SWIFT_Cron::DisableList<\/a>"],[0,5,"<a href=\"Cron\/class.SWIFT_Cron.php.html#490\">SWIFT_Cron::EnableList<\/a>"],[0,8,"<a href=\"Cron\/class.SWIFT_Cron.php.html#541\">SWIFT_Cron::ExecuteList<\/a>"],[0,1,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#42\">SWIFT_CronLog::__construct<\/a>"],[0,1,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#54\">SWIFT_CronLog::__destruct<\/a>"],[0,3,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#68\">SWIFT_CronLog::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#91\">SWIFT_CronLog::GetCronLogID<\/a>"],[0,3,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#108\">SWIFT_CronLog::LoadData<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#128\">SWIFT_CronLog::GetDataStore<\/a>"],[0,3,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#146\">SWIFT_CronLog::GetProperty<\/a>"],[100,1,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#162\">SWIFT_CronLog::LoadLanguageSection<\/a>"],[83.33333333333334,5,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#180\">SWIFT_CronLog::Create<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#216\">SWIFT_CronLog::Delete<\/a>"],[0,2,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#237\">SWIFT_CronLog::DeleteList<\/a>"],[80,2,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#258\">SWIFT_CronLog::DeleteOnCronID<\/a>"],[70,3,"<a href=\"Cron\/class.SWIFT_CronLog.php.html#279\">SWIFT_CronLog::CleanUp<\/a>"],[0,2,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#58\">SWIFT_ErrorLog::__construct<\/a>"],[0,1,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#74\">SWIFT_ErrorLog::__destruct<\/a>"],[0,3,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#88\">SWIFT_ErrorLog::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#110\">SWIFT_ErrorLog::GetErrorLogID<\/a>"],[0,3,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#127\">SWIFT_ErrorLog::LoadData<\/a>"],[0,2,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#147\">SWIFT_ErrorLog::GetDataStore<\/a>"],[0,3,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#165\">SWIFT_ErrorLog::GetProperty<\/a>"],[75,7,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#184\">SWIFT_ErrorLog::IsValidType<\/a>"],[90,8,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#205\">SWIFT_ErrorLog::Create<\/a>"],[0,2,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#236\">SWIFT_ErrorLog::Delete<\/a>"],[0,4,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#257\">SWIFT_ErrorLog::DeleteList<\/a>"],[0,7,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#291\">SWIFT_ErrorLog::GetErrorLabel<\/a>"],[0,5,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#320\">SWIFT_ErrorLog::GetDashboardContainer<\/a>"],[70,3,"<a href=\"ErrorLog\/class.SWIFT_ErrorLog.php.html#361\">SWIFT_ErrorLog::CleanUp<\/a>"],[100,2,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#40\">SWIFT_FileManager::__construct<\/a>"],[100,1,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#54\">SWIFT_FileManager::__destruct<\/a>"],[40,2,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#68\">SWIFT_FileManager::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#88\">SWIFT_FileManager::GetFileID<\/a>"],[100,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#107\">SWIFT_FileManager::LoadData<\/a>"],[0,2,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#127\">SWIFT_FileManager::GetDataStore<\/a>"],[60,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#147\">SWIFT_FileManager::GetProperty<\/a>"],[0,9,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#175\">SWIFT_FileManager::Create<\/a>"],[0,2,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#233\">SWIFT_FileManager::CreateExtended<\/a>"],[0,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#258\">SWIFT_FileManager::GetNewFileName<\/a>"],[0,2,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#284\">SWIFT_FileManager::Delete<\/a>"],[0,8,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#306\">SWIFT_FileManager::DeleteList<\/a>"],[0,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#361\">SWIFT_FileManager::DeleteExpired<\/a>"],[0,4,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#391\">SWIFT_FileManager::DeleteOnFileNameList<\/a>"],[0,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#425\">SWIFT_FileManager::GetURL<\/a>"],[60,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#446\">SWIFT_FileManager::GetPath<\/a>"],[0,6,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#467\">SWIFT_FileManager::GetFileSize<\/a>"],[0,5,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#500\">SWIFT_FileManager::HasRemote<\/a>"],[0,10,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#527\">SWIFT_FileManager::GetRemoteInfo<\/a>"],[0,9,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#562\">SWIFT_FileManager::Dispatch<\/a>"],[66.66666666666666,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#629\">SWIFT_FileManager::GetBase64<\/a>"],[0,3,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#653\">SWIFT_FileManager::HasRemoteFile<\/a>"],[0,8,"<a href=\"FileManager\/class.SWIFT_FileManager.php.html#675\">SWIFT_FileManager::GetRemoteFileInfo<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#66\">SWIFT_JobQueueMessage::__construct<\/a>"],[0,1,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#82\">SWIFT_JobQueueMessage::__destruct<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#96\">SWIFT_JobQueueMessage::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#118\">SWIFT_JobQueueMessage::GetJobQueueMessageID<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#135\">SWIFT_JobQueueMessage::LoadData<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#155\">SWIFT_JobQueueMessage::GetDataStore<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#173\">SWIFT_JobQueueMessage::GetProperty<\/a>"],[0,8,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#192\">SWIFT_JobQueueMessage::IsValidStatus<\/a>"],[0,12,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#212\">SWIFT_JobQueueMessage::Create<\/a>"],[0,4,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#311\">SWIFT_JobQueueMessage::Update<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#343\">SWIFT_JobQueueMessage::Delete<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#364\">SWIFT_JobQueueMessage::DeleteList<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#385\">SWIFT_JobQueueMessage::Cleanup<\/a>"],[0,4,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#414\">SWIFT_JobQueueMessage::RetrieveOnUUID<\/a>"],[0,9,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessage.php.html#441\">SWIFT_JobQueueMessage::GetMessageStatusLabel<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#48\">SWIFT_JobQueueMessageLog::__construct<\/a>"],[0,1,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#62\">SWIFT_JobQueueMessageLog::__destruct<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#76\">SWIFT_JobQueueMessageLog::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#98\">SWIFT_JobQueueMessageLog::GetJobQueueMessageLogID<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#117\">SWIFT_JobQueueMessageLog::LoadData<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#137\">SWIFT_JobQueueMessageLog::GetDataStore<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#157\">SWIFT_JobQueueMessageLog::GetProperty<\/a>"],[0,5,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#185\">SWIFT_JobQueueMessageLog::Create<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#222\">SWIFT_JobQueueMessageLog::Delete<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#245\">SWIFT_JobQueueMessageLog::DeleteList<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessageLog.php.html#266\">SWIFT_JobQueueMessageLog::Cleanup<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#49\">SWIFT_JobQueueMessagePacket::__construct<\/a>"],[0,1,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#65\">SWIFT_JobQueueMessagePacket::__destruct<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#79\">SWIFT_JobQueueMessagePacket::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#101\">SWIFT_JobQueueMessagePacket::GetJobQueueMessagePacketID<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#120\">SWIFT_JobQueueMessagePacket::LoadData<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#140\">SWIFT_JobQueueMessagePacket::GetDataStore<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#160\">SWIFT_JobQueueMessagePacket::GetProperty<\/a>"],[0,5,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#188\">SWIFT_JobQueueMessagePacket::Create<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#219\">SWIFT_JobQueueMessagePacket::Delete<\/a>"],[0,2,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#242\">SWIFT_JobQueueMessagePacket::DeleteList<\/a>"],[0,3,"<a href=\"JobQueue\/class.SWIFT_JobQueueMessagePacket.php.html#263\">SWIFT_JobQueueMessagePacket::Cleanup<\/a>"],[0,1,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#36\">SWIFT_MailQueueManager::ParseVariables<\/a>"],[0,3,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#56\">SWIFT_MailQueueManager::AddToQueue<\/a>"],[0,2,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#82\">SWIFT_MailQueueManager::RecountMailQueue<\/a>"],[0,3,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#104\">SWIFT_MailQueueManager::DeleteMailQueueDataList<\/a>"],[0,5,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#128\">SWIFT_MailQueueManager::ProcessMailQueue<\/a>"],[0,9,"<a href=\"Mail\/class.SWIFT_MailQueueManager.php.html#171\">SWIFT_MailQueueManager::SendQueueEmails<\/a>"],[0,4,"<a href=\"Registry\/class.SWIFT_Registry.php.html#48\">SWIFT_Registry::HasLocalCache<\/a>"],[0,4,"<a href=\"Registry\/class.SWIFT_Registry.php.html#70\">SWIFT_Registry::GetLocalCache<\/a>"],[0,3,"<a href=\"Registry\/class.SWIFT_Registry.php.html#93\">SWIFT_Registry::UpdateLocalCache<\/a>"],[0,3,"<a href=\"Registry\/class.SWIFT_Registry.php.html#113\">SWIFT_Registry::DeleteLocalCache<\/a>"],[0,3,"<a href=\"Registry\/class.SWIFT_Registry.php.html#133\">SWIFT_Registry::InsertKey<\/a>"],[0,5,"<a href=\"Registry\/class.SWIFT_Registry.php.html#158\">SWIFT_Registry::UpdateKey<\/a>"],[0,3,"<a href=\"Registry\/class.SWIFT_Registry.php.html#195\">SWIFT_Registry::DeleteKey<\/a>"],[0,4,"<a href=\"Registry\/class.SWIFT_Registry.php.html#214\">SWIFT_Registry::DeleteKeyList<\/a>"],[0,7,"<a href=\"Registry\/class.SWIFT_Registry.php.html#240\">SWIFT_Registry::GetKey<\/a>"],[0,12,"<a href=\"Registry\/class.SWIFT_Registry.php.html#280\">SWIFT_Registry::GetKeyList<\/a>"],[0,6,"<a href=\"Registry\/class.SWIFT_Registry.php.html#346\">SWIFT_Registry::LoadRegistryCache<\/a>"],[0,3,"<a href=\"Registry\/class.SWIFT_Registry.php.html#401\">SWIFT_Registry::RefreshRegistryCacheFile<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#82\">SWIFT_Session::__construct<\/a>"],[0,1,"<a href=\"Session\/class.SWIFT_Session.php.html#98\">SWIFT_Session::__destruct<\/a>"],[0,3,"<a href=\"Session\/class.SWIFT_Session.php.html#112\">SWIFT_Session::ProcessUpdatePool<\/a>"],[0,7,"<a href=\"Session\/class.SWIFT_Session.php.html#135\">SWIFT_Session::LoadData<\/a>"],[0,15,"<a href=\"Session\/class.SWIFT_Session.php.html#167\">SWIFT_Session::UpdateActivityCombined<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#227\">SWIFT_Session::GetDataStore<\/a>"],[0,3,"<a href=\"Session\/class.SWIFT_Session.php.html#247\">SWIFT_Session::GetProperty<\/a>"],[0,3,"<a href=\"Session\/class.SWIFT_Session.php.html#266\">SWIFT_Session::GetSessionID<\/a>"],[0,7,"<a href=\"Session\/class.SWIFT_Session.php.html#291\">SWIFT_Session::UpdateHeartbeatAndHitsOnTypeID<\/a>"],[0,5,"<a href=\"Session\/class.SWIFT_Session.php.html#334\">SWIFT_Session::UpdateHeartbeatAndHitsOnSessionID<\/a>"],[0,3,"<a href=\"Session\/class.SWIFT_Session.php.html#372\">SWIFT_Session::UpdateHeartbeatOnTypeID<\/a>"],[0,5,"<a href=\"Session\/class.SWIFT_Session.php.html#394\">SWIFT_Session::UpdateHeartbeatAndStatus<\/a>"],[0,40,"<a href=\"Session\/class.SWIFT_Session.php.html#436\">SWIFT_Session::Insert<\/a>"],[0,3,"<a href=\"Session\/class.SWIFT_Session.php.html#589\">SWIFT_Session::InsertAndStart<\/a>"],[13.513513513513514,43,"<a href=\"Session\/class.SWIFT_Session.php.html#617\">SWIFT_Session::Start<\/a>"],[0,20,"<a href=\"Session\/class.SWIFT_Session.php.html#807\">SWIFT_Session::CheckAndGet<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#886\">SWIFT_Session::End<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#921\">SWIFT_Session::EndCustomSession<\/a>"],[0,14,"<a href=\"Session\/class.SWIFT_Session.php.html#946\">SWIFT_Session::Logout<\/a>"],[0,3,"<a href=\"Session\/class.SWIFT_Session.php.html#1013\">SWIFT_Session::Update<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1040\">SWIFT_Session::UpdateStatus<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1063\">SWIFT_Session::UpdatePhoneStatus<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1085\">SWIFT_Session::UpdateLastActivity<\/a>"],[83.33333333333334,5,"<a href=\"Session\/class.SWIFT_Session.php.html#1108\">SWIFT_Session::CheckCSRFHash<\/a>"],[100,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1133\">SWIFT_Session::FlushInactive<\/a>"],[100,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1158\">SWIFT_Session::GetUserAgent<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1178\">SWIFT_Session::SetCaptcha<\/a>"],[50,14,"<a href=\"Session\/class.SWIFT_Session.php.html#1202\">SWIFT_Session::DeleteList<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1249\">SWIFT_Session::KillSessionList<\/a>"],[88.88888888888889,4,"<a href=\"Session\/class.SWIFT_Session.php.html#1271\">SWIFT_Session::KillSessionListOnType<\/a>"],[0,18,"<a href=\"Session\/class.SWIFT_Session.php.html#1299\">SWIFT_Session::IsLoggedIn<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1352\">SWIFT_Session::UpdateTicketView<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1374\">SWIFT_Session::ResetHitsOnSessionID<\/a>"],[0,5,"<a href=\"Session\/class.SWIFT_Session.php.html#1397\">SWIFT_Session::DeleteOnTypeID<\/a>"],[0,2,"<a href=\"Session\/class.SWIFT_Session.php.html#1427\">SWIFT_Session::RetrieveSession<\/a>"],[87.5,3,"<a href=\"Settings\/class.SWIFT_Settings.php.html#43\">SWIFT_Settings::__construct<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_Settings.php.html#69\">SWIFT_Settings::UpdateLocalCache<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_Settings.php.html#89\">SWIFT_Settings::DeleteLocalCache<\/a>"],[0,3,"<a href=\"Settings\/class.SWIFT_Settings.php.html#108\">SWIFT_Settings::DeleteLocalCacheSection<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_Settings.php.html#130\">SWIFT_Settings::InsertKey<\/a>"],[0,6,"<a href=\"Settings\/class.SWIFT_Settings.php.html#160\">SWIFT_Settings::UpdateKey<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_Settings.php.html#196\">SWIFT_Settings::DeleteKey<\/a>"],[0,3,"<a href=\"Settings\/class.SWIFT_Settings.php.html#223\">SWIFT_Settings::DeleteSection<\/a>"],[50,2,"<a href=\"Settings\/class.SWIFT_Settings.php.html#249\">SWIFT_Settings::ReplaceLocalCache<\/a>"],[60,6,"<a href=\"Settings\/class.SWIFT_Settings.php.html#269\">SWIFT_Settings::GetKey<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_Settings.php.html#291\">SWIFT_Settings::GetSection<\/a>"],[66.66666666666666,3,"<a href=\"Settings\/class.SWIFT_Settings.php.html#313\">SWIFT_Settings::Get<\/a>"],[0,1,"<a href=\"Settings\/class.SWIFT_Settings.php.html#327\">SWIFT_Settings::GetBool<\/a>"],[0,1,"<a href=\"Settings\/class.SWIFT_Settings.php.html#336\">SWIFT_Settings::GetInt<\/a>"],[0,1,"<a href=\"Settings\/class.SWIFT_Settings.php.html#345\">SWIFT_Settings::GetString<\/a>"],[0,2,"<a href=\"Settings\/class.SWIFT_Settings.php.html#356\">SWIFT_Settings::GetSettings<\/a>"],[85.71428571428571,6,"<a href=\"Settings\/class.SWIFT_Settings.php.html#372\">SWIFT_Settings::RebuildCache<\/a>"],[0,1,"<a href=\"Settings\/class.SWIFT_SettingsField.php.html#49\">SWIFT_SettingsField::__construct<\/a>"],[0,5,"<a href=\"Settings\/class.SWIFT_SettingsField.php.html#68\">SWIFT_SettingsField::Create<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_SettingsField.php.html#94\">SWIFT_SettingsField::DeleteList<\/a>"],[0,3,"<a href=\"Settings\/class.SWIFT_SettingsField.php.html#128\">SWIFT_SettingsField::DeleteOnSettingGroup<\/a>"],[0,1,"<a href=\"Settings\/class.SWIFT_SettingsGroup.php.html#46\">SWIFT_SettingsGroup::__construct<\/a>"],[0,4,"<a href=\"Settings\/class.SWIFT_SettingsGroup.php.html#62\">SWIFT_SettingsGroup::Create<\/a>"],[0,2,"<a href=\"Settings\/class.SWIFT_SettingsGroup.php.html#87\">SWIFT_SettingsGroup::DeleteList<\/a>"],[0,3,"<a href=\"Settings\/class.SWIFT_SettingsGroup.php.html#110\">SWIFT_SettingsGroup::DeleteOnApp<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

@@ -241,11 +241,11 @@ ADD vhost.conf /etc/apache2/sites-enabled/001-swift.conf
 
 RUN perl -pi -e 's[#ServerName .*][ServerName kayako-dev]' /etc/apache2/sites-enabled/000-default.conf
 
-RUN cat /etc/apache2/sites-enabled/000-default.conf|perl -pe 's[DocumentRoot .*][DocumentRoot /var/www/html/magento1]' | perl -pe 's[ServerName .*][ServerName mage1.kayako-dev.com]' > /etc/apache2/sites-enabled/002-magento1.conf
+RUN cat /etc/apache2/sites-enabled/000-default.conf|perl -pe 's[DocumentRoot .*][DocumentRoot /var/www/html/magento1]' | perl -pe 's[ServerName .*][ServerName mage1.kayako-dev.local]' > /etc/apache2/sites-enabled/002-magento1.conf
 
-RUN cat /etc/apache2/sites-enabled/000-default.conf|perl -pe 's[DocumentRoot .*][DocumentRoot /var/www/html/magento2]' | perl -pe 's[ServerName .*][ServerName mage2.kayako-dev.com]' > /etc/apache2/sites-enabled/003-magento2.conf
+RUN cat /etc/apache2/sites-enabled/000-default.conf|perl -pe 's[DocumentRoot .*][DocumentRoot /var/www/html/magento2]' | perl -pe 's[ServerName .*][ServerName mage2.kayako-dev.local]' > /etc/apache2/sites-enabled/003-magento2.conf
 
-RUN cat /etc/apache2/sites-enabled/000-default.conf|perl -pe 's[DocumentRoot .*][DocumentRoot /var/www/html/samlidp/www]' | perl -pe 's[ServerName .*][ServerName saml.kayako-dev.com]' > /etc/apache2/sites-enabled/004-samlidp.conf
+RUN cat /etc/apache2/sites-enabled/000-default.conf|perl -pe 's[DocumentRoot .*][DocumentRoot /var/www/html/samlidp/www]' | perl -pe 's[ServerName .*][ServerName saml.kayako-dev.local]' > /etc/apache2/sites-enabled/004-samlidp.conf
 
 RUN echo ServerName kayako-dev >> /etc/apache2/apache2.conf
 
@@ -259,3 +259,6 @@ RUN rm -rf /tmp/* rm -rf /usr/src/*
 
 #RUN perl -pi -e 's[zend_extension_debug="xdebug.so"][;zend_extension_debug="xdebug.so"]' $(php-config --prefix)/etc/php.ini && \
 #    perl -pi -e 's[zend_extension=][;zend_extension=]' $(php-config --prefix)/etc/conf.d/xdebug.ini
+
+RUN perl -pi -e 's[display_errors\s*=.*][display_errors=1]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[html_errors\s*=.*][html_errors=1]' $(php-config --prefix)/etc/php.ini

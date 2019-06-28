@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/swift/trunk/__apps/news</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/home/swift/trunk</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">__apps</a></li>
+         <li class="breadcrumb-item"><a href="index.html">news</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="staff/class.Controller_Category.php.html#45">News\Staff\Controller_Category</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_news.php.html#37">News\SWIFT_SetupDatabase_news</a></td><td class="text-right">77%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_NewsRenderManager.php.html#30">News\Library\Render\SWIFT_NewsRenderManager</a></td><td class="text-right">79%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="staff/class.Controller_Category.php.html#45">News\Staff\Controller_Category</a></td><td class="text-right">151</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_NewsRenderManager.php.html#30">News\Library\Render\SWIFT_NewsRenderManager</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_news.php.html#37">News\SWIFT_SetupDatabase_news</a></td><td class="text-right">11</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_news.php.html#162"><abbr title="News\SWIFT_SetupDatabase_news::Upgrade_4_92_6">Upgrade_4_92_6</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_NewsRenderManager.php.html#51"><abbr title="News\Library\Render\SWIFT_NewsRenderManager::RenderCategoryTree">RenderCategoryTree</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#453"><abbr title="News\Staff\Controller_Category::QuickFilter">QuickFilter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/NewsItem/class.SWIFT_NewsItem.php.html#790"><abbr title="News\Models\NewsItem\SWIFT_NewsItem::GetStrippedDay">GetStrippedDay</abbr></a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="staff/class.Controller_Category.php.html#453"><abbr title="News\Staff\Controller_Category::QuickFilter">QuickFilter</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_news.php.html#162"><abbr title="News\SWIFT_SetupDatabase_news::Upgrade_4_92_6">Upgrade_4_92_6</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_NewsRenderManager.php.html#51"><abbr title="News\Library\Render\SWIFT_NewsRenderManager::RenderCategoryTree">RenderCategoryTree</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/NewsItem/class.SWIFT_NewsItem.php.html#790"><abbr title="News\Models\NewsItem\SWIFT_NewsItem::GetStrippedDay">GetStrippedDay</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.26</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 7.5.7</a> at Sun Jun 23 1:22:47 CST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,3,0,8,25], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,0,0,0,0,0,0,1,0,0,14,198], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,13,"<a href=\"admin\/class.Controller_ImpEx.php.html#36\">News\\Admin\\Controller_ImpEx<\/a>"],[100,4,"<a href=\"admin\/class.Controller_SettingsManager.php.html#34\">News\\Admin\\Controller_SettingsManager<\/a>"],[100,4,"<a href=\"admin\/class.View_ImpEx.php.html#33\">News\\Admin\\View_ImpEx<\/a>"],[100,31,"<a href=\"api\/class.Controller_Category.php.html#35\">News\\Api\\Controller_Category<\/a>"],[99.33333333333333,52,"<a href=\"api\/class.Controller_Comment.php.html#40\">News\\Api\\Controller_Comment<\/a>"],[98.48484848484848,109,"<a href=\"api\/class.Controller_NewsItem.php.html#39\">News\\Api\\Controller_NewsItem<\/a>"],[98.76543209876543,28,"<a href=\"api\/class.Controller_Subscriber.php.html#35\">News\\Api\\Controller_Subscriber<\/a>"],[100,14,"<a href=\"client\/class.Controller_Comments.php.html#36\">News\\Client\\Controller_Comments<\/a>"],[100,7,"<a href=\"client\/class.Controller_List.php.html#34\">News\\Client\\Controller_List<\/a>"],[93.02325581395348,18,"<a href=\"client\/class.Controller_NewsItem.php.html#38\">News\\Client\\Controller_NewsItem<\/a>"],[100,33,"<a href=\"client\/class.Controller_Subscriber.php.html#41\">News\\Client\\Controller_Subscriber<\/a>"],[100,4,"<a href=\"config\/class.SWIFT_App_news.php.html#30\">News\\SWIFT_App_news<\/a>"],[77.77777777777779,10,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#37\">News\\SWIFT_SetupDatabase_news<\/a>"],[100,6,"<a href=\"cron\/class.Controller_NewsMinute.php.html#35\">News\\Cron\\Controller_NewsMinute<\/a>"],[100,4,"<a href=\"library\/RSS\/class.SWIFT_NewsRSSManager.php.html#32\">News\\Library\\Rss\\SWIFT_NewsRSSManager<\/a>"],[79.34782608695652,18,"<a href=\"library\/Render\/class.SWIFT_NewsRenderManager.php.html#30\">News\\Library\\Render\\SWIFT_NewsRenderManager<\/a>"],[100,24,"<a href=\"library\/Subscriber\/class.SWIFT_NewsSubscriberDispatch.php.html#36\">News\\Library\\Subscriber\\SWIFT_NewsSubscriberDispatch<\/a>"],[100,0,"<a href=\"library\/Subscriber\/class.SWIFT_Subscriber_Exception.php.html#27\">News\\Library\\Subscriber\\SWIFT_Subscriber_Exception<\/a>"],[100,49,"<a href=\"library\/Sync\/class.SWIFT_NewsSyncManager.php.html#32\">News\\Library\\Sync\\SWIFT_NewsSyncManager<\/a>"],[100,12,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_news.php.html#40\">News\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_news<\/a>"],[100,0,"<a href=\"models\/Category\/class.SWIFT_Category_Exception.php.html#29\">News\\Models\\Category\\SWIFT_Category_Exception<\/a>"],[100,47,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#29\">News\\Models\\Category\\SWIFT_NewsCategory<\/a>"],[100,40,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#29\">News\\Models\\Category\\SWIFT_NewsCategoryLink<\/a>"],[97.23926380368098,131,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#37\">News\\Models\\NewsItem\\SWIFT_NewsItem<\/a>"],[100,0,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem_Exception.php.html#28\">News\\Models\\NewsItem\\SWIFT_NewsItem_Exception<\/a>"],[99.16317991631799,86,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#37\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber<\/a>"],[100,32,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#33\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash<\/a>"],[100,0,"<a href=\"models\/Subscriber\/class.SWIFT_Subscriber_Exception.php.html#29\">News\\Models\\Subscriber\\SWIFT_Subscriber_Exception<\/a>"],[100,4,"<a href=\"rss\/class.Controller_Feed.php.html#31\">News\\Rss\\Controller_Feed<\/a>"],[72.25433526011561,64,"<a href=\"staff\/class.Controller_Category.php.html#45\">News\\Staff\\Controller_Category<\/a>"],[100,10,"<a href=\"staff\/class.Controller_Comments.php.html#38\">News\\Staff\\Controller_Comments<\/a>"],[97.84172661870504,109,"<a href=\"staff\/class.Controller_NewsItem.php.html#48\">News\\Staff\\Controller_NewsItem<\/a>"],[100,49,"<a href=\"staff\/class.Controller_Subscriber.php.html#45\">News\\Staff\\Controller_Subscriber<\/a>"],[100,17,"<a href=\"staff\/class.View_Category.php.html#39\">News\\Staff\\View_Category<\/a>"],[99.31972789115646,66,"<a href=\"staff\/class.View_NewsItem.php.html#44\">News\\Staff\\View_NewsItem<\/a>"],[100,14,"<a href=\"staff\/class.View_Subscriber.php.html#38\">News\\Staff\\View_Subscriber<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"admin\/class.Controller_ImpEx.php.html#47\">News\\Admin\\Controller_ImpEx::__construct<\/a>"],[100,3,"<a href=\"admin\/class.Controller_ImpEx.php.html#62\">News\\Admin\\Controller_ImpEx::Manage<\/a>"],[100,6,"<a href=\"admin\/class.Controller_ImpEx.php.html#93\">News\\Admin\\Controller_ImpEx::Import<\/a>"],[100,3,"<a href=\"admin\/class.Controller_ImpEx.php.html#155\">News\\Admin\\Controller_ImpEx::Export<\/a>"],[100,1,"<a href=\"admin\/class.Controller_SettingsManager.php.html#46\">News\\Admin\\Controller_SettingsManager::__construct<\/a>"],[100,3,"<a href=\"admin\/class.Controller_SettingsManager.php.html#63\">News\\Admin\\Controller_SettingsManager::Index<\/a>"],[100,4,"<a href=\"admin\/class.View_ImpEx.php.html#43\">News\\Admin\\View_ImpEx::RenderImpEx<\/a>"],[100,1,"<a href=\"api\/class.Controller_Category.php.html#44\">News\\Api\\Controller_Category::__construct<\/a>"],[100,5,"<a href=\"api\/class.Controller_Category.php.html#71\">News\\Api\\Controller_Category::ProcessNewsCategories<\/a>"],[100,2,"<a href=\"api\/class.Controller_Category.php.html#126\">News\\Api\\Controller_Category::GetList<\/a>"],[100,2,"<a href=\"api\/class.Controller_Category.php.html#158\">News\\Api\\Controller_Category::Get<\/a>"],[100,8,"<a href=\"api\/class.Controller_Category.php.html#195\">News\\Api\\Controller_Category::Post<\/a>"],[100,10,"<a href=\"api\/class.Controller_Category.php.html#256\">News\\Api\\Controller_Category::Put<\/a>"],[100,3,"<a href=\"api\/class.Controller_Category.php.html#322\">News\\Api\\Controller_Category::Delete<\/a>"],[100,1,"<a href=\"api\/class.Controller_Comment.php.html#50\">News\\Api\\Controller_Comment::__construct<\/a>"],[100,5,"<a href=\"api\/class.Controller_Comment.php.html#68\">News\\Api\\Controller_Comment::ProcessNewsComments<\/a>"],[100,2,"<a href=\"api\/class.Controller_Comment.php.html#150\">News\\Api\\Controller_Comment::GetList<\/a>"],[100,2,"<a href=\"api\/class.Controller_Comment.php.html#195\">News\\Api\\Controller_Comment::Get<\/a>"],[100,5,"<a href=\"api\/class.Controller_Comment.php.html#238\">News\\Api\\Controller_Comment::ListAll<\/a>"],[98.38709677419355,33,"<a href=\"api\/class.Controller_Comment.php.html#300\">News\\Api\\Controller_Comment::Post<\/a>"],[100,2,"<a href=\"api\/class.Controller_Comment.php.html#431\">News\\Api\\Controller_Comment::Put<\/a>"],[100,2,"<a href=\"api\/class.Controller_Comment.php.html#452\">News\\Api\\Controller_Comment::Delete<\/a>"],[100,1,"<a href=\"api\/class.Controller_NewsItem.php.html#48\">News\\Api\\Controller_NewsItem::__construct<\/a>"],[100,8,"<a href=\"api\/class.Controller_NewsItem.php.html#64\">News\\Api\\Controller_NewsItem::ProcessNewsItems<\/a>"],[100,2,"<a href=\"api\/class.Controller_NewsItem.php.html#184\">News\\Api\\Controller_NewsItem::GetList<\/a>"],[100,2,"<a href=\"api\/class.Controller_NewsItem.php.html#236\">News\\Api\\Controller_NewsItem::Get<\/a>"],[100,6,"<a href=\"api\/class.Controller_NewsItem.php.html#287\">News\\Api\\Controller_NewsItem::ListAll<\/a>"],[97.05882352941177,41,"<a href=\"api\/class.Controller_NewsItem.php.html#403\">News\\Api\\Controller_NewsItem::Post<\/a>"],[97.5,46,"<a href=\"api\/class.Controller_NewsItem.php.html#575\">News\\Api\\Controller_NewsItem::Put<\/a>"],[100,3,"<a href=\"api\/class.Controller_NewsItem.php.html#737\">News\\Api\\Controller_NewsItem::Delete<\/a>"],[100,1,"<a href=\"api\/class.Controller_Subscriber.php.html#44\">News\\Api\\Controller_Subscriber::__construct<\/a>"],[100,5,"<a href=\"api\/class.Controller_Subscriber.php.html#59\">News\\Api\\Controller_Subscriber::ProcessNewsSubscribers<\/a>"],[100,2,"<a href=\"api\/class.Controller_Subscriber.php.html#115\">News\\Api\\Controller_Subscriber::GetList<\/a>"],[100,2,"<a href=\"api\/class.Controller_Subscriber.php.html#149\">News\\Api\\Controller_Subscriber::Get<\/a>"],[95.45454545454545,9,"<a href=\"api\/class.Controller_Subscriber.php.html#186\">News\\Api\\Controller_Subscriber::Post<\/a>"],[100,6,"<a href=\"api\/class.Controller_Subscriber.php.html#255\">News\\Api\\Controller_Subscriber::Put<\/a>"],[100,3,"<a href=\"api\/class.Controller_Subscriber.php.html#303\">News\\Api\\Controller_Subscriber::Delete<\/a>"],[100,3,"<a href=\"client\/class.Controller_Comments.php.html#43\">News\\Client\\Controller_Comments::__construct<\/a>"],[100,11,"<a href=\"client\/class.Controller_Comments.php.html#73\">News\\Client\\Controller_Comments::Submit<\/a>"],[100,3,"<a href=\"client\/class.Controller_List.php.html#42\">News\\Client\\Controller_List::__construct<\/a>"],[100,4,"<a href=\"client\/class.Controller_List.php.html#75\">News\\Client\\Controller_List::Index<\/a>"],[100,3,"<a href=\"client\/class.Controller_NewsItem.php.html#45\">News\\Client\\Controller_NewsItem::__construct<\/a>"],[91.17647058823529,15,"<a href=\"client\/class.Controller_NewsItem.php.html#79\">News\\Client\\Controller_NewsItem::View<\/a>"],[100,3,"<a href=\"client\/class.Controller_Subscriber.php.html#50\">News\\Client\\Controller_Subscriber::__construct<\/a>"],[100,15,"<a href=\"client\/class.Controller_Subscriber.php.html#80\">News\\Client\\Controller_Subscriber::Subscribe<\/a>"],[100,9,"<a href=\"client\/class.Controller_Subscriber.php.html#181\">News\\Client\\Controller_Subscriber::Validate<\/a>"],[100,6,"<a href=\"client\/class.Controller_Subscriber.php.html#235\">News\\Client\\Controller_Subscriber::Unsubscribe<\/a>"],[100,4,"<a href=\"config\/class.SWIFT_App_news.php.html#39\">News\\SWIFT_App_news::Initialize<\/a>"],[100,1,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#48\">News\\SWIFT_SetupDatabase_news::__construct<\/a>"],[100,1,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#60\">News\\SWIFT_SetupDatabase_news::LoadTables<\/a>"],[100,1,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#77\">News\\SWIFT_SetupDatabase_news::GetPageCount<\/a>"],[100,1,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#90\">News\\SWIFT_SetupDatabase_news::Install<\/a>"],[100,3,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#112\">News\\SWIFT_SetupDatabase_news::InstallSampleData<\/a>"],[100,1,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#144\">News\\SWIFT_SetupDatabase_news::Uninstall<\/a>"],[0,2,"<a href=\"config\/class.SWIFT_SetupDatabase_news.php.html#162\">News\\SWIFT_SetupDatabase_news::Upgrade_4_92_6<\/a>"],[100,6,"<a href=\"cron\/class.Controller_NewsMinute.php.html#44\">News\\Cron\\Controller_NewsMinute::Sync<\/a>"],[100,1,"<a href=\"library\/RSS\/class.SWIFT_NewsRSSManager.php.html#39\">News\\Library\\Rss\\SWIFT_NewsRSSManager::__construct<\/a>"],[100,3,"<a href=\"library\/RSS\/class.SWIFT_NewsRSSManager.php.html#56\">News\\Library\\Rss\\SWIFT_NewsRSSManager::Dispatch<\/a>"],[100,1,"<a href=\"library\/Render\/class.SWIFT_NewsRenderManager.php.html#37\">News\\Library\\Render\\SWIFT_NewsRenderManager::__construct<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_NewsRenderManager.php.html#51\">News\\Library\\Render\\SWIFT_NewsRenderManager::RenderCategoryTree<\/a>"],[100,5,"<a href=\"library\/Render\/class.SWIFT_NewsRenderManager.php.html#88\">News\\Library\\Render\\SWIFT_NewsRenderManager::RenderTree<\/a>"],[100,4,"<a href=\"library\/Render\/class.SWIFT_NewsRenderManager.php.html#150\">News\\Library\\Render\\SWIFT_NewsRenderManager::RenderViewNewsTree<\/a>"],[100,6,"<a href=\"library\/Render\/class.SWIFT_NewsRenderManager.php.html#193\">News\\Library\\Render\\SWIFT_NewsRenderManager::RenderWelcomeTab<\/a>"],[100,3,"<a href=\"library\/Subscriber\/class.SWIFT_NewsSubscriberDispatch.php.html#47\">News\\Library\\Subscriber\\SWIFT_NewsSubscriberDispatch::__construct<\/a>"],[100,21,"<a href=\"library\/Subscriber\/class.SWIFT_NewsSubscriberDispatch.php.html#73\">News\\Library\\Subscriber\\SWIFT_NewsSubscriberDispatch::Send<\/a>"],[100,24,"<a href=\"library\/Sync\/class.SWIFT_NewsSyncManager.php.html#43\">News\\Library\\Sync\\SWIFT_NewsSyncManager::Sync<\/a>"],[100,25,"<a href=\"library\/Sync\/class.SWIFT_NewsSyncManager.php.html#157\">News\\Library\\Sync\\SWIFT_NewsSyncManager::ParseXMLFeed<\/a>"],[100,1,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_news.php.html#54\">News\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_news::__construct<\/a>"],[100,4,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_news.php.html#66\">News\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_news::Search<\/a>"],[100,7,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_news.php.html#94\">News\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_news::SearchNews<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#54\">News\\Models\\Category\\SWIFT_NewsCategory::__construct<\/a>"],[100,1,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#69\">News\\Models\\Category\\SWIFT_NewsCategory::__destruct<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#84\">News\\Models\\Category\\SWIFT_NewsCategory::ProcessUpdatePool<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#106\">News\\Models\\Category\\SWIFT_NewsCategory::GetNewsCategoryID<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#125\">News\\Models\\Category\\SWIFT_NewsCategory::LoadData<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#145\">News\\Models\\Category\\SWIFT_NewsCategory::GetDataStore<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#163\">News\\Models\\Category\\SWIFT_NewsCategory::GetProperty<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#186\">News\\Models\\Category\\SWIFT_NewsCategory::IsValidVisibilityType<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#205\">News\\Models\\Category\\SWIFT_NewsCategory::Create<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#241\">News\\Models\\Category\\SWIFT_NewsCategory::Update<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#270\">News\\Models\\Category\\SWIFT_NewsCategory::Delete<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#293\">News\\Models\\Category\\SWIFT_NewsCategory::DeleteList<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#327\">News\\Models\\Category\\SWIFT_NewsCategory::RebuildCache<\/a>"],[100,10,"<a href=\"models\/Category\/class.SWIFT_NewsCategory.php.html#365\">News\\Models\\Category\\SWIFT_NewsCategory::CreateOrUpdateFromSync<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#51\">News\\Models\\Category\\SWIFT_NewsCategoryLink::__construct<\/a>"],[100,1,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#65\">News\\Models\\Category\\SWIFT_NewsCategoryLink::__destruct<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#80\">News\\Models\\Category\\SWIFT_NewsCategoryLink::ProcessUpdatePool<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#102\">News\\Models\\Category\\SWIFT_NewsCategoryLink::GetNewsCategoryLinkID<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#119\">News\\Models\\Category\\SWIFT_NewsCategoryLink::LoadData<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#139\">News\\Models\\Category\\SWIFT_NewsCategoryLink::GetDataStore<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#157\">News\\Models\\Category\\SWIFT_NewsCategoryLink::GetProperty<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#178\">News\\Models\\Category\\SWIFT_NewsCategoryLink::Create<\/a>"],[100,2,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#205\">News\\Models\\Category\\SWIFT_NewsCategoryLink::Delete<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#226\">News\\Models\\Category\\SWIFT_NewsCategoryLink::DeleteList<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#259\">News\\Models\\Category\\SWIFT_NewsCategoryLink::DeleteOnNewsCategory<\/a>"],[100,4,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#292\">News\\Models\\Category\\SWIFT_NewsCategoryLink::DeleteOnNewsItem<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#325\">News\\Models\\Category\\SWIFT_NewsCategoryLink::RetrieveOnNewsItem<\/a>"],[100,3,"<a href=\"models\/Category\/class.SWIFT_NewsCategoryLink.php.html#352\">News\\Models\\Category\\SWIFT_NewsCategoryLink::RetrieveOnNewsCategory<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#94\">News\\Models\\NewsItem\\SWIFT_NewsItem::__construct<\/a>"],[100,1,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#110\">News\\Models\\NewsItem\\SWIFT_NewsItem::__destruct<\/a>"],[100,3,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#124\">News\\Models\\NewsItem\\SWIFT_NewsItem::ProcessUpdatePool<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#146\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetNewsItemID<\/a>"],[100,3,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#165\">News\\Models\\NewsItem\\SWIFT_NewsItem::LoadData<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#187\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetDataStore<\/a>"],[100,3,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#207\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetProperty<\/a>"],[100,4,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#230\">News\\Models\\NewsItem\\SWIFT_NewsItem::IsValidNewsType<\/a>"],[100,3,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#247\">News\\Models\\NewsItem\\SWIFT_NewsItem::IsValidNewsStatus<\/a>"],[98.07692307692307,26,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#287\">News\\Models\\NewsItem\\SWIFT_NewsItem::Create<\/a>"],[100,18,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#427\">News\\Models\\NewsItem\\SWIFT_NewsItem::Update<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#540\">News\\Models\\NewsItem\\SWIFT_NewsItem::UpdateStatus<\/a>"],[100,5,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#565\">News\\Models\\NewsItem\\SWIFT_NewsItem::UpdateContents<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#614\">News\\Models\\NewsItem\\SWIFT_NewsItem::Delete<\/a>"],[100,4,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#636\">News\\Models\\NewsItem\\SWIFT_NewsItem::DeleteList<\/a>"],[91.83673469387756,13,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#690\">News\\Models\\NewsItem\\SWIFT_NewsItem::Retrieve<\/a>"],[66.66666666666666,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#790\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetStrippedDay<\/a>"],[96.7741935483871,13,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#808\">News\\Models\\NewsItem\\SWIFT_NewsItem::RetrieveCategoryCount<\/a>"],[90.9090909090909,8,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#876\">News\\Models\\NewsItem\\SWIFT_NewsItem::RetrieveStore<\/a>"],[100,6,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#932\">News\\Models\\NewsItem\\SWIFT_NewsItem::RetrieveCount<\/a>"],[100,5,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#975\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetNewsTypeLabel<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#1018\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetLinkedUserGroupIDList<\/a>"],[100,2,"<a href=\"models\/NewsItem\/class.SWIFT_NewsItem.php.html#1035\">News\\Models\\NewsItem\\SWIFT_NewsItem::GetLinkedStaffGroupIDList<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#66\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::__construct<\/a>"],[100,1,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#80\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::__destruct<\/a>"],[100,3,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#94\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::ProcessUpdatePool<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#116\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::GetNewsSubscriberID<\/a>"],[100,3,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#133\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::LoadData<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#153\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::GetDataStore<\/a>"],[100,3,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#171\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::GetProperty<\/a>"],[100,9,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#197\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::Create<\/a>"],[100,3,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#262\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::Update<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#286\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::Delete<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#307\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::DeleteList<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#329\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::IsSubscribed<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#352\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::DispatchValidationEmail<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#392\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::DispatchWelcomeEmail<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#434\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::MarkAsValidated<\/a>"],[100,1,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#455\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::GenerateFileName<\/a>"],[100,7,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#468\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::Export<\/a>"],[100,8,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#528\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::Import<\/a>"],[100,4,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#588\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::DeleteOnEmail<\/a>"],[100,4,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#617\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::DeleteOnUserID<\/a>"],[100,4,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#646\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::IsSubscribedOnUserID<\/a>"],[95.45454545454545,8,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#671\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::Subscribe<\/a>"],[100,4,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#727\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::UnSubscribe<\/a>"],[92.3076923076923,5,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#754\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::RetreiveSubscriberOnUser<\/a>"],[100,1,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriber.php.html#784\">News\\Models\\Subscriber\\SWIFT_NewsSubscriber::GetInstance<\/a>"],[100,4,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#56\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::__construct<\/a>"],[100,1,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#72\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::__destruct<\/a>"],[100,3,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#86\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::ProcessUpdatePool<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#108\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::GetNewsSubscriberHashID<\/a>"],[100,9,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#126\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::LoadData<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#163\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::GetDataStore<\/a>"],[100,3,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#181\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::GetProperty<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#201\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::Create<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#223\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::Delete<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#244\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::DeleteList<\/a>"],[100,2,"<a href=\"models\/Subscriber\/class.SWIFT_NewsSubscriberHash.php.html#266\">News\\Models\\Subscriber\\SWIFT_NewsSubscriberHash::Retrieve<\/a>"],[100,1,"<a href=\"rss\/class.Controller_Feed.php.html#38\">News\\Rss\\Controller_Feed::__construct<\/a>"],[100,3,"<a href=\"rss\/class.Controller_Feed.php.html#53\">News\\Rss\\Controller_Feed::Index<\/a>"],[100,1,"<a href=\"staff\/class.Controller_Category.php.html#56\">News\\Staff\\Controller_Category::__construct<\/a>"],[100,2,"<a href=\"staff\/class.Controller_Category.php.html#73\">News\\Staff\\Controller_Category::_LoadDisplayData<\/a>"],[100,6,"<a href=\"staff\/class.Controller_Category.php.html#93\">News\\Staff\\Controller_Category::DeleteList<\/a>"],[100,2,"<a href=\"staff\/class.Controller_Category.php.html#136\">News\\Staff\\Controller_Category::Delete<\/a>"],[100,3,"<a href=\"staff\/class.Controller_Category.php.html#158\">News\\Staff\\Controller_Category::Manage<\/a>"],[100,11,"<a href=\"staff\/class.Controller_Category.php.html#192\">News\\Staff\\Controller_Category::RunChecks<\/a>"],[100,3,"<a href=\"staff\/class.Controller_Category.php.html#252\">News\\Staff\\Controller_Category::Insert<\/a>"],[100,3,"<a href=\"staff\/class.Controller_Category.php.html#284\">News\\Staff\\Controller_Category::_RenderConfirmation<\/a>"],[100,4,"<a href=\"staff\/class.Controller_Category.php.html#310\">News\\Staff\\Controller_Category::InsertSubmit<\/a>"],[100,6,"<a href=\"staff\/class.Controller_Category.php.html#354\">News\\Staff\\Controller_Category::Edit<\/a>"],[100,7,"<a href=\"staff\/class.Controller_Category.php.html#397\">News\\Staff\\Controller_Category::EditSubmit<\/a>"],[0,16,"<a href=\"staff\/class.Controller_Category.php.html#453\">News\\Staff\\Controller_Category::QuickFilter<\/a>"],[100,1,"<a href=\"staff\/class.Controller_Comments.php.html#45\">News\\Staff\\Controller_Comments::__construct<\/a>"],[100,9,"<a href=\"staff\/class.Controller_Comments.php.html#64\">News\\Staff\\Controller_Comments::Submit<\/a>"],[100,1,"<a href=\"staff\/class.Controller_NewsItem.php.html#59\">News\\Staff\\Controller_NewsItem::__construct<\/a>"],[100,2,"<a href=\"staff\/class.Controller_NewsItem.php.html#76\">News\\Staff\\Controller_NewsItem::_LoadDisplayData<\/a>"],[100,2,"<a href=\"staff\/class.Controller_NewsItem.php.html#95\">News\\Staff\\Controller_NewsItem::_LoadDisplayDataForViewNews<\/a>"],[100,6,"<a href=\"staff\/class.Controller_NewsItem.php.html#115\">News\\Staff\\Controller_NewsItem::DeleteList<\/a>"],[100,2,"<a href=\"staff\/class.Controller_NewsItem.php.html#158\">News\\Staff\\Controller_NewsItem::Delete<\/a>"],[100,3,"<a href=\"staff\/class.Controller_NewsItem.php.html#180\">News\\Staff\\Controller_NewsItem::Manage<\/a>"],[100,3,"<a href=\"staff\/class.Controller_NewsItem.php.html#212\">News\\Staff\\Controller_NewsItem::InsertDialog<\/a>"],[100,12,"<a href=\"staff\/class.Controller_NewsItem.php.html#244\">News\\Staff\\Controller_NewsItem::RunChecks<\/a>"],[100,4,"<a href=\"staff\/class.Controller_NewsItem.php.html#296\">News\\Staff\\Controller_NewsItem::Insert<\/a>"],[100,3,"<a href=\"staff\/class.Controller_NewsItem.php.html#331\">News\\Staff\\Controller_NewsItem::_RenderConfirmation<\/a>"],[90,9,"<a href=\"staff\/class.Controller_NewsItem.php.html#357\">News\\Staff\\Controller_NewsItem::InsertSubmit<\/a>"],[100,6,"<a href=\"staff\/class.Controller_NewsItem.php.html#431\">News\\Staff\\Controller_NewsItem::Edit<\/a>"],[90.625,12,"<a href=\"staff\/class.Controller_NewsItem.php.html#479\">News\\Staff\\Controller_NewsItem::EditSubmit<\/a>"],[100,6,"<a href=\"staff\/class.Controller_NewsItem.php.html#562\">News\\Staff\\Controller_NewsItem::_GetStaffGroupIDList<\/a>"],[100,6,"<a href=\"staff\/class.Controller_NewsItem.php.html#587\">News\\Staff\\Controller_NewsItem::_GetUserGroupIDList<\/a>"],[100,4,"<a href=\"staff\/class.Controller_NewsItem.php.html#613\">News\\Staff\\Controller_NewsItem::_GetNewsCategoryIDList<\/a>"],[100,19,"<a href=\"staff\/class.Controller_NewsItem.php.html#637\">News\\Staff\\Controller_NewsItem::QuickFilter<\/a>"],[100,3,"<a href=\"staff\/class.Controller_NewsItem.php.html#753\">News\\Staff\\Controller_NewsItem::ViewAll<\/a>"],[100,6,"<a href=\"staff\/class.Controller_NewsItem.php.html#791\">News\\Staff\\Controller_NewsItem::ViewItem<\/a>"],[100,1,"<a href=\"staff\/class.Controller_Subscriber.php.html#58\">News\\Staff\\Controller_Subscriber::__construct<\/a>"],[100,2,"<a href=\"staff\/class.Controller_Subscriber.php.html#75\">News\\Staff\\Controller_Subscriber::_LoadDisplayData<\/a>"],[100,6,"<a href=\"staff\/class.Controller_Subscriber.php.html#95\">News\\Staff\\Controller_Subscriber::DeleteList<\/a>"],[100,2,"<a href=\"staff\/class.Controller_Subscriber.php.html#138\">News\\Staff\\Controller_Subscriber::Delete<\/a>"],[100,3,"<a href=\"staff\/class.Controller_Subscriber.php.html#159\">News\\Staff\\Controller_Subscriber::Manage<\/a>"],[100,12,"<a href=\"staff\/class.Controller_Subscriber.php.html#193\">News\\Staff\\Controller_Subscriber::RunChecks<\/a>"],[100,3,"<a href=\"staff\/class.Controller_Subscriber.php.html#262\">News\\Staff\\Controller_Subscriber::Insert<\/a>"],[100,3,"<a href=\"staff\/class.Controller_Subscriber.php.html#294\">News\\Staff\\Controller_Subscriber::_RenderConfirmation<\/a>"],[100,4,"<a href=\"staff\/class.Controller_Subscriber.php.html#320\">News\\Staff\\Controller_Subscriber::InsertSubmit<\/a>"],[100,6,"<a href=\"staff\/class.Controller_Subscriber.php.html#364\">News\\Staff\\Controller_Subscriber::Edit<\/a>"],[100,7,"<a href=\"staff\/class.Controller_Subscriber.php.html#407\">News\\Staff\\Controller_Subscriber::EditSubmit<\/a>"],[100,12,"<a href=\"staff\/class.View_Category.php.html#49\">News\\Staff\\View_Category::Render<\/a>"],[100,3,"<a href=\"staff\/class.View_Category.php.html#124\">News\\Staff\\View_Category::RenderGrid<\/a>"],[100,2,"<a href=\"staff\/class.View_Category.php.html#176\">News\\Staff\\View_Category::GridRender<\/a>"],[100,28,"<a href=\"staff\/class.View_NewsItem.php.html#55\">News\\Staff\\View_NewsItem::Render<\/a>"],[100,4,"<a href=\"staff\/class.View_NewsItem.php.html#317\">News\\Staff\\View_NewsItem::RenderInsertNewsDialog<\/a>"],[100,3,"<a href=\"staff\/class.View_NewsItem.php.html#383\">News\\Staff\\View_NewsItem::RenderGrid<\/a>"],[91.66666666666666,9,"<a href=\"staff\/class.View_NewsItem.php.html#447\">News\\Staff\\View_NewsItem::GridRender<\/a>"],[100,9,"<a href=\"staff\/class.View_NewsItem.php.html#505\">News\\Staff\\View_NewsItem::RenderViewAll<\/a>"],[100,6,"<a href=\"staff\/class.View_NewsItem.php.html#612\">News\\Staff\\View_NewsItem::RenderViewItem<\/a>"],[100,7,"<a href=\"staff\/class.View_NewsItem.php.html#691\">News\\Staff\\View_NewsItem::RenderInfoBox<\/a>"],[100,9,"<a href=\"staff\/class.View_Subscriber.php.html#49\">News\\Staff\\View_Subscriber::Render<\/a>"],[100,3,"<a href=\"staff\/class.View_Subscriber.php.html#114\">News\\Staff\\View_Subscriber::RenderGrid<\/a>"],[100,2,"<a href=\"staff\/class.View_Subscriber.php.html#166\">News\\Staff\\View_Subscriber::GridRender<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

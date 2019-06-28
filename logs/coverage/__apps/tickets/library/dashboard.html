@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/swift/trunk/__apps/tickets/library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../../.css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../index.html">/home/swift/trunk</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">__apps</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">tickets</a></li>
+         <li class="breadcrumb-item"><a href="index.html">library</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#41">Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#50">Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager</a></td><td class="text-right">41%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#50">Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager</a></td><td class="text-right">13056</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#41">Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets</a></td><td class="text-right">5700</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#393"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchTickets">SearchTickets</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#317"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchBayesian">SearchBayesian</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#230"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchWorkflow">SearchWorkflow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#201"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchAutoClose">SearchAutoClose</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#172"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchPriorities">SearchPriorities</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#143"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchStatuses">SearchStatuses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#114"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchTypes">SearchTypes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#50"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::Search">Search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#259"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchSLAPlans">SearchSLAPlans</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#201"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::ProcessMacroNode">ProcessMacroNode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#288"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchEscalations">SearchEscalations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#64"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::DispatchLogin">DispatchLogin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#346"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchFilters">SearchFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#1388"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::processTicketPosts">processTicketPosts</abbr></a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#1117"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::preocessCustomFields">preocessCustomFields</abbr></a></td><td class="text-right">6%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#919"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::GetSortByFieldOnValue">GetSortByFieldOnValue</abbr></a></td><td class="text-right">31%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#877"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::RetrieveIDListFromCSV">RetrieveIDListFromCSV</abbr></a></td><td class="text-right">45%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#496"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::DispatchOnTicketIDList">DispatchOnTicketIDList</abbr></a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#292"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::DispatchList">DispatchList</abbr></a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="Split/class.SWIFT_TicketSplitManager.php.html#49"><abbr title="Tickets\Library\Split\SWIFT_TicketSplitManager::SetFrom">SetFrom</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Split/class.SWIFT_TicketSplitManager.php.html#68"><abbr title="Tickets\Library\Split\SWIFT_TicketSplitManager::SetTo">SetTo</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Split/class.SWIFT_TicketSplitManager.php.html#87"><abbr title="Tickets\Library\Split\SWIFT_TicketSplitManager::SetStartDateLine">SetStartDateLine</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Ticket/class.SWIFT_TicketEmailDispatch.php.html#999"><abbr title="Tickets\Library\Ticket\SWIFT_TicketEmailDispatch::Prepare">Prepare</abbr></a></td><td class="text-right">76%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#1117"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::preocessCustomFields">preocessCustomFields</abbr></a></td><td class="text-right">2171</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#393"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchTickets">SearchTickets</abbr></a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#64"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::DispatchLogin">DispatchLogin</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#201"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::ProcessMacroNode">ProcessMacroNode</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#496"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::DispatchOnTicketIDList">DispatchOnTicketIDList</abbr></a></td><td class="text-right">321</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#346"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchFilters">SearchFilters</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#292"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::DispatchList">DispatchList</abbr></a></td><td class="text-right">89</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#1388"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::processTicketPosts">processTicketPosts</abbr></a></td><td class="text-right">36</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#919"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::GetSortByFieldOnValue">GetSortByFieldOnValue</abbr></a></td><td class="text-right">34</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#317"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchBayesian">SearchBayesian</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#259"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchSLAPlans">SearchSLAPlans</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#288"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchEscalations">SearchEscalations</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#50"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::Search">Search</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#114"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchTypes">SearchTypes</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#143"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchStatuses">SearchStatuses</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#172"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchPriorities">SearchPriorities</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#201"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchAutoClose">SearchAutoClose</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="UnifiedSearch/class.SWIFT_UnifiedSearch_tickets.php.html#230"><abbr title="Tickets\Library\UnifiedSearch\SWIFT_UnifiedSearch_tickets::SearchWorkflow">SearchWorkflow</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Ticket/class.SWIFT_TicketEmailDispatch.php.html#999"><abbr title="Tickets\Library\Ticket\SWIFT_TicketEmailDispatch::Prepare">Prepare</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="StaffAPI/class.SWIFT_TicketStaffAPIManager.php.html#877"><abbr title="Tickets\Library\StaffAPI\SWIFT_TicketStaffAPIManager::RetrieveIDListFromCSV">RetrieveIDListFromCSV</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Split/class.SWIFT_TicketSplitManager.php.html#68"><abbr title="Tickets\Library\Split\SWIFT_TicketSplitManager::SetTo">SetTo</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Split/class.SWIFT_TicketSplitManager.php.html#87"><abbr title="Tickets\Library\Split\SWIFT_TicketSplitManager::SetStartDateLine">SetStartDateLine</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Split/class.SWIFT_TicketSplitManager.php.html#49"><abbr title="Tickets\Library\Split\SWIFT_TicketSplitManager::SetFrom">SetFrom</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.26</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 7.5.7</a> at Sun Jun 23 1:22:47 CST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,0,0,0,1,0,0,0,1,7,21], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([13,2,0,0,1,1,0,2,4,3,13,174], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,51,"<a href=\"API\/class.SWIFT_TicketAPIManager.php.html#37\">Tickets\\Library\\API\\SWIFT_TicketAPIManager<\/a>"],[100,51,"<a href=\"Ajax\/class.SWIFT_TicketAjaxManager.php.html#31\">Tickets\\Library\\Ajax\\SWIFT_TicketAjaxManager<\/a>"],[100,44,"<a href=\"AutoClose\/class.SWIFT_AutoCloseManager.php.html#35\">Tickets\\Library\\AutoClose\\SWIFT_AutoCloseManager<\/a>"],[100,108,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#30\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian<\/a>"],[100,0,"<a href=\"Bayesian\/class.SWIFT_Bayesian_Exception.php.html#27\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian_Exception<\/a>"],[99.4392523364486,214,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#57\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser<\/a>"],[100,0,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1549\">Tickets\\Library\\EmailParser\\ReturnStatusException<\/a>"],[100,32,"<a href=\"Escalation\/class.SWIFT_EscalationRuleManager.php.html#35\">Tickets\\Library\\Escalation\\SWIFT_EscalationRuleManager<\/a>"],[100,0,"<a href=\"Escalation\/class.SWIFT_Escalation_Exception.php.html#26\">Tickets\\Library\\Escalation\\SWIFT_Escalation_Exception<\/a>"],[100,0,"<a href=\"Flag\/class.SWIFT_Flag_Exception.php.html#27\">Tickets\\Library\\Flag\\SWIFT_Flag_Exception<\/a>"],[100,13,"<a href=\"Flag\/class.SWIFT_TicketFlag.php.html#27\">Tickets\\Library\\Flag\\SWIFT_TicketFlag<\/a>"],[100,0,"<a href=\"FollowUp\/class.SWIFT_FollowUp_Exception.php.html#27\">Tickets\\Library\\FollowUp\\SWIFT_FollowUp_Exception<\/a>"],[100,36,"<a href=\"FollowUp\/class.SWIFT_TicketFollowUpManager.php.html#36\">Tickets\\Library\\FollowUp\\SWIFT_TicketFollowUpManager<\/a>"],[100,32,"<a href=\"Macro\/class.SWIFT_MacroManager.php.html#31\">Tickets\\Library\\Macro\\SWIFT_MacroManager<\/a>"],[100,0,"<a href=\"Macro\/class.SWIFT_Macro_Exception.php.html#27\">Tickets\\Library\\Macro\\SWIFT_Macro_Exception<\/a>"],[100,0,"<a href=\"Notification\/class.SWIFT_Notification_Exception.php.html#27\">Tickets\\Library\\Notification\\SWIFT_Notification_Exception<\/a>"],[99.17582417582418,149,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#52\">Tickets\\Library\\Notification\\SWIFT_TicketNotification<\/a>"],[94.73684210526315,24,"<a href=\"SLA\/class.SWIFT_SLAHolidayManager.php.html#32\">Tickets\\Library\\SLA\\SWIFT_SLAHolidayManager<\/a>"],[99.14040114613181,159,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#38\">Tickets\\Library\\SLA\\SWIFT_SLAManager<\/a>"],[100,0,"<a href=\"SLA\/class.SWIFT_SLA_Exception.php.html#27\">Tickets\\Library\\SLA\\SWIFT_SLA_Exception<\/a>"],[100,47,"<a href=\"Search\/class.SWIFT_TicketSearch.php.html#33\">Tickets\\Library\\Search\\SWIFT_TicketSearch<\/a>"],[99.64349376114082,238,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#48\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager<\/a>"],[89.74358974358975,16,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#35\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager<\/a>"],[41.04477611940299,250,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#50\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager<\/a>"],[95.90643274853801,216,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#55\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch<\/a>"],[100,67,"<a href=\"Ticket\/class.SWIFT_TicketManager.php.html#31\">Tickets\\Library\\Ticket\\SWIFT_TicketManager<\/a>"],[100,0,"<a href=\"Ticket\/class.SWIFT_Ticket_Exception.php.html#27\">Tickets\\Library\\Ticket\\SWIFT_Ticket_Exception<\/a>"],[0,75,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#41\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets<\/a>"],[100,45,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#30\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager<\/a>"],[99.6822033898305,330,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#53\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer<\/a>"],[100,0,"<a href=\"View\/class.SWIFT_View_Exception.php.html#27\">Tickets\\Library\\View\\SWIFT_View_Exception<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,3,"<a href=\"API\/class.SWIFT_TicketAPIManager.php.html#51\">Tickets\\Library\\API\\SWIFT_TicketAPIManager::__construct<\/a>"],[100,48,"<a href=\"API\/class.SWIFT_TicketAPIManager.php.html#71\">Tickets\\Library\\API\\SWIFT_TicketAPIManager::RenderTickets<\/a>"],[100,16,"<a href=\"Ajax\/class.SWIFT_TicketAjaxManager.php.html#45\">Tickets\\Library\\Ajax\\SWIFT_TicketAjaxManager::GetTicketStatusOnDepartmentID<\/a>"],[100,16,"<a href=\"Ajax\/class.SWIFT_TicketAjaxManager.php.html#141\">Tickets\\Library\\Ajax\\SWIFT_TicketAjaxManager::GetTicketTypeOnDepartmentID<\/a>"],[100,19,"<a href=\"Ajax\/class.SWIFT_TicketAjaxManager.php.html#238\">Tickets\\Library\\Ajax\\SWIFT_TicketAjaxManager::GetTicketOwnerOnDepartmentID<\/a>"],[100,33,"<a href=\"AutoClose\/class.SWIFT_AutoCloseManager.php.html#51\">Tickets\\Library\\AutoClose\\SWIFT_AutoCloseManager::ExecutePending<\/a>"],[100,11,"<a href=\"AutoClose\/class.SWIFT_AutoCloseManager.php.html#189\">Tickets\\Library\\AutoClose\\SWIFT_AutoCloseManager::ExecuteClosure<\/a>"],[100,7,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#55\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::Train<\/a>"],[100,8,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#100\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::Untrain<\/a>"],[100,9,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#152\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::Get<\/a>"],[100,5,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#226\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::UpdateProbabilities<\/a>"],[100,11,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#267\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::CombineWordProbability<\/a>"],[100,9,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#330\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetWordProbability<\/a>"],[100,6,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#377\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetCategories<\/a>"],[100,2,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#412\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::UnlinkWordToCategory<\/a>"],[100,3,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#433\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::LinkWordToCategory<\/a>"],[100,2,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#462\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::UpdateWordToCategoryLink<\/a>"],[100,3,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#483\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetWordCategoryLink<\/a>"],[100,3,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#509\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetWordCategoryLinkGrouped<\/a>"],[100,1,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#532\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetTokenCounter<\/a>"],[100,7,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#544\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetWordIDList<\/a>"],[100,4,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#585\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::Tokenize<\/a>"],[100,11,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#613\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::ShouldIndexWord<\/a>"],[100,2,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#659\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::ReturnSanitizedText<\/a>"],[100,3,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#677\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::HasUnicodeChars<\/a>"],[100,7,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#694\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::UTF8ToUnicode<\/a>"],[100,4,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#732\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::UnicodeToEntities<\/a>"],[100,1,"<a href=\"Bayesian\/class.SWIFT_Bayesian.php.html#753\">Tickets\\Library\\Bayesian\\SWIFT_Bayesian::GetStopWordContainer<\/a>"],[100,5,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#91\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::__construct<\/a>"],[100,4,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#125\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::SetMailParserEmailObject<\/a>"],[100,2,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#149\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::GetMailParserEmailObject<\/a>"],[100,4,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#169\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::SetEmailQueue<\/a>"],[100,2,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#193\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::GetEmailQueue<\/a>"],[100,4,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#211\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::SetParserRuleManager<\/a>"],[100,2,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#235\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::GetParserRuleManager<\/a>"],[100,4,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#253\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::SetMailParser<\/a>"],[100,2,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#277\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::GetMailParser<\/a>"],[98.79518072289156,37,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#294\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::Process<\/a>"],[100,16,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#528\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::ProcessRecipients<\/a>"],[100,23,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#605\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::ParseTicketID<\/a>"],[100,4,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#746\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::CleanupSubject<\/a>"],[100,14,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#767\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::getTicketIdContainer<\/a>"],[100,8,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#813\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::checkMergedStatus<\/a>"],[100,7,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#850\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::checkStaffReply<\/a>"],[98.30508474576271,16,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#900\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processUserReply<\/a>"],[100,1,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1047\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processStaffReply<\/a>"],[94.73684210526315,3,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1104\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::doCreateUser<\/a>"],[100,7,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1149\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processUserNotRegistered<\/a>"],[100,9,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1187\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processUserNotValidated<\/a>"],[100,3,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1247\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processNewTicket<\/a>"],[100,16,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1325\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processAttachments<\/a>"],[100,21,"<a href=\"EmailParser\/class.SWIFT_TicketEmailParser.php.html#1421\">Tickets\\Library\\EmailParser\\SWIFT_TicketEmailParser::processReplies<\/a>"],[100,1,"<a href=\"Escalation\/class.SWIFT_EscalationRuleManager.php.html#44\">Tickets\\Library\\Escalation\\SWIFT_EscalationRuleManager::__construct<\/a>"],[100,11,"<a href=\"Escalation\/class.SWIFT_EscalationRuleManager.php.html#63\">Tickets\\Library\\Escalation\\SWIFT_EscalationRuleManager::Run<\/a>"],[100,20,"<a href=\"Escalation\/class.SWIFT_EscalationRuleManager.php.html#175\">Tickets\\Library\\Escalation\\SWIFT_EscalationRuleManager::RetrieveEscalationRuleObjects<\/a>"],[100,7,"<a href=\"Flag\/class.SWIFT_TicketFlag.php.html#50\">Tickets\\Library\\Flag\\SWIFT_TicketFlag::IsValidFlagType<\/a>"],[100,3,"<a href=\"Flag\/class.SWIFT_TicketFlag.php.html#66\">Tickets\\Library\\Flag\\SWIFT_TicketFlag::GetFlagList<\/a>"],[100,3,"<a href=\"Flag\/class.SWIFT_TicketFlag.php.html#91\">Tickets\\Library\\Flag\\SWIFT_TicketFlag::GetFlagContainer<\/a>"],[100,36,"<a href=\"FollowUp\/class.SWIFT_TicketFollowUpManager.php.html#46\">Tickets\\Library\\FollowUp\\SWIFT_TicketFollowUpManager::ExecutePending<\/a>"],[100,2,"<a href=\"Macro\/class.SWIFT_MacroManager.php.html#44\">Tickets\\Library\\Macro\\SWIFT_MacroManager::GetMacroCategoryOptions<\/a>"],[100,11,"<a href=\"Macro\/class.SWIFT_MacroManager.php.html#78\">Tickets\\Library\\Macro\\SWIFT_MacroManager::GetSubMacroCategoryOptions<\/a>"],[100,1,"<a href=\"Macro\/class.SWIFT_MacroManager.php.html#129\">Tickets\\Library\\Macro\\SWIFT_MacroManager::GetTreeItemOptions<\/a>"],[100,5,"<a href=\"Macro\/class.SWIFT_MacroManager.php.html#146\">Tickets\\Library\\Macro\\SWIFT_MacroManager::GetMacroCategoryTree<\/a>"],[100,13,"<a href=\"Macro\/class.SWIFT_MacroManager.php.html#195\">Tickets\\Library\\Macro\\SWIFT_MacroManager::GetSubMacroCategoryTree<\/a>"],[100,2,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#74\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::__construct<\/a>"],[100,4,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#91\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::SetTicket<\/a>"],[100,7,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#112\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::IsValidType<\/a>"],[100,3,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#131\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::Update<\/a>"],[100,33,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#154\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::GetEmailList<\/a>"],[99.32432432432432,27,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#285\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::GetBaseContent<\/a>"],[100,4,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#555\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::GetTitle<\/a>"],[100,26,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#587\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::Prepare<\/a>"],[97.46835443037975,43,"<a href=\"Notification\/class.SWIFT_TicketNotification.php.html#708\">Tickets\\Library\\Notification\\SWIFT_TicketNotification::Dispatch<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAHolidayManager.php.html#43\">Tickets\\Library\\SLA\\SWIFT_SLAHolidayManager::__construct<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAHolidayManager.php.html#57\">Tickets\\Library\\SLA\\SWIFT_SLAHolidayManager::GenerateFileName<\/a>"],[100,7,"<a href=\"SLA\/class.SWIFT_SLAHolidayManager.php.html#72\">Tickets\\Library\\SLA\\SWIFT_SLAHolidayManager::Export<\/a>"],[87.5,15,"<a href=\"SLA\/class.SWIFT_SLAHolidayManager.php.html#137\">Tickets\\Library\\SLA\\SWIFT_SLAHolidayManager::Import<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#55\">Tickets\\Library\\SLA\\SWIFT_SLAManager::__construct<\/a>"],[100,2,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#78\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetSecondsFromHour<\/a>"],[100,3,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#103\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetDefaultOverdueSeconds<\/a>"],[100,3,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#126\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetDefaultResolutionDueSeconds<\/a>"],[100,8,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#150\">Tickets\\Library\\SLA\\SWIFT_SLAManager::ExecuteSLAPlans<\/a>"],[100,30,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#215\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetDueTime<\/a>"],[100,10,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#299\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetResolutionTime<\/a>"],[100,3,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#338\">Tickets\\Library\\SLA\\SWIFT_SLAManager::IsValidType<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#354\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetTimeLeftInDay<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#378\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetStartOfDay<\/a>"],[100,2,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#393\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetTimestampOnSLAHour<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#412\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetTimezoneTimestamp<\/a>"],[100,31,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#436\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetDueSeconds<\/a>"],[98.75,32,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#645\">Tickets\\Library\\SLA\\SWIFT_SLAManager::GetSLAResponseTime<\/a>"],[100,6,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#808\">Tickets\\Library\\SLA\\SWIFT_SLAManager::checkIsCurrentTimeOpen<\/a>"],[100,7,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#879\">Tickets\\Library\\SLA\\SWIFT_SLAManager::checkIsCurrentTimeLessOpen<\/a>"],[100,1,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#938\">Tickets\\Library\\SLA\\SWIFT_SLAManager::sortByOpenTimeline<\/a>"],[92.85714285714286,17,"<a href=\"SLA\/class.SWIFT_SLAManager.php.html#956\">Tickets\\Library\\SLA\\SWIFT_SLAManager::checkIsTimelineInDay<\/a>"],[100,36,"<a href=\"Search\/class.SWIFT_TicketSearch.php.html#128\">Tickets\\Library\\Search\\SWIFT_TicketSearch::ExtendCustomCriteria<\/a>"],[100,10,"<a href=\"Search\/class.SWIFT_TicketSearch.php.html#413\">Tickets\\Library\\Search\\SWIFT_TicketSearch::GetCriteriaPointer<\/a>"],[100,1,"<a href=\"Search\/class.SWIFT_TicketSearch.php.html#828\">Tickets\\Library\\Search\\SWIFT_TicketSearch::GetFieldPointer<\/a>"],[100,5,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#57\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetOwnerIDClause<\/a>"],[100,7,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#93\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::RetrieveOnOwner<\/a>"],[100,3,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#132\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::RetrieveOnStatus<\/a>"],[100,3,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#175\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::RetrieveOnType<\/a>"],[100,3,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#218\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::RetrieveOnPriority<\/a>"],[100,3,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#260\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::RetrieveOverdueTickets<\/a>"],[100,5,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#303\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::RetrieveNewUpdatedTickets<\/a>"],[100,13,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#347\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SearchTicketID<\/a>"],[100,8,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#430\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SearchCreator<\/a>"],[100,8,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#497\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SearchEmail<\/a>"],[95.45454545454545,8,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#558\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SearchSubject<\/a>"],[100,8,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#619\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SearchFullName<\/a>"],[100,25,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#682\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::QuickSearch<\/a>"],[100,51,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#804\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SearchRules<\/a>"],[100,9,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#959\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::ParseTicketJoinIDList<\/a>"],[100,6,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1011\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchMessage<\/a>"],[100,3,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1052\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchMessageLike<\/a>"],[100,11,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1078\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchUser<\/a>"],[100,9,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1149\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchUserOrganization<\/a>"],[100,13,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1224\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchUserGroup<\/a>"],[100,4,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1299\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchTicketNotes<\/a>"],[100,6,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1329\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchFullname<\/a>"],[100,6,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1369\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchEmail<\/a>"],[100,3,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1408\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchCreatorEmail<\/a>"],[100,4,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1434\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::GetSearchTags<\/a>"],[97.5,14,"<a href=\"Search\/class.SWIFT_TicketSearchManager.php.html#1476\">Tickets\\Library\\Search\\SWIFT_TicketSearchManager::SupportCenterSearch<\/a>"],[75,2,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#49\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SetFrom<\/a>"],[75,2,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#68\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SetTo<\/a>"],[75,2,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#87\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SetStartDateLine<\/a>"],[100,1,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#104\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SplitPosts<\/a>"],[100,1,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#119\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SplitAttachments<\/a>"],[100,1,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#133\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SplitTimeTrack<\/a>"],[100,1,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#148\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SplitNotes<\/a>"],[100,1,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#163\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SplitDraft<\/a>"],[100,1,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#177\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::SplitFollowUp<\/a>"],[88.88888888888889,4,"<a href=\"Split\/class.SWIFT_TicketSplitManager.php.html#191\">Tickets\\Library\\Split\\SWIFT_TicketSplitManager::Split<\/a>"],[0,19,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#64\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::DispatchLogin<\/a>"],[0,18,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#201\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::ProcessMacroNode<\/a>"],[69.31818181818183,41,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#292\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::DispatchList<\/a>"],[65.43778801843318,77,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#496\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::DispatchOnTicketIDList<\/a>"],[45.45454545454545,5,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#877\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::RetrieveIDListFromCSV<\/a>"],[100,1,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#906\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::GetValidSortByValues<\/a>"],[31.57894736842105,9,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#919\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::GetSortByFieldOnValue<\/a>"],[94.11764705882352,23,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#997\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::Search<\/a>"],[6.578947368421052,51,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#1117\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::preocessCustomFields<\/a>"],[5.714285714285714,6,"<a href=\"StaffAPI\/class.SWIFT_TicketStaffAPIManager.php.html#1388\">Tickets\\Library\\StaffAPI\\SWIFT_TicketStaffAPIManager::processTicketPosts<\/a>"],[100,3,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#67\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::__construct<\/a>"],[100,2,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#94\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchNotification<\/a>"],[100,19,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#117\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchUserReply<\/a>"],[98.50746268656717,28,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#209\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchStaffReply<\/a>"],[100,12,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#373\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchForwardReply<\/a>"],[100,24,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#454\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchAutoresponder<\/a>"],[100,12,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#605\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchPendingAutoClose<\/a>"],[82.92682926829268,15,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#679\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchFinalAutoClose<\/a>"],[100,4,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#772\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::DispatchSurvey<\/a>"],[100,9,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#816\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::ProcessAttachments<\/a>"],[100,4,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#848\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::ProcessTicketAttachments<\/a>"],[100,11,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#877\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::ProcessPostAttachments<\/a>"],[100,15,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#920\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::ProcessPostList<\/a>"],[76.47058823529412,13,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#999\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::Prepare<\/a>"],[100,21,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#1070\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::LoadTemplateVariables<\/a>"],[90.74074074074075,22,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#1241\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::Dispatch<\/a>"],[100,1,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#1380\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::getLanguage<\/a>"],[100,1,"<a href=\"Ticket\/class.SWIFT_TicketEmailDispatch.php.html#1392\">Tickets\\Library\\Ticket\\SWIFT_TicketEmailDispatch::getLanguageEngine<\/a>"],[100,2,"<a href=\"Ticket\/class.SWIFT_TicketManager.php.html#44\">Tickets\\Library\\Ticket\\SWIFT_TicketManager::RebuildCacheOnShutdown<\/a>"],[100,4,"<a href=\"Ticket\/class.SWIFT_TicketManager.php.html#62\">Tickets\\Library\\Ticket\\SWIFT_TicketManager::Recount<\/a>"],[100,53,"<a href=\"Ticket\/class.SWIFT_TicketManager.php.html#91\">Tickets\\Library\\Ticket\\SWIFT_TicketManager::RebuildCache<\/a>"],[100,4,"<a href=\"Ticket\/class.SWIFT_TicketManager.php.html#358\">Tickets\\Library\\Ticket\\SWIFT_TicketManager::ExportXML<\/a>"],[100,4,"<a href=\"Ticket\/class.SWIFT_TicketManager.php.html#378\">Tickets\\Library\\Ticket\\SWIFT_TicketManager::ExportPDF<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#50\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::Search<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#114\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchTypes<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#143\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchStatuses<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#172\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchPriorities<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#201\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchAutoClose<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#230\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchWorkflow<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#259\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchSLAPlans<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#288\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchEscalations<\/a>"],[0,4,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#317\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchBayesian<\/a>"],[0,12,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#346\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchFilters<\/a>"],[0,27,"<a href=\"UnifiedSearch\/class.SWIFT_UnifiedSearch_tickets.php.html#393\">Tickets\\Library\\UnifiedSearch\\SWIFT_UnifiedSearch_tickets::SearchTickets<\/a>"],[100,3,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#51\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::__construct<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#75\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementTicketStatus<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#103\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementTicketType<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#131\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementTicketPriority<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#159\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementDepartment<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#187\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementStaff<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#215\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementTicketLink<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#243\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementTicketFlag<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#271\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::IncrementBayesian<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#300\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::GetTopTicketItems<\/a>"],[100,2,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#321\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::QueueRebuildCache<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewPropertyManager.php.html#340\">Tickets\\Library\\View\\SWIFT_TicketViewPropertyManager::RebuildCache<\/a>"],[100,10,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#69\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetDefaultTicketViewObject<\/a>"],[100,20,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#123\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetNextPreviousTicketID<\/a>"],[100,38,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#209\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::ParseVariables<\/a>"],[100,18,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#364\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetTicketViewObject<\/a>"],[100,13,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#423\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::Render<\/a>"],[98.81889763779527,57,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#633\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::RenderMassActionPanel<\/a>"],[100,20,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1087\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GridItemCallback<\/a>"],[100,13,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1208\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetCustomFieldValues<\/a>"],[100,15,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1278\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetConcatenatedCustomFieldOptions<\/a>"],[100,3,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1343\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::DispatchMenu<\/a>"],[100,4,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1377\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::ChangeView<\/a>"],[100,19,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1416\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::RenderTree<\/a>"],[100,14,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1547\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::RenderTreeDepartment<\/a>"],[100,13,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1628\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetTicketStatusIDList<\/a>"],[100,3,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1660\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetMyTicketsCounter<\/a>"],[100,3,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1686\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetUnassignedCounter<\/a>"],[100,13,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1712\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::RetrieveOverdueContainer<\/a>"],[100,10,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1793\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetDashboardDepartmentProgress<\/a>"],[100,11,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1853\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetDashboardStatusProgress<\/a>"],[100,15,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1904\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetDashboardOwnerProgress<\/a>"],[100,6,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#1973\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetDashboardTypeProgress<\/a>"],[100,5,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#2011\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::GetDashboardPriorityProgress<\/a>"],[100,7,"<a href=\"View\/class.SWIFT_TicketViewRenderer.php.html#2053\">Tickets\\Library\\View\\SWIFT_TicketViewRenderer::RetrieveCustomFieldIDList<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

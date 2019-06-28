@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/swift/trunk/__apps/reports</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../.css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../.css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/home/swift/trunk</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">__apps</a></li>
+         <li class="breadcrumb-item"><a href="index.html">reports</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="config/class.SWIFT_App_reports.php.html#23">SWIFT_App_reports</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#28">SWIFT_Report</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderTabular.php.html#26">SWIFT_ReportRenderTabular</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#32">SWIFT_ReportBase</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportTreeRender.php.html#23">SWIFT_ReportTreeRender</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Setup/class.SWIFT_ReportSetup.php.html#25">SWIFT_ReportSetup</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#26">SWIFT_UnifiedSearch_reports</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#27">SWIFT_ReportCategory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#26">SWIFT_ReportHistory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#28">SWIFT_ReportRenderMatrix</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#27">SWIFT_ReportUsageLog</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#32">Controller_Category</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_KQL.php.html#27">Controller_KQL</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#35">Controller_Report</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#34">Controller_Schedule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#31">View_Category</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#33">View_Report</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderSummary.php.html#26">SWIFT_ReportRenderSummary</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderGroupedTabular.php.html#26">SWIFT_ReportRenderGroupedTabular</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#25">SWIFT_SetupDatabase_reports</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#28">SWIFT_ReportRender</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_ReportSchedule.php.html#23">Controller_ReportSchedule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#32">Controller_Setup</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsHourly.php.html#25">Controller_ReportsHourly</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsMinute.php.html#23">Controller_ReportsMinute</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#27">SWIFT_ReportChart</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#23">SWIFT_ReportChartArea</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#25">SWIFT_ReportChartBase</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#23">SWIFT_ReportChartColumn</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#23">SWIFT_ReportChartLine</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#23">SWIFT_ReportChartPie</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#28">SWIFT_ReportExport</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1100">CellStyleMock</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportGroupedTabular.php.html#26">SWIFT_ReportExportGroupedTabular</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#28">SWIFT_ReportExportMatrix</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportSummary.php.html#26">SWIFT_ReportExportSummary</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportTabular.php.html#26">SWIFT_ReportExportTabular</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Schedule.php.html#28">View_Schedule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#26">SWIFT_ReportSchedule</a></td><td class="text-right">2%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#32">SWIFT_ReportBase</a></td><td class="text-right">69432</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#28">SWIFT_ReportRender</a></td><td class="text-right">28392</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#35">Controller_Report</a></td><td class="text-right">21170</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#28">SWIFT_ReportExport</a></td><td class="text-right">17292</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#25">SWIFT_ReportChartBase</a></td><td class="text-right">9506</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#26">SWIFT_ReportSchedule</a></td><td class="text-right">8917</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#28">SWIFT_ReportRenderMatrix</a></td><td class="text-right">7482</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#28">SWIFT_ReportExportMatrix</a></td><td class="text-right">6642</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#34">Controller_Schedule</a></td><td class="text-right">6006</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#27">SWIFT_ReportChart</a></td><td class="text-right">5402</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#28">SWIFT_Report</a></td><td class="text-right">5112</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#33">View_Report</a></td><td class="text-right">3540</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#32">Controller_Category</a></td><td class="text-right">2652</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#27">SWIFT_ReportCategory</a></td><td class="text-right">2550</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#26">SWIFT_ReportHistory</a></td><td class="text-right">1980</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#27">SWIFT_ReportUsageLog</a></td><td class="text-right">1406</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderSummary.php.html#26">SWIFT_ReportRenderSummary</a></td><td class="text-right">1260</td></tr>
+       <tr><td><a href="staff/class.View_Schedule.php.html#28">View_Schedule</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportSummary.php.html#26">SWIFT_ReportExportSummary</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderGroupedTabular.php.html#26">SWIFT_ReportRenderGroupedTabular</a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#25">SWIFT_SetupDatabase_reports</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderTabular.php.html#26">SWIFT_ReportRenderTabular</a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#31">View_Category</a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportGroupedTabular.php.html#26">SWIFT_ReportExportGroupedTabular</a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#32">Controller_Setup</a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportTabular.php.html#26">SWIFT_ReportExportTabular</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#23">SWIFT_ReportChartColumn</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#23">SWIFT_ReportChartLine</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#23">SWIFT_ReportChartArea</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#26">SWIFT_UnifiedSearch_reports</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="library/Setup/class.SWIFT_ReportSetup.php.html#25">SWIFT_ReportSetup</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#23">SWIFT_ReportChartPie</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="staff/class.Controller_KQL.php.html#27">Controller_KQL</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsMinute.php.html#23">Controller_ReportsMinute</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsHourly.php.html#25">Controller_ReportsHourly</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportTreeRender.php.html#23">SWIFT_ReportTreeRender</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="console/class.Controller_ReportSchedule.php.html#23">Controller_ReportSchedule</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="config/class.SWIFT_App_reports.php.html#23">SWIFT_App_reports</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="config/class.SWIFT_App_reports.php.html#32"><abbr title="SWIFT_App_reports::Initialize">Initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#270"><abbr title="SWIFT_Report::Update">Update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#460"><abbr title="SWIFT_Report::GetBaseTableList">GetBaseTableList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#428"><abbr title="SWIFT_Report::GetVisibilityLabel">GetVisibilityLabel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#396"><abbr title="SWIFT_Report::DeleteOnCategory">DeleteOnCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#367"><abbr title="SWIFT_Report::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#347"><abbr title="SWIFT_Report::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#306"><abbr title="SWIFT_Report::UpdateProperties">UpdateProperties</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#229"><abbr title="SWIFT_Report::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#50"><abbr title="SWIFT_ReportHistory::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#211"><abbr title="SWIFT_Report::IsValidVisibilityType">IsValidVisibilityType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#193"><abbr title="SWIFT_Report::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#176"><abbr title="SWIFT_Report::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#141"><abbr title="SWIFT_Report::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#124"><abbr title="SWIFT_Report::GetReportID">GetReportID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#102"><abbr title="SWIFT_Report::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#88"><abbr title="SWIFT_Report::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#493"><abbr title="SWIFT_Report::UpdateExecution">UpdateExecution</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#64"><abbr title="SWIFT_ReportHistory::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#356"><abbr title="SWIFT_ReportCategory::RebuildCache">RebuildCache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#292"><abbr title="SWIFT_ReportHistory::GetTotalCount">GetTotalCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#119"><abbr title="SWIFT_ReportUsageLog::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#102"><abbr title="SWIFT_ReportUsageLog::GetReportUsageLogID">GetReportUsageLogID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#80"><abbr title="SWIFT_ReportUsageLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#66"><abbr title="SWIFT_ReportUsageLog::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#52"><abbr title="SWIFT_ReportUsageLog::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#318"><abbr title="SWIFT_ReportHistory::RetrieveOnReport">RetrieveOnReport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#261"><abbr title="SWIFT_ReportHistory::DeleteOnReport">DeleteOnReport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#78"><abbr title="SWIFT_ReportHistory::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#241"><abbr title="SWIFT_ReportHistory::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#221"><abbr title="SWIFT_ReportHistory::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#188"><abbr title="SWIFT_ReportHistory::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#169"><abbr title="SWIFT_ReportHistory::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#152"><abbr title="SWIFT_ReportHistory::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#117"><abbr title="SWIFT_ReportHistory::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#100"><abbr title="SWIFT_ReportHistory::GetReportHistoryID">GetReportHistoryID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#74"><abbr title="SWIFT_Report::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#317"><abbr title="SWIFT_ReportCategory::GetVisibilityLabel">GetVisibilityLabel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#171"><abbr title="SWIFT_ReportUsageLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1450"><abbr title="SWIFT_ReportBase::RestoreSessionTimeZone">RestoreSessionTimeZone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1603"><abbr title="SWIFT_ReportBase::Field_WriteTicketID">Field_WriteTicketID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1569"><abbr title="SWIFT_ReportBase::Field_WriteTicketMaskID">Field_WriteTicketMaskID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1531"><abbr title="SWIFT_ReportBase::WriteFieldURL">WriteFieldURL</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1508"><abbr title="SWIFT_ReportBase::Field_ProcessHTMLContents">Field_ProcessHTMLContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1489"><abbr title="SWIFT_ReportBase::GetFormat">GetFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1470"><abbr title="SWIFT_ReportBase::GetStaff">GetStaff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1410"><abbr title="SWIFT_ReportBase::SetSessionTimeZone">SetSessionTimeZone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1667"><abbr title="SWIFT_ReportBase::Field_WriteChatID">Field_WriteChatID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1394"><abbr title="SWIFT_ReportBase::GetRecordCount">GetRecordCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1376"><abbr title="SWIFT_ReportBase::IncrementRecordCount">IncrementRecordCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1364"><abbr title="SWIFT_ReportBase::IsValidExportFormat">IsValidExportFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1319"><abbr title="SWIFT_ReportBase::RecountMatrixYGrid">RecountMatrixYGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1278"><abbr title="SWIFT_ReportBase::CleanupMatrixYGrid">CleanupMatrixYGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1231"><abbr title="SWIFT_ReportBase::RebuildMatrixCountForYGrid">RebuildMatrixCountForYGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1184"><abbr title="SWIFT_ReportBase::RecountMatrixXGrid">RecountMatrixXGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1633"><abbr title="SWIFT_ReportBase::Field_WriteChatMaskID">Field_WriteChatMaskID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1697"><abbr title="SWIFT_ReportBase::Field_WriteMessageMaskID">Field_WriteMessageMaskID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#292"><abbr title="SWIFT_ReportCategory::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#105"><abbr title="SWIFT_ReportCategory::GetReportCategoryID">GetReportCategoryID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#270"><abbr title="SWIFT_ReportCategory::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#243"><abbr title="SWIFT_ReportCategory::Update">Update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#213"><abbr title="SWIFT_ReportCategory::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#198"><abbr title="SWIFT_ReportCategory::IsValidVisibilityType">IsValidVisibilityType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#176"><abbr title="SWIFT_ReportCategory::GetProperty">GetProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#157"><abbr title="SWIFT_ReportCategory::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#122"><abbr title="SWIFT_ReportCategory::LoadData">LoadData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#81"><abbr title="SWIFT_ReportCategory::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1732"><abbr title="SWIFT_ReportBase::Field_WriteMessageID">Field_WriteMessageID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#67"><abbr title="SWIFT_ReportCategory::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#53"><abbr title="SWIFT_ReportCategory::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#79"><abbr title="SWIFT_UnifiedSearch_reports::SearchReports">SearchReports</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#51"><abbr title="SWIFT_UnifiedSearch_reports::Search">Search</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#39"><abbr title="SWIFT_UnifiedSearch_reports::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Setup/class.SWIFT_ReportSetup.php.html#33"><abbr title="SWIFT_ReportSetup::Install">Install</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportTreeRender.php.html#31"><abbr title="SWIFT_ReportTreeRender::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#154"><abbr title="SWIFT_ReportUsageLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#192"><abbr title="SWIFT_ReportUsageLog::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1043"><abbr title="SWIFT_ReportBase::BuildMatrixXGrid">BuildMatrixXGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#838"><abbr title="Controller_Report::Export">Export</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#116"><abbr title="Controller_Schedule::Dialog">Dialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#81"><abbr title="Controller_Schedule::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#60"><abbr title="Controller_Schedule::_LoadDisplayData">_LoadDisplayData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#45"><abbr title="Controller_Schedule::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#1024"><abbr title="Controller_Report::PrintReport">PrintReport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#973"><abbr title="Controller_Report::GenerateSubmit">GenerateSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#741"><abbr title="Controller_Report::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#252"><abbr title="Controller_Schedule::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#689"><abbr title="Controller_Report::PropertiesSubmit">PropertiesSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#648"><abbr title="Controller_Report::PropertiesDialog">PropertiesDialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#575"><abbr title="Controller_Report::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#511"><abbr title="Controller_Report::Edit">Edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#468"><abbr title="Controller_Report::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#443"><abbr title="Controller_Report::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#375"><abbr title="Controller_Report::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#171"><abbr title="Controller_Schedule::Submit">Submit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#295"><abbr title="Controller_Schedule::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#284"><abbr title="Controller_Report::RunChecks">RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#167"><abbr title="View_Report::RenderPropertiesDialog">RenderPropertiesDialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Schedule.php.html#37"><abbr title="View_Schedule::RenderReport">RenderReport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#741"><abbr title="View_Report::GetExportOptionsMenu">GetExportOptionsMenu</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#708"><abbr title="View_Report::RenderInfoBox">RenderInfoBox</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#647"><abbr title="View_Report::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#571"><abbr title="View_Report::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#500"><abbr title="View_Report::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#279"><abbr title="View_Report::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#45"><abbr title="View_Report::RenderDialog">RenderDialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#330"><abbr title="Controller_Schedule::RunChecks">RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#201"><abbr title="View_Category::GridRender">GridRender</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#124"><abbr title="View_Category::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#43"><abbr title="View_Category::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#469"><abbr title="Controller_Schedule::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#441"><abbr title="Controller_Schedule::_CheckPOSTEmailContainer">_CheckPOSTEmailContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#419"><abbr title="Controller_Schedule::GetRecurrenceTypeFromString">GetRecurrenceTypeFromString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#398"><abbr title="Controller_Schedule::IsValidRecurrenceType">IsValidRecurrenceType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#343"><abbr title="Controller_Report::InsertDialog">InsertDialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#250"><abbr title="Controller_Report::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#218"><abbr title="SWIFT_ReportUsageLog::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#415"><abbr title="SWIFT_ReportSchedule::IsExecuting">IsExecuting</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#610"><abbr title="SWIFT_ReportSchedule::RetrievePendingSchedules">RetrievePendingSchedules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#584"><abbr title="SWIFT_ReportSchedule::RetrieveOnReportAndStaff">RetrieveOnReportAndStaff</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#520"><abbr title="SWIFT_ReportSchedule::DeleteOnReport">DeleteOnReport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#477"><abbr title="SWIFT_ReportSchedule::Create">Create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#451"><abbr title="SWIFT_ReportSchedule::StopExecuting">StopExecuting</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#431"><abbr title="SWIFT_ReportSchedule::StartExecuting">StartExecuting</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#342"><abbr title="SWIFT_ReportSchedule::ReSchedule">ReSchedule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#665"><abbr title="SWIFT_ReportSchedule::QuerySummaryList">QuerySummaryList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#158"><abbr title="SWIFT_ReportSchedule::Execute">Execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#126"><abbr title="SWIFT_ReportSchedule::Update">Update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#105"><abbr title="SWIFT_ReportSchedule::GetScheduleID">GetScheduleID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#91"><abbr title="SWIFT_ReportSchedule::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#77"><abbr title="SWIFT_ReportSchedule::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#254"><abbr title="SWIFT_ReportUsageLog::DeleteOnReport">DeleteOnReport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#238"><abbr title="SWIFT_ReportUsageLog::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#631"><abbr title="SWIFT_ReportSchedule::ExecutePendingSchedules">ExecutePendingSchedules</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#689"><abbr title="SWIFT_ReportSchedule::GetSupportedRecurrenceTypes">GetSupportedRecurrenceTypes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#156"><abbr title="Controller_Report::QuickFilter">QuickFilter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#294"><abbr title="Controller_Category::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#135"><abbr title="Controller_Report::_LoadDisplayData">_LoadDisplayData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#114"><abbr title="Controller_Report::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#62"><abbr title="Controller_Report::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#46"><abbr title="Controller_Report::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_KQL.php.html#37"><abbr title="Controller_KQL::FetchKQLJSON">FetchKQLJSON</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#376"><abbr title="Controller_Category::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#335"><abbr title="Controller_Category::Edit">Edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#269"><abbr title="Controller_Category::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#701"><abbr title="SWIFT_ReportSchedule::IsValidRecurrenceType">IsValidRecurrenceType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#236"><abbr title="Controller_Category::Insert">Insert</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#186"><abbr title="Controller_Category::RunChecks">RunChecks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#151"><abbr title="Controller_Category::Manage">Manage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#131"><abbr title="Controller_Category::_LoadDisplayData">_LoadDisplayData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#110"><abbr title="Controller_Category::Delete">Delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#60"><abbr title="Controller_Category::DeleteList">DeleteList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#43"><abbr title="Controller_Category::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1143"><abbr title="SWIFT_ReportBase::CleanupMatrixXGrid">CleanupMatrixXGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#948"><abbr title="SWIFT_ReportBase::BuildMatrixYGrid">BuildMatrixYGrid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#37"><abbr title="SWIFT_SetupDatabase_reports::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#40"><abbr title="SWIFT_ReportChartColumn::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#40"><abbr title="SWIFT_ReportChartPie::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#82"><abbr title="SWIFT_ReportChartLine::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#62"><abbr title="SWIFT_ReportChartLine::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#40"><abbr title="SWIFT_ReportChartLine::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#90"><abbr title="SWIFT_ReportChartColumn::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#62"><abbr title="SWIFT_ReportChartColumn::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#560"><abbr title="SWIFT_ReportChartBase::GeneratePalette">GeneratePalette</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#76"><abbr title="SWIFT_ReportChartPie::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#524"><abbr title="SWIFT_ReportChartBase::GetRGBFromHSL">GetRGBFromHSL</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#497"><abbr title="SWIFT_ReportChartBase::GetRGBFromHue">GetRGBFromHue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#436"><abbr title="SWIFT_ReportChartBase::InitializeColors">InitializeColors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#415"><abbr title="SWIFT_ReportChartBase::RotateArray">RotateArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#389"><abbr title="SWIFT_ReportChartBase::SetColorPalette">SetColorPalette</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#372"><abbr title="SWIFT_ReportChartBase::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#356"><abbr title="SWIFT_ReportChartBase::GetUniqueID">GetUniqueID</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#56"><abbr title="SWIFT_ReportChartPie::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#90"><abbr title="SWIFT_ReportExport::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#323"><abbr title="SWIFT_ReportChartBase::AppendOutput">AppendOutput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#410"><abbr title="SWIFT_ReportExport::GetCellStyle">GetCellStyle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#589"><abbr title="SWIFT_ReportExport::SetCellValue">SetCellValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#550"><abbr title="SWIFT_ReportExport::GenerateTitleCell">GenerateTitleCell</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#527"><abbr title="SWIFT_ReportExport::StyleStatementCell">StyleStatementCell</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#507"><abbr title="SWIFT_ReportExport::StyleGroupCell">StyleGroupCell</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#479"><abbr title="SWIFT_ReportExport::StyleTitleCell">StyleTitleCell</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#450"><abbr title="SWIFT_ReportExport::StyleCell">StyleCell</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#431"><abbr title="SWIFT_ReportExport::SetCellStyle">SetCellStyle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#392"><abbr title="SWIFT_ReportExport::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#112"><abbr title="SWIFT_ReportExport::Process">Process</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#367"><abbr title="SWIFT_ReportExport::CalculateWidth">CalculateWidth</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#351"><abbr title="SWIFT_ReportExport::IsWidthCalculated">IsWidthCalculated</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#306"><abbr title="SWIFT_ReportExport::FinalizeDocument">FinalizeDocument</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#276"><abbr title="SWIFT_ReportExport::InitializeDocument">InitializeDocument</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#238"><abbr title="SWIFT_ReportExport::GetFile">GetFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#202"><abbr title="SWIFT_ReportExport::DispatchFile">DispatchFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#179"><abbr title="SWIFT_ReportExport::Prepare">Prepare</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#341"><abbr title="SWIFT_ReportChartBase::GetOutput">GetOutput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#306"><abbr title="SWIFT_ReportChartBase::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#911"><abbr title="SWIFT_ReportBase::BuildMatrixYMap">BuildMatrixYMap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#205"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_52_2153">Upgrade_4_52_2153</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#70"><abbr title="Controller_Setup::_GetSetupObject">_GetSetupObject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#54"><abbr title="Controller_Setup::Index">Index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#40"><abbr title="Controller_Setup::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_ReportSchedule.php.html#33"><abbr title="Controller_ReportSchedule::EmailReports">EmailReports</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#262"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_71_0000">Upgrade_4_71_0000</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#236"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_66_0_5800">Upgrade_4_66_0_5800</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#184"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_40_1148">Upgrade_4_40_1148</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#78"><abbr title="Controller_Setup::_RunStep2">_RunStep2</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#157"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_30_628">Upgrade_4_30_628</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#135"><abbr title="SWIFT_SetupDatabase_reports::UpgradePost_4_01_586">UpgradePost_4_01_586</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#102"><abbr title="SWIFT_SetupDatabase_reports::UpgradePre_4_01_586">UpgradePre_4_01_586</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#88"><abbr title="SWIFT_SetupDatabase_reports::Uninstall">Uninstall</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#72"><abbr title="SWIFT_SetupDatabase_reports::Install">Install</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#60"><abbr title="SWIFT_SetupDatabase_reports::GetPageCount">GetPageCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#48"><abbr title="SWIFT_SetupDatabase_reports::LoadTables">LoadTables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#74"><abbr title="Controller_Setup::_RunStep1">_RunStep1</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#82"><abbr title="Controller_Setup::_RunStep3">_RunStep3</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#242"><abbr title="SWIFT_ReportChartBase::GetChartXML">GetChartXML</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsMinute.php.html#33"><abbr title="Controller_ReportsMinute::EmailReports">EmailReports</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#127"><abbr title="SWIFT_ReportChartBase::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#81"><abbr title="SWIFT_ReportChartArea::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#62"><abbr title="SWIFT_ReportChartArea::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#40"><abbr title="SWIFT_ReportChartArea::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#429"><abbr title="SWIFT_ReportChart::GetAxisContainer">GetAxisContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#416"><abbr title="SWIFT_ReportChart::GetDataType">GetDataType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#69"><abbr title="SWIFT_ReportChart::Process">Process</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsHourly.php.html#35"><abbr title="Controller_ReportsHourly::EmailReports">EmailReports</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#86"><abbr title="Controller_Setup::_RunStep4">_RunStep4</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#114"><abbr title="Controller_Setup::StepProcessor">StepProcessor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#110"><abbr title="Controller_Setup::ShowProgress">ShowProgress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#106"><abbr title="Controller_Setup::Console">Console</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#102"><abbr title="Controller_Setup::_RunStep8">_RunStep8</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#98"><abbr title="Controller_Setup::_RunStep7">_RunStep7</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#94"><abbr title="Controller_Setup::_RunStep6">_RunStep6</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#90"><abbr title="Controller_Setup::_RunStep5">_RunStep5</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#681"><abbr title="SWIFT_ReportExport::SetColumnValue">SetColumnValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#866"><abbr title="SWIFT_ReportExport::MergeAndStyleCells">MergeAndStyleCells</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#926"><abbr title="SWIFT_ReportExport::ResetColumn">ResetColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#914"><abbr title="SWIFT_ReportRender::RenderTitleColumn">RenderTitleColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#69"><abbr title="SWIFT_ReportRenderMatrix::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#57"><abbr title="SWIFT_ReportRenderMatrix::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderGroupedTabular.php.html#49"><abbr title="SWIFT_ReportRenderGroupedTabular::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderGroupedTabular.php.html#37"><abbr title="SWIFT_ReportRenderGroupedTabular::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#959"><abbr title="SWIFT_ReportRender::GetFormat">GetFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#943"><abbr title="SWIFT_ReportRender::GetExportFormatMap">GetExportFormatMap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#899"><abbr title="SWIFT_ReportRender::ProcessColumnValue">ProcessColumnValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#474"><abbr title="SWIFT_ReportRenderMatrix::RenderBody">RenderBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#801"><abbr title="SWIFT_ReportRender::ExportColumnValue">ExportColumnValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#681"><abbr title="SWIFT_ReportRender::RenderColumnValue">RenderColumnValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#582"><abbr title="SWIFT_ReportRender::GetParsedColumnValue">GetParsedColumnValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#561"><abbr title="SWIFT_ReportRender::AppendOutput">AppendOutput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#544"><abbr title="SWIFT_ReportRender::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#523"><abbr title="SWIFT_ReportRender::ResetCharts">ResetCharts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#503"><abbr title="SWIFT_ReportRender::AddChart">AddChart</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#257"><abbr title="SWIFT_ReportRenderMatrix::RenderXTitle">RenderXTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderSummary.php.html#37"><abbr title="SWIFT_ReportRenderSummary::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#295"><abbr title="SWIFT_ReportRender::GetCharts">GetCharts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#562"><abbr title="SWIFT_ReportBase::SetCustomFields">SetCustomFields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#782"><abbr title="SWIFT_ReportBase::LoadMatrixData">LoadMatrixData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#756"><abbr title="SWIFT_ReportBase::GetFilename">GetFilename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#703"><abbr title="SWIFT_ReportBase::SortSummarySQLResult">SortSummarySQLResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#637"><abbr title="SWIFT_ReportBase::BuildSummaryCountMap">BuildSummaryCountMap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#619"><abbr title="SWIFT_ReportBase::SetOriginalAliasMap">SetOriginalAliasMap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#600"><abbr title="SWIFT_ReportBase::SetFunctionMap">SetFunctionMap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#581"><abbr title="SWIFT_ReportBase::SetAliasMap">SetAliasMap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#543"><abbr title="SWIFT_ReportBase::SetHiddenFields">SetHiddenFields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderSummary.php.html#49"><abbr title="SWIFT_ReportRenderSummary::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#455"><abbr title="SWIFT_ReportBase::ConvertColumnValue">ConvertColumnValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#335"><abbr title="SWIFT_ReportBase::ProcessFieldValues">ProcessFieldValues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#206"><abbr title="SWIFT_ReportBase::ProcessSQLResultTitle">ProcessSQLResultTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#139"><abbr title="SWIFT_ReportBase::ExecuteSQL">ExecuteSQL</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#108"><abbr title="SWIFT_ReportBase::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderTabular.php.html#49"><abbr title="SWIFT_ReportRenderTabular::Render">Render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderTabular.php.html#37"><abbr title="SWIFT_ReportRenderTabular::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#486"><abbr title="SWIFT_ReportRender::GetChartNotifications">GetChartNotifications</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#277"><abbr title="SWIFT_ReportRender::SetDisplayValues">SetDisplayValues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#944"><abbr title="SWIFT_ReportExport::NextColumn">NextColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1107"><abbr title="CellStyleMock::getFill">getFill</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1125"><abbr title="CellStyleMock::getBottom">getBottom</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1122"><abbr title="CellStyleMock::getTop">getTop</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1119"><abbr title="CellStyleMock::getLeft">getLeft</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1116"><abbr title="CellStyleMock::getRight">getRight</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1113"><abbr title="CellStyleMock::getNumberFormat">getNumberFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1110"><abbr title="CellStyleMock::getAlignment">getAlignment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1104"><abbr title="CellStyleMock::getFont">getFont</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1131"><abbr title="CellStyleMock::setColor">setColor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1101"><abbr title="CellStyleMock::getBorders">getBorders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1089"><abbr title="SWIFT_ReportExport::GetFormat">GetFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1055"><abbr title="SWIFT_ReportExport::GetExportFormatContainer">GetExportFormatContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1022"><abbr title="SWIFT_ReportExport::GetExportElapsedFormat">GetExportElapsedFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#998"><abbr title="SWIFT_ReportExport::GetExportDateFormat">GetExportDateFormat</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#976"><abbr title="SWIFT_ReportExport::MergeColumns">MergeColumns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#960"><abbr title="SWIFT_ReportExport::GetColumns">GetColumns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1128"><abbr title="CellStyleMock::setBorderStyle">setBorderStyle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1134"><abbr title="CellStyleMock::getCellByColumnAndRow">getCellByColumnAndRow</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#204"><abbr title="SWIFT_ReportRender::Process">Process</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportSummary.php.html#49"><abbr title="SWIFT_ReportExportSummary::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#162"><abbr title="SWIFT_ReportRender::DispatchHTML">DispatchHTML</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#117"><abbr title="SWIFT_ReportRender::DispatchCSV">DispatchCSV</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#100"><abbr title="SWIFT_ReportRender::GetOutput">GetOutput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#67"><abbr title="SWIFT_ReportRender::GetChartsOutput">GetChartsOutput</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#55"><abbr title="SWIFT_ReportRender::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportTabular.php.html#49"><abbr title="SWIFT_ReportExportTabular::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportTabular.php.html#37"><abbr title="SWIFT_ReportExportTabular::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportSummary.php.html#37"><abbr title="SWIFT_ReportExportSummary::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1137"><abbr title="CellStyleMock::getHyperlink">getHyperlink</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#398"><abbr title="SWIFT_ReportExportMatrix::ExportBody">ExportBody</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#187"><abbr title="SWIFT_ReportExportMatrix::ExportXTitle">ExportXTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#54"><abbr title="SWIFT_ReportExportMatrix::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#42"><abbr title="SWIFT_ReportExportMatrix::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportGroupedTabular.php.html#49"><abbr title="SWIFT_ReportExportGroupedTabular::Generate">Generate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportGroupedTabular.php.html#37"><abbr title="SWIFT_ReportExportGroupedTabular::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1140"><abbr title="CellStyleMock::setUrl">setUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="staff/class.View_Schedule.php.html#163"><abbr title="View_Schedule::RenderScheduleDialog">RenderScheduleDialog</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#551"><abbr title="SWIFT_ReportSchedule::DeleteOnStaff">DeleteOnStaff</abbr></a></td><td class="text-right">63%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#69"><abbr title="SWIFT_ReportChart::Process">Process</abbr></a></td><td class="text-right">4422</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#257"><abbr title="SWIFT_ReportRenderMatrix::RenderXTitle">RenderXTitle</abbr></a></td><td class="text-right">1892</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#187"><abbr title="SWIFT_ReportExportMatrix::ExportXTitle">ExportXTitle</abbr></a></td><td class="text-right">1722</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#681"><abbr title="SWIFT_ReportExport::SetColumnValue">SetColumnValue</abbr></a></td><td class="text-right">1332</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#295"><abbr title="SWIFT_ReportRender::GetCharts">GetCharts</abbr></a></td><td class="text-right">1260</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderSummary.php.html#49"><abbr title="SWIFT_ReportRenderSummary::Render">Render</abbr></a></td><td class="text-right">1190</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#681"><abbr title="SWIFT_ReportRender::RenderColumnValue">RenderColumnValue</abbr></a></td><td class="text-right">1122</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#398"><abbr title="SWIFT_ReportExportMatrix::ExportBody">ExportBody</abbr></a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportSummary.php.html#49"><abbr title="SWIFT_ReportExportSummary::Generate">Generate</abbr></a></td><td class="text-right">930</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderGroupedTabular.php.html#49"><abbr title="SWIFT_ReportRenderGroupedTabular::Render">Render</abbr></a></td><td class="text-right">870</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#335"><abbr title="SWIFT_ReportBase::ProcessFieldValues">ProcessFieldValues</abbr></a></td><td class="text-right">812</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#474"><abbr title="SWIFT_ReportRenderMatrix::RenderBody">RenderBody</abbr></a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#782"><abbr title="SWIFT_ReportBase::LoadMatrixData">LoadMatrixData</abbr></a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#801"><abbr title="SWIFT_ReportRender::ExportColumnValue">ExportColumnValue</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#206"><abbr title="SWIFT_ReportBase::ProcessSQLResultTitle">ProcessSQLResultTitle</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#158"><abbr title="SWIFT_ReportSchedule::Execute">Execute</abbr></a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#582"><abbr title="SWIFT_ReportRender::GetParsedColumnValue">GetParsedColumnValue</abbr></a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#127"><abbr title="SWIFT_ReportChartBase::__construct">__construct</abbr></a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#455"><abbr title="SWIFT_ReportBase::ConvertColumnValue">ConvertColumnValue</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="staff/class.View_Schedule.php.html#163"><abbr title="View_Schedule::RenderScheduleDialog">RenderScheduleDialog</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#242"><abbr title="SWIFT_ReportChartBase::GetChartXML">GetChartXML</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#330"><abbr title="Controller_Schedule::RunChecks">RunChecks</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderTabular.php.html#49"><abbr title="SWIFT_ReportRenderTabular::Render">Render</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#838"><abbr title="Controller_Report::Export">Export</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportGroupedTabular.php.html#49"><abbr title="SWIFT_ReportExportGroupedTabular::Generate">Generate</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#647"><abbr title="View_Report::GridRender">GridRender</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#436"><abbr title="SWIFT_ReportChartBase::InitializeColors">InitializeColors</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRenderMatrix.php.html#69"><abbr title="SWIFT_ReportRenderMatrix::Render">Render</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#279"><abbr title="View_Report::Render">Render</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#139"><abbr title="SWIFT_ReportBase::ExecuteSQL">ExecuteSQL</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#156"><abbr title="Controller_Report::QuickFilter">QuickFilter</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#589"><abbr title="SWIFT_ReportExport::SetCellValue">SetCellValue</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1043"><abbr title="SWIFT_ReportBase::BuildMatrixXGrid">BuildMatrixXGrid</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#741"><abbr title="Controller_Report::Generate">Generate</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#171"><abbr title="Controller_Schedule::Submit">Submit</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportTabular.php.html#49"><abbr title="SWIFT_ReportExportTabular::Generate">Generate</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#342"><abbr title="SWIFT_ReportSchedule::ReSchedule">ReSchedule</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#116"><abbr title="Controller_Schedule::Dialog">Dialog</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="staff/class.View_Schedule.php.html#37"><abbr title="View_Schedule::RenderReport">RenderReport</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#284"><abbr title="Controller_Report::RunChecks">RunChecks</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#511"><abbr title="Controller_Report::Edit">Edit</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#575"><abbr title="Controller_Report::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#560"><abbr title="SWIFT_ReportChartBase::GeneratePalette">GeneratePalette</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#477"><abbr title="SWIFT_ReportSchedule::Create">Create</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#43"><abbr title="View_Category::Render">Render</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#637"><abbr title="SWIFT_ReportBase::BuildSummaryCountMap">BuildSummaryCountMap</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#948"><abbr title="SWIFT_ReportBase::BuildMatrixYGrid">BuildMatrixYGrid</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#973"><abbr title="Controller_Report::GenerateSubmit">GenerateSubmit</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#117"><abbr title="SWIFT_ReportRender::DispatchCSV">DispatchCSV</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#689"><abbr title="Controller_Report::PropertiesSubmit">PropertiesSubmit</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#60"><abbr title="Controller_Category::DeleteList">DeleteList</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#375"><abbr title="Controller_Report::Insert">Insert</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#186"><abbr title="Controller_Category::RunChecks">RunChecks</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#229"><abbr title="SWIFT_Report::Create">Create</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#126"><abbr title="SWIFT_ReportSchedule::Update">Update</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#306"><abbr title="SWIFT_Report::UpdateProperties">UpdateProperties</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#866"><abbr title="SWIFT_ReportExport::MergeAndStyleCells">MergeAndStyleCells</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#141"><abbr title="SWIFT_Report::LoadData">LoadData</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#119"><abbr title="SWIFT_ReportUsageLog::LoadData">LoadData</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#45"><abbr title="View_Report::RenderDialog">RenderDialog</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#122"><abbr title="SWIFT_ReportCategory::LoadData">LoadData</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExportMatrix.php.html#54"><abbr title="SWIFT_ReportExportMatrix::Generate">Generate</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#117"><abbr title="SWIFT_ReportHistory::LoadData">LoadData</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#167"><abbr title="View_Report::RenderPropertiesDialog">RenderPropertiesDialog</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#62"><abbr title="Controller_Report::DeleteList">DeleteList</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="library/Setup/class.SWIFT_ReportSetup.php.html#33"><abbr title="SWIFT_ReportSetup::Install">Install</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1278"><abbr title="SWIFT_ReportBase::CleanupMatrixYGrid">CleanupMatrixYGrid</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1143"><abbr title="SWIFT_ReportBase::CleanupMatrixXGrid">CleanupMatrixXGrid</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#112"><abbr title="SWIFT_ReportExport::Process">Process</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#204"><abbr title="SWIFT_ReportRender::Process">Process</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#376"><abbr title="Controller_Category::EditSubmit">EditSubmit</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#270"><abbr title="SWIFT_Report::Update">Update</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1055"><abbr title="SWIFT_ReportExport::GetExportFormatContainer">GetExportFormatContainer</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1231"><abbr title="SWIFT_ReportBase::RebuildMatrixCountForYGrid">RebuildMatrixCountForYGrid</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#252"><abbr title="Controller_Schedule::DeleteList">DeleteList</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1410"><abbr title="SWIFT_ReportBase::SetSessionTimeZone">SetSessionTimeZone</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#192"><abbr title="SWIFT_ReportUsageLog::Create">Create</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1531"><abbr title="SWIFT_ReportBase::WriteFieldURL">WriteFieldURL</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#213"><abbr title="SWIFT_ReportCategory::Create">Create</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#243"><abbr title="SWIFT_ReportCategory::Update">Update</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#102"><abbr title="SWIFT_SetupDatabase_reports::UpgradePre_4_01_586">UpgradePre_4_01_586</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#648"><abbr title="Controller_Report::PropertiesDialog">PropertiesDialog</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#703"><abbr title="SWIFT_ReportBase::SortSummarySQLResult">SortSummarySQLResult</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#335"><abbr title="Controller_Category::Edit">Edit</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#631"><abbr title="SWIFT_ReportSchedule::ExecutePendingSchedules">ExecutePendingSchedules</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#497"><abbr title="SWIFT_ReportChartBase::GetRGBFromHue">GetRGBFromHue</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#306"><abbr title="SWIFT_ReportExport::FinalizeDocument">FinalizeDocument</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="staff/class.Controller_KQL.php.html#37"><abbr title="Controller_KQL::FetchKQLJSON">FetchKQLJSON</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1184"><abbr title="SWIFT_ReportBase::RecountMatrixXGrid">RecountMatrixXGrid</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#295"><abbr title="Controller_Schedule::Delete">Delete</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#584"><abbr title="SWIFT_ReportSchedule::RetrieveOnReportAndStaff">RetrieveOnReportAndStaff</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#1024"><abbr title="Controller_Report::PrintReport">PrintReport</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1319"><abbr title="SWIFT_ReportBase::RecountMatrixYGrid">RecountMatrixYGrid</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#62"><abbr title="SWIFT_ReportChartColumn::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#389"><abbr title="SWIFT_ReportChartBase::SetColorPalette">SetColorPalette</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#82"><abbr title="SWIFT_ReportChartLine::Render">Render</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#108"><abbr title="SWIFT_ReportBase::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#441"><abbr title="Controller_Schedule::_CheckPOSTEmailContainer">_CheckPOSTEmailContainer</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#81"><abbr title="Controller_Schedule::Manage">Manage</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#67"><abbr title="SWIFT_ReportRender::GetChartsOutput">GetChartsOutput</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#202"><abbr title="SWIFT_ReportExport::DispatchFile">DispatchFile</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#460"><abbr title="SWIFT_Report::GetBaseTableList">GetBaseTableList</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#317"><abbr title="SWIFT_ReportCategory::GetVisibilityLabel">GetVisibilityLabel</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#520"><abbr title="SWIFT_ReportSchedule::DeleteOnReport">DeleteOnReport</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#396"><abbr title="SWIFT_Report::DeleteOnCategory">DeleteOnCategory</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#50"><abbr title="SWIFT_ReportHistory::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#188"><abbr title="SWIFT_ReportHistory::Create">Create</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#261"><abbr title="SWIFT_ReportHistory::DeleteOnReport">DeleteOnReport</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1470"><abbr title="SWIFT_ReportBase::GetStaff">GetStaff</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#294"><abbr title="Controller_Category::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#74"><abbr title="SWIFT_Report::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#292"><abbr title="SWIFT_ReportHistory::GetTotalCount">GetTotalCount</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1508"><abbr title="SWIFT_ReportBase::Field_ProcessHTMLContents">Field_ProcessHTMLContents</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#53"><abbr title="SWIFT_ReportCategory::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#318"><abbr title="SWIFT_ReportHistory::RetrieveOnReport">RetrieveOnReport</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#52"><abbr title="SWIFT_ReportUsageLog::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#79"><abbr title="SWIFT_UnifiedSearch_reports::SearchReports">SearchReports</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#428"><abbr title="SWIFT_Report::GetVisibilityLabel">GetVisibilityLabel</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#254"><abbr title="SWIFT_ReportUsageLog::DeleteOnReport">DeleteOnReport</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1364"><abbr title="SWIFT_ReportBase::IsValidExportFormat">IsValidExportFormat</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#77"><abbr title="SWIFT_ReportSchedule::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#124"><abbr title="View_Category::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#415"><abbr title="SWIFT_ReportChartBase::RotateArray">RotateArray</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#90"><abbr title="SWIFT_ReportChartColumn::Render">Render</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#550"><abbr title="SWIFT_ReportExport::GenerateTitleCell">GenerateTitleCell</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#81"><abbr title="SWIFT_ReportChartArea::Render">Render</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#429"><abbr title="SWIFT_ReportChart::GetAxisContainer">GetAxisContainer</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#914"><abbr title="SWIFT_ReportRender::RenderTitleColumn">RenderTitleColumn</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#468"><abbr title="Controller_Report::InsertSubmit">InsertSubmit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#62"><abbr title="SWIFT_ReportChartArea::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#524"><abbr title="SWIFT_ReportChartBase::GetRGBFromHSL">GetRGBFromHSL</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#193"><abbr title="SWIFT_Report::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1569"><abbr title="SWIFT_ReportBase::Field_WriteTicketMaskID">Field_WriteTicketMaskID</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#135"><abbr title="SWIFT_SetupDatabase_reports::UpgradePost_4_01_586">UpgradePost_4_01_586</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1697"><abbr title="SWIFT_ReportBase::Field_WriteMessageMaskID">Field_WriteMessageMaskID</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#250"><abbr title="Controller_Report::Manage">Manage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#157"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_30_628">Upgrade_4_30_628</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#998"><abbr title="SWIFT_ReportExport::GetExportDateFormat">GetExportDateFormat</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#976"><abbr title="SWIFT_ReportExport::MergeColumns">MergeColumns</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#80"><abbr title="SWIFT_ReportUsageLog::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#911"><abbr title="SWIFT_ReportBase::BuildMatrixYMap">BuildMatrixYMap</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#479"><abbr title="SWIFT_ReportExport::StyleTitleCell">StyleTitleCell</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#367"><abbr title="SWIFT_ReportExport::CalculateWidth">CalculateWidth</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#78"><abbr title="SWIFT_ReportHistory::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#756"><abbr title="SWIFT_ReportBase::GetFilename">GetFilename</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#238"><abbr title="SWIFT_ReportExport::GetFile">GetFile</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#469"><abbr title="Controller_Schedule::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#169"><abbr title="SWIFT_ReportHistory::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#419"><abbr title="Controller_Schedule::GetRecurrenceTypeFromString">GetRecurrenceTypeFromString</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#171"><abbr title="SWIFT_ReportUsageLog::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#443"><abbr title="Controller_Report::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#56"><abbr title="SWIFT_ReportChartPie::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#959"><abbr title="SWIFT_ReportRender::GetFormat">GetFormat</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#269"><abbr title="Controller_Category::_RenderConfirmation">_RenderConfirmation</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportTreeRender.php.html#31"><abbr title="SWIFT_ReportTreeRender::Render">Render</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1633"><abbr title="SWIFT_ReportBase::Field_WriteChatMaskID">Field_WriteChatMaskID</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/UnifiedSearch/class.SWIFT_UnifiedSearch_reports.php.html#51"><abbr title="SWIFT_UnifiedSearch_reports::Search">Search</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#262"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_71_0000">Upgrade_4_71_0000</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#571"><abbr title="View_Report::RenderGrid">RenderGrid</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#81"><abbr title="SWIFT_ReportCategory::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#236"><abbr title="Controller_Category::Insert">Insert</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#741"><abbr title="View_Report::GetExportOptionsMenu">GetExportOptionsMenu</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#102"><abbr title="SWIFT_Report::ProcessUpdatePool">ProcessUpdatePool</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#176"><abbr title="SWIFT_ReportCategory::GetProperty">GetProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#198"><abbr title="SWIFT_ReportCategory::IsValidVisibilityType">IsValidVisibilityType</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsHourly.php.html#35"><abbr title="Controller_ReportsHourly::EmailReports">EmailReports</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="cron/class.Controller_ReportsMinute.php.html#33"><abbr title="Controller_ReportsMinute::EmailReports">EmailReports</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#151"><abbr title="Controller_Category::Manage">Manage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChart.php.html#416"><abbr title="SWIFT_ReportChart::GetDataType">GetDataType</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1450"><abbr title="SWIFT_ReportBase::RestoreSessionTimeZone">RestoreSessionTimeZone</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#343"><abbr title="Controller_Report::InsertDialog">InsertDialog</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#62"><abbr title="SWIFT_ReportChartLine::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="staff/class.View_Category.php.html#201"><abbr title="View_Category::GridRender">GridRender</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#708"><abbr title="View_Report::RenderInfoBox">RenderInfoBox</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#415"><abbr title="SWIFT_ReportSchedule::IsExecuting">IsExecuting</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#431"><abbr title="SWIFT_ReportSchedule::StartExecuting">StartExecuting</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#451"><abbr title="SWIFT_ReportSchedule::StopExecuting">StopExecuting</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#398"><abbr title="Controller_Schedule::IsValidRecurrenceType">IsValidRecurrenceType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.Controller_Schedule.php.html#60"><abbr title="Controller_Schedule::_LoadDisplayData">_LoadDisplayData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#135"><abbr title="Controller_Report::_LoadDisplayData">_LoadDisplayData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#610"><abbr title="SWIFT_ReportSchedule::RetrievePendingSchedules">RetrievePendingSchedules</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.View_Report.php.html#500"><abbr title="View_Report::Generate">Generate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#665"><abbr title="SWIFT_ReportSchedule::QuerySummaryList">QuerySummaryList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#110"><abbr title="Controller_Category::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.Controller_Category.php.html#131"><abbr title="Controller_Category::_LoadDisplayData">_LoadDisplayData</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="staff/class.Controller_Report.php.html#114"><abbr title="Controller_Report::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="config/class.SWIFT_App_reports.php.html#32"><abbr title="SWIFT_App_reports::Initialize">Initialize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#105"><abbr title="SWIFT_ReportSchedule::GetScheduleID">GetScheduleID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#276"><abbr title="SWIFT_ReportExport::InitializeDocument">InitializeDocument</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#277"><abbr title="SWIFT_ReportRender::SetDisplayValues">SetDisplayValues</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#162"><abbr title="SWIFT_ReportRender::DispatchHTML">DispatchHTML</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#100"><abbr title="SWIFT_ReportRender::GetOutput">GetOutput</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#1089"><abbr title="SWIFT_ReportExport::GetFormat">GetFormat</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#960"><abbr title="SWIFT_ReportExport::GetColumns">GetColumns</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#944"><abbr title="SWIFT_ReportExport::NextColumn">NextColumn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#926"><abbr title="SWIFT_ReportExport::ResetColumn">ResetColumn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#527"><abbr title="SWIFT_ReportExport::StyleStatementCell">StyleStatementCell</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#507"><abbr title="SWIFT_ReportExport::StyleGroupCell">StyleGroupCell</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#450"><abbr title="SWIFT_ReportExport::StyleCell">StyleCell</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#431"><abbr title="SWIFT_ReportExport::SetCellStyle">SetCellStyle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#410"><abbr title="SWIFT_ReportExport::GetCellStyle">GetCellStyle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#392"><abbr title="SWIFT_ReportExport::Generate">Generate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#351"><abbr title="SWIFT_ReportExport::IsWidthCalculated">IsWidthCalculated</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Export/class.SWIFT_ReportExport.php.html#179"><abbr title="SWIFT_ReportExport::Prepare">Prepare</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#503"><abbr title="SWIFT_ReportRender::AddChart">AddChart</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartPie.php.html#76"><abbr title="SWIFT_ReportChartPie::Render">Render</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartLine.php.html#40"><abbr title="SWIFT_ReportChartLine::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartColumn.php.html#40"><abbr title="SWIFT_ReportChartColumn::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#372"><abbr title="SWIFT_ReportChartBase::GetColorIdentifiers">GetColorIdentifiers</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#356"><abbr title="SWIFT_ReportChartBase::GetUniqueID">GetUniqueID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#341"><abbr title="SWIFT_ReportChartBase::GetOutput">GetOutput</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#323"><abbr title="SWIFT_ReportChartBase::AppendOutput">AppendOutput</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartBase.php.html#306"><abbr title="SWIFT_ReportChartBase::Render">Render</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Chart/class.SWIFT_ReportChartArea.php.html#40"><abbr title="SWIFT_ReportChartArea::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="console/class.Controller_Setup.php.html#54"><abbr title="Controller_Setup::Index">Index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="console/class.Controller_ReportSchedule.php.html#33"><abbr title="Controller_ReportSchedule::EmailReports">EmailReports</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#236"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_66_0_5800">Upgrade_4_66_0_5800</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#205"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_52_2153">Upgrade_4_52_2153</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="config/class.SWIFT_SetupDatabase_reports.php.html#184"><abbr title="SWIFT_SetupDatabase_reports::Upgrade_4_40_1148">Upgrade_4_40_1148</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#486"><abbr title="SWIFT_ReportRender::GetChartNotifications">GetChartNotifications</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#523"><abbr title="SWIFT_ReportRender::ResetCharts">ResetCharts</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#218"><abbr title="SWIFT_ReportUsageLog::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#292"><abbr title="SWIFT_ReportCategory::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#154"><abbr title="SWIFT_ReportUsageLog::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportUsageLog.php.html#102"><abbr title="SWIFT_ReportUsageLog::GetReportUsageLogID">GetReportUsageLogID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#241"><abbr title="SWIFT_ReportHistory::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#221"><abbr title="SWIFT_ReportHistory::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#152"><abbr title="SWIFT_ReportHistory::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_ReportHistory.php.html#100"><abbr title="SWIFT_ReportHistory::GetReportHistoryID">GetReportHistoryID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#493"><abbr title="SWIFT_Report::UpdateExecution">UpdateExecution</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#367"><abbr title="SWIFT_Report::DeleteList">DeleteList</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#347"><abbr title="SWIFT_Report::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#211"><abbr title="SWIFT_Report::IsValidVisibilityType">IsValidVisibilityType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#176"><abbr title="SWIFT_Report::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Report/class.SWIFT_Report.php.html#124"><abbr title="SWIFT_Report::GetReportID">GetReportID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#356"><abbr title="SWIFT_ReportCategory::RebuildCache">RebuildCache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#270"><abbr title="SWIFT_ReportCategory::Delete">Delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#544"><abbr title="SWIFT_ReportRender::Render">Render</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#619"><abbr title="SWIFT_ReportBase::SetOriginalAliasMap">SetOriginalAliasMap</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#561"><abbr title="SWIFT_ReportRender::AppendOutput">AppendOutput</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Render/class.SWIFT_ReportRender.php.html#943"><abbr title="SWIFT_ReportRender::GetExportFormatMap">GetExportFormatMap</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#543"><abbr title="SWIFT_ReportBase::SetHiddenFields">SetHiddenFields</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#562"><abbr title="SWIFT_ReportBase::SetCustomFields">SetCustomFields</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#581"><abbr title="SWIFT_ReportBase::SetAliasMap">SetAliasMap</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#600"><abbr title="SWIFT_ReportBase::SetFunctionMap">SetFunctionMap</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1603"><abbr title="SWIFT_ReportBase::Field_WriteTicketID">Field_WriteTicketID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#157"><abbr title="SWIFT_ReportCategory::GetDataStore">GetDataStore</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1376"><abbr title="SWIFT_ReportBase::IncrementRecordCount">IncrementRecordCount</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1394"><abbr title="SWIFT_ReportBase::GetRecordCount">GetRecordCount</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1489"><abbr title="SWIFT_ReportBase::GetFormat">GetFormat</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1667"><abbr title="SWIFT_ReportBase::Field_WriteChatID">Field_WriteChatID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Report/class.SWIFT_ReportBase.php.html#1732"><abbr title="SWIFT_ReportBase::Field_WriteMessageID">Field_WriteMessageID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Category/class.SWIFT_ReportCategory.php.html#105"><abbr title="SWIFT_ReportCategory::GetReportCategoryID">GetReportCategoryID</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Schedule/class.SWIFT_ReportSchedule.php.html#551"><abbr title="SWIFT_ReportSchedule::DeleteOnStaff">DeleteOnStaff</abbr></a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.26</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 7.5.7</a> at Sun Jun 23 1:22:47 CST 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([38,1,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([310,0,0,0,0,0,0,1,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"config\/class.SWIFT_App_reports.php.html#23\">SWIFT_App_reports<\/a>"],[0,26,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#25\">SWIFT_SetupDatabase_reports<\/a>"],[0,2,"<a href=\"console\/class.Controller_ReportSchedule.php.html#23\">Controller_ReportSchedule<\/a>"],[0,15,"<a href=\"console\/class.Controller_Setup.php.html#32\">Controller_Setup<\/a>"],[0,3,"<a href=\"cron\/class.Controller_ReportsHourly.php.html#25\">Controller_ReportsHourly<\/a>"],[0,3,"<a href=\"cron\/class.Controller_ReportsMinute.php.html#23\">Controller_ReportsMinute<\/a>"],[0,73,"<a href=\"library\/Chart\/class.SWIFT_ReportChart.php.html#27\">SWIFT_ReportChart<\/a>"],[0,9,"<a href=\"library\/Chart\/class.SWIFT_ReportChartArea.php.html#23\">SWIFT_ReportChartArea<\/a>"],[0,97,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#25\">SWIFT_ReportChartBase<\/a>"],[0,12,"<a href=\"library\/Chart\/class.SWIFT_ReportChartColumn.php.html#23\">SWIFT_ReportChartColumn<\/a>"],[0,10,"<a href=\"library\/Chart\/class.SWIFT_ReportChartLine.php.html#23\">SWIFT_ReportChartLine<\/a>"],[0,6,"<a href=\"library\/Chart\/class.SWIFT_ReportChartPie.php.html#23\">SWIFT_ReportChartPie<\/a>"],[0,131,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#28\">SWIFT_ReportExport<\/a>"],[0,14,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1100\">CellStyleMock<\/a>"],[0,17,"<a href=\"library\/Export\/class.SWIFT_ReportExportGroupedTabular.php.html#26\">SWIFT_ReportExportGroupedTabular<\/a>"],[0,81,"<a href=\"library\/Export\/class.SWIFT_ReportExportMatrix.php.html#28\">SWIFT_ReportExportMatrix<\/a>"],[0,31,"<a href=\"library\/Export\/class.SWIFT_ReportExportSummary.php.html#26\">SWIFT_ReportExportSummary<\/a>"],[0,13,"<a href=\"library\/Export\/class.SWIFT_ReportExportTabular.php.html#26\">SWIFT_ReportExportTabular<\/a>"],[0,168,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#28\">SWIFT_ReportRender<\/a>"],[0,30,"<a href=\"library\/Render\/class.SWIFT_ReportRenderGroupedTabular.php.html#26\">SWIFT_ReportRenderGroupedTabular<\/a>"],[0,86,"<a href=\"library\/Render\/class.SWIFT_ReportRenderMatrix.php.html#28\">SWIFT_ReportRenderMatrix<\/a>"],[0,35,"<a href=\"library\/Render\/class.SWIFT_ReportRenderSummary.php.html#26\">SWIFT_ReportRenderSummary<\/a>"],[0,17,"<a href=\"library\/Render\/class.SWIFT_ReportRenderTabular.php.html#26\">SWIFT_ReportRenderTabular<\/a>"],[0,263,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#32\">SWIFT_ReportBase<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportTreeRender.php.html#23\">SWIFT_ReportTreeRender<\/a>"],[0,8,"<a href=\"library\/Setup\/class.SWIFT_ReportSetup.php.html#25\">SWIFT_ReportSetup<\/a>"],[0,8,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_reports.php.html#26\">SWIFT_UnifiedSearch_reports<\/a>"],[0,50,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#27\">SWIFT_ReportCategory<\/a>"],[0,71,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#28\">SWIFT_Report<\/a>"],[0,44,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#26\">SWIFT_ReportHistory<\/a>"],[0,37,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#27\">SWIFT_ReportUsageLog<\/a>"],[2.8000000000000003,98,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#26\">SWIFT_ReportSchedule<\/a>"],[0,51,"<a href=\"staff\/class.Controller_Category.php.html#32\">Controller_Category<\/a>"],[0,6,"<a href=\"staff\/class.Controller_KQL.php.html#27\">Controller_KQL<\/a>"],[0,145,"<a href=\"staff\/class.Controller_Report.php.html#35\">Controller_Report<\/a>"],[0,77,"<a href=\"staff\/class.Controller_Schedule.php.html#34\">Controller_Schedule<\/a>"],[0,17,"<a href=\"staff\/class.View_Category.php.html#31\">View_Category<\/a>"],[0,59,"<a href=\"staff\/class.View_Report.php.html#33\">View_Report<\/a>"],[0,31,"<a href=\"staff\/class.View_Schedule.php.html#28\">View_Schedule<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"config\/class.SWIFT_App_reports.php.html#32\">SWIFT_App_reports::Initialize<\/a>"],[0,1,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#37\">SWIFT_SetupDatabase_reports::__construct<\/a>"],[0,1,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#48\">SWIFT_SetupDatabase_reports::LoadTables<\/a>"],[0,1,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#60\">SWIFT_SetupDatabase_reports::GetPageCount<\/a>"],[0,1,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#72\">SWIFT_SetupDatabase_reports::Install<\/a>"],[0,1,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#88\">SWIFT_SetupDatabase_reports::Uninstall<\/a>"],[0,6,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#102\">SWIFT_SetupDatabase_reports::UpgradePre_4_01_586<\/a>"],[0,3,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#135\">SWIFT_SetupDatabase_reports::UpgradePost_4_01_586<\/a>"],[0,3,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#157\">SWIFT_SetupDatabase_reports::Upgrade_4_30_628<\/a>"],[0,2,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#184\">SWIFT_SetupDatabase_reports::Upgrade_4_40_1148<\/a>"],[0,2,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#205\">SWIFT_SetupDatabase_reports::Upgrade_4_52_2153<\/a>"],[0,2,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#236\">SWIFT_SetupDatabase_reports::Upgrade_4_66_0_5800<\/a>"],[0,3,"<a href=\"config\/class.SWIFT_SetupDatabase_reports.php.html#262\">SWIFT_SetupDatabase_reports::Upgrade_4_71_0000<\/a>"],[0,2,"<a href=\"console\/class.Controller_ReportSchedule.php.html#33\">Controller_ReportSchedule::EmailReports<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#40\">Controller_Setup::__construct<\/a>"],[0,2,"<a href=\"console\/class.Controller_Setup.php.html#54\">Controller_Setup::Index<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#70\">Controller_Setup::_GetSetupObject<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#74\">Controller_Setup::_RunStep1<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#78\">Controller_Setup::_RunStep2<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#82\">Controller_Setup::_RunStep3<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#86\">Controller_Setup::_RunStep4<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#90\">Controller_Setup::_RunStep5<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#94\">Controller_Setup::_RunStep6<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#98\">Controller_Setup::_RunStep7<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#102\">Controller_Setup::_RunStep8<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#106\">Controller_Setup::Console<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#110\">Controller_Setup::ShowProgress<\/a>"],[0,1,"<a href=\"console\/class.Controller_Setup.php.html#114\">Controller_Setup::StepProcessor<\/a>"],[0,3,"<a href=\"cron\/class.Controller_ReportsHourly.php.html#35\">Controller_ReportsHourly::EmailReports<\/a>"],[0,3,"<a href=\"cron\/class.Controller_ReportsMinute.php.html#33\">Controller_ReportsMinute::EmailReports<\/a>"],[0,66,"<a href=\"library\/Chart\/class.SWIFT_ReportChart.php.html#69\">SWIFT_ReportChart::Process<\/a>"],[0,3,"<a href=\"library\/Chart\/class.SWIFT_ReportChart.php.html#416\">SWIFT_ReportChart::GetDataType<\/a>"],[0,4,"<a href=\"library\/Chart\/class.SWIFT_ReportChart.php.html#429\">SWIFT_ReportChart::GetAxisContainer<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartArea.php.html#40\">SWIFT_ReportChartArea::__construct<\/a>"],[0,3,"<a href=\"library\/Chart\/class.SWIFT_ReportChartArea.php.html#62\">SWIFT_ReportChartArea::GetColorIdentifiers<\/a>"],[0,4,"<a href=\"library\/Chart\/class.SWIFT_ReportChartArea.php.html#81\">SWIFT_ReportChartArea::Render<\/a>"],[0,23,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#127\">SWIFT_ReportChartBase::__construct<\/a>"],[0,19,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#242\">SWIFT_ReportChartBase::GetChartXML<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#306\">SWIFT_ReportChartBase::Render<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#323\">SWIFT_ReportChartBase::AppendOutput<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#341\">SWIFT_ReportChartBase::GetOutput<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#356\">SWIFT_ReportChartBase::GetUniqueID<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#372\">SWIFT_ReportChartBase::GetColorIdentifiers<\/a>"],[0,5,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#389\">SWIFT_ReportChartBase::SetColorPalette<\/a>"],[0,4,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#415\">SWIFT_ReportChartBase::RotateArray<\/a>"],[0,16,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#436\">SWIFT_ReportChartBase::InitializeColors<\/a>"],[0,6,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#497\">SWIFT_ReportChartBase::GetRGBFromHue<\/a>"],[0,3,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#524\">SWIFT_ReportChartBase::GetRGBFromHSL<\/a>"],[0,11,"<a href=\"library\/Chart\/class.SWIFT_ReportChartBase.php.html#560\">SWIFT_ReportChartBase::GeneratePalette<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartColumn.php.html#40\">SWIFT_ReportChartColumn::__construct<\/a>"],[0,6,"<a href=\"library\/Chart\/class.SWIFT_ReportChartColumn.php.html#62\">SWIFT_ReportChartColumn::GetColorIdentifiers<\/a>"],[0,4,"<a href=\"library\/Chart\/class.SWIFT_ReportChartColumn.php.html#90\">SWIFT_ReportChartColumn::Render<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartLine.php.html#40\">SWIFT_ReportChartLine::__construct<\/a>"],[0,3,"<a href=\"library\/Chart\/class.SWIFT_ReportChartLine.php.html#62\">SWIFT_ReportChartLine::GetColorIdentifiers<\/a>"],[0,5,"<a href=\"library\/Chart\/class.SWIFT_ReportChartLine.php.html#82\">SWIFT_ReportChartLine::Render<\/a>"],[0,1,"<a href=\"library\/Chart\/class.SWIFT_ReportChartPie.php.html#40\">SWIFT_ReportChartPie::__construct<\/a>"],[0,3,"<a href=\"library\/Chart\/class.SWIFT_ReportChartPie.php.html#56\">SWIFT_ReportChartPie::GetColorIdentifiers<\/a>"],[0,2,"<a href=\"library\/Chart\/class.SWIFT_ReportChartPie.php.html#76\">SWIFT_ReportChartPie::Render<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#90\">SWIFT_ReportExport::__construct<\/a>"],[0,7,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#112\">SWIFT_ReportExport::Process<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#179\">SWIFT_ReportExport::Prepare<\/a>"],[0,5,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#202\">SWIFT_ReportExport::DispatchFile<\/a>"],[0,3,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#238\">SWIFT_ReportExport::GetFile<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#276\">SWIFT_ReportExport::InitializeDocument<\/a>"],[0,6,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#306\">SWIFT_ReportExport::FinalizeDocument<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#351\">SWIFT_ReportExport::IsWidthCalculated<\/a>"],[0,3,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#367\">SWIFT_ReportExport::CalculateWidth<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#392\">SWIFT_ReportExport::Generate<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#410\">SWIFT_ReportExport::GetCellStyle<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#431\">SWIFT_ReportExport::SetCellStyle<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#450\">SWIFT_ReportExport::StyleCell<\/a>"],[0,3,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#479\">SWIFT_ReportExport::StyleTitleCell<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#507\">SWIFT_ReportExport::StyleGroupCell<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#527\">SWIFT_ReportExport::StyleStatementCell<\/a>"],[0,4,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#550\">SWIFT_ReportExport::GenerateTitleCell<\/a>"],[0,14,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#589\">SWIFT_ReportExport::SetCellValue<\/a>"],[0,36,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#681\">SWIFT_ReportExport::SetColumnValue<\/a>"],[0,9,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#866\">SWIFT_ReportExport::MergeAndStyleCells<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#926\">SWIFT_ReportExport::ResetColumn<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#944\">SWIFT_ReportExport::NextColumn<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#960\">SWIFT_ReportExport::GetColumns<\/a>"],[0,3,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#976\">SWIFT_ReportExport::MergeColumns<\/a>"],[0,3,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#998\">SWIFT_ReportExport::GetExportDateFormat<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1022\">SWIFT_ReportExport::GetExportElapsedFormat<\/a>"],[0,7,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1055\">SWIFT_ReportExport::GetExportFormatContainer<\/a>"],[0,2,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1089\">SWIFT_ReportExport::GetFormat<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1101\">CellStyleMock::getBorders<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1104\">CellStyleMock::getFont<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1107\">CellStyleMock::getFill<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1110\">CellStyleMock::getAlignment<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1113\">CellStyleMock::getNumberFormat<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1116\">CellStyleMock::getRight<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1119\">CellStyleMock::getLeft<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1122\">CellStyleMock::getTop<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1125\">CellStyleMock::getBottom<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1128\">CellStyleMock::setBorderStyle<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1131\">CellStyleMock::setColor<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1134\">CellStyleMock::getCellByColumnAndRow<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1137\">CellStyleMock::getHyperlink<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExport.php.html#1140\">CellStyleMock::setUrl<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExportGroupedTabular.php.html#37\">SWIFT_ReportExportGroupedTabular::__construct<\/a>"],[0,16,"<a href=\"library\/Export\/class.SWIFT_ReportExportGroupedTabular.php.html#49\">SWIFT_ReportExportGroupedTabular::Generate<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExportMatrix.php.html#42\">SWIFT_ReportExportMatrix::__construct<\/a>"],[0,9,"<a href=\"library\/Export\/class.SWIFT_ReportExportMatrix.php.html#54\">SWIFT_ReportExportMatrix::Generate<\/a>"],[0,41,"<a href=\"library\/Export\/class.SWIFT_ReportExportMatrix.php.html#187\">SWIFT_ReportExportMatrix::ExportXTitle<\/a>"],[0,30,"<a href=\"library\/Export\/class.SWIFT_ReportExportMatrix.php.html#398\">SWIFT_ReportExportMatrix::ExportBody<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExportSummary.php.html#37\">SWIFT_ReportExportSummary::__construct<\/a>"],[0,30,"<a href=\"library\/Export\/class.SWIFT_ReportExportSummary.php.html#49\">SWIFT_ReportExportSummary::Generate<\/a>"],[0,1,"<a href=\"library\/Export\/class.SWIFT_ReportExportTabular.php.html#37\">SWIFT_ReportExportTabular::__construct<\/a>"],[0,12,"<a href=\"library\/Export\/class.SWIFT_ReportExportTabular.php.html#49\">SWIFT_ReportExportTabular::Generate<\/a>"],[0,1,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#55\">SWIFT_ReportRender::__construct<\/a>"],[0,5,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#67\">SWIFT_ReportRender::GetChartsOutput<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#100\">SWIFT_ReportRender::GetOutput<\/a>"],[0,10,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#117\">SWIFT_ReportRender::DispatchCSV<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#162\">SWIFT_ReportRender::DispatchHTML<\/a>"],[0,7,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#204\">SWIFT_ReportRender::Process<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#277\">SWIFT_ReportRender::SetDisplayValues<\/a>"],[0,35,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#295\">SWIFT_ReportRender::GetCharts<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#486\">SWIFT_ReportRender::GetChartNotifications<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#503\">SWIFT_ReportRender::AddChart<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#523\">SWIFT_ReportRender::ResetCharts<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#544\">SWIFT_ReportRender::Render<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#561\">SWIFT_ReportRender::AppendOutput<\/a>"],[0,25,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#582\">SWIFT_ReportRender::GetParsedColumnValue<\/a>"],[0,33,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#681\">SWIFT_ReportRender::RenderColumnValue<\/a>"],[0,26,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#801\">SWIFT_ReportRender::ExportColumnValue<\/a>"],[0,1,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#899\">SWIFT_ReportRender::ProcessColumnValue<\/a>"],[0,4,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#914\">SWIFT_ReportRender::RenderTitleColumn<\/a>"],[0,2,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#943\">SWIFT_ReportRender::GetExportFormatMap<\/a>"],[0,3,"<a href=\"library\/Render\/class.SWIFT_ReportRender.php.html#959\">SWIFT_ReportRender::GetFormat<\/a>"],[0,1,"<a href=\"library\/Render\/class.SWIFT_ReportRenderGroupedTabular.php.html#37\">SWIFT_ReportRenderGroupedTabular::__construct<\/a>"],[0,29,"<a href=\"library\/Render\/class.SWIFT_ReportRenderGroupedTabular.php.html#49\">SWIFT_ReportRenderGroupedTabular::Render<\/a>"],[0,1,"<a href=\"library\/Render\/class.SWIFT_ReportRenderMatrix.php.html#57\">SWIFT_ReportRenderMatrix::__construct<\/a>"],[0,15,"<a href=\"library\/Render\/class.SWIFT_ReportRenderMatrix.php.html#69\">SWIFT_ReportRenderMatrix::Render<\/a>"],[0,43,"<a href=\"library\/Render\/class.SWIFT_ReportRenderMatrix.php.html#257\">SWIFT_ReportRenderMatrix::RenderXTitle<\/a>"],[0,27,"<a href=\"library\/Render\/class.SWIFT_ReportRenderMatrix.php.html#474\">SWIFT_ReportRenderMatrix::RenderBody<\/a>"],[0,1,"<a href=\"library\/Render\/class.SWIFT_ReportRenderSummary.php.html#37\">SWIFT_ReportRenderSummary::__construct<\/a>"],[0,34,"<a href=\"library\/Render\/class.SWIFT_ReportRenderSummary.php.html#49\">SWIFT_ReportRenderSummary::Render<\/a>"],[0,1,"<a href=\"library\/Render\/class.SWIFT_ReportRenderTabular.php.html#37\">SWIFT_ReportRenderTabular::__construct<\/a>"],[0,16,"<a href=\"library\/Render\/class.SWIFT_ReportRenderTabular.php.html#49\">SWIFT_ReportRenderTabular::Render<\/a>"],[0,5,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#108\">SWIFT_ReportBase::__construct<\/a>"],[0,15,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#139\">SWIFT_ReportBase::ExecuteSQL<\/a>"],[0,26,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#206\">SWIFT_ReportBase::ProcessSQLResultTitle<\/a>"],[0,28,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#335\">SWIFT_ReportBase::ProcessFieldValues<\/a>"],[0,20,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#455\">SWIFT_ReportBase::ConvertColumnValue<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#543\">SWIFT_ReportBase::SetHiddenFields<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#562\">SWIFT_ReportBase::SetCustomFields<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#581\">SWIFT_ReportBase::SetAliasMap<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#600\">SWIFT_ReportBase::SetFunctionMap<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#619\">SWIFT_ReportBase::SetOriginalAliasMap<\/a>"],[0,11,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#637\">SWIFT_ReportBase::BuildSummaryCountMap<\/a>"],[0,6,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#703\">SWIFT_ReportBase::SortSummarySQLResult<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#756\">SWIFT_ReportBase::GetFilename<\/a>"],[0,27,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#782\">SWIFT_ReportBase::LoadMatrixData<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#911\">SWIFT_ReportBase::BuildMatrixYMap<\/a>"],[0,11,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#948\">SWIFT_ReportBase::BuildMatrixYGrid<\/a>"],[0,14,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1043\">SWIFT_ReportBase::BuildMatrixXGrid<\/a>"],[0,8,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1143\">SWIFT_ReportBase::CleanupMatrixXGrid<\/a>"],[0,6,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1184\">SWIFT_ReportBase::RecountMatrixXGrid<\/a>"],[0,7,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1231\">SWIFT_ReportBase::RebuildMatrixCountForYGrid<\/a>"],[0,8,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1278\">SWIFT_ReportBase::CleanupMatrixYGrid<\/a>"],[0,6,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1319\">SWIFT_ReportBase::RecountMatrixYGrid<\/a>"],[0,4,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1364\">SWIFT_ReportBase::IsValidExportFormat<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1376\">SWIFT_ReportBase::IncrementRecordCount<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1394\">SWIFT_ReportBase::GetRecordCount<\/a>"],[0,7,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1410\">SWIFT_ReportBase::SetSessionTimeZone<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1450\">SWIFT_ReportBase::RestoreSessionTimeZone<\/a>"],[0,4,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1470\">SWIFT_ReportBase::GetStaff<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1489\">SWIFT_ReportBase::GetFormat<\/a>"],[0,4,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1508\">SWIFT_ReportBase::Field_ProcessHTMLContents<\/a>"],[0,6,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1531\">SWIFT_ReportBase::WriteFieldURL<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1569\">SWIFT_ReportBase::Field_WriteTicketMaskID<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1603\">SWIFT_ReportBase::Field_WriteTicketID<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1633\">SWIFT_ReportBase::Field_WriteChatMaskID<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1667\">SWIFT_ReportBase::Field_WriteChatID<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1697\">SWIFT_ReportBase::Field_WriteMessageMaskID<\/a>"],[0,2,"<a href=\"library\/Report\/class.SWIFT_ReportBase.php.html#1732\">SWIFT_ReportBase::Field_WriteMessageID<\/a>"],[0,3,"<a href=\"library\/Report\/class.SWIFT_ReportTreeRender.php.html#31\">SWIFT_ReportTreeRender::Render<\/a>"],[0,8,"<a href=\"library\/Setup\/class.SWIFT_ReportSetup.php.html#33\">SWIFT_ReportSetup::Install<\/a>"],[0,1,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_reports.php.html#39\">SWIFT_UnifiedSearch_reports::__construct<\/a>"],[0,3,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_reports.php.html#51\">SWIFT_UnifiedSearch_reports::Search<\/a>"],[0,4,"<a href=\"library\/UnifiedSearch\/class.SWIFT_UnifiedSearch_reports.php.html#79\">SWIFT_UnifiedSearch_reports::SearchReports<\/a>"],[0,4,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#53\">SWIFT_ReportCategory::__construct<\/a>"],[0,1,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#67\">SWIFT_ReportCategory::__destruct<\/a>"],[0,3,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#81\">SWIFT_ReportCategory::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#105\">SWIFT_ReportCategory::GetReportCategoryID<\/a>"],[0,9,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#122\">SWIFT_ReportCategory::LoadData<\/a>"],[0,2,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#157\">SWIFT_ReportCategory::GetDataStore<\/a>"],[0,3,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#176\">SWIFT_ReportCategory::GetProperty<\/a>"],[0,3,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#198\">SWIFT_ReportCategory::IsValidVisibilityType<\/a>"],[0,6,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#213\">SWIFT_ReportCategory::Create<\/a>"],[0,6,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#243\">SWIFT_ReportCategory::Update<\/a>"],[0,2,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#270\">SWIFT_ReportCategory::Delete<\/a>"],[0,2,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#292\">SWIFT_ReportCategory::DeleteList<\/a>"],[0,5,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#317\">SWIFT_ReportCategory::GetVisibilityLabel<\/a>"],[0,2,"<a href=\"models\/Category\/class.SWIFT_ReportCategory.php.html#356\">SWIFT_ReportCategory::RebuildCache<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#74\">SWIFT_Report::__construct<\/a>"],[0,1,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#88\">SWIFT_Report::__destruct<\/a>"],[0,3,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#102\">SWIFT_Report::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#124\">SWIFT_Report::GetReportID<\/a>"],[0,9,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#141\">SWIFT_Report::LoadData<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#176\">SWIFT_Report::GetDataStore<\/a>"],[0,3,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#193\">SWIFT_Report::GetProperty<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#211\">SWIFT_Report::IsValidVisibilityType<\/a>"],[0,10,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#229\">SWIFT_Report::Create<\/a>"],[0,7,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#270\">SWIFT_Report::Update<\/a>"],[0,9,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#306\">SWIFT_Report::UpdateProperties<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#347\">SWIFT_Report::Delete<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#367\">SWIFT_Report::DeleteList<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#396\">SWIFT_Report::DeleteOnCategory<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#428\">SWIFT_Report::GetVisibilityLabel<\/a>"],[0,5,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#460\">SWIFT_Report::GetBaseTableList<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_Report.php.html#493\">SWIFT_Report::UpdateExecution<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#50\">SWIFT_ReportHistory::__construct<\/a>"],[0,1,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#64\">SWIFT_ReportHistory::__destruct<\/a>"],[0,3,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#78\">SWIFT_ReportHistory::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#100\">SWIFT_ReportHistory::GetReportHistoryID<\/a>"],[0,9,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#117\">SWIFT_ReportHistory::LoadData<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#152\">SWIFT_ReportHistory::GetDataStore<\/a>"],[0,3,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#169\">SWIFT_ReportHistory::GetProperty<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#188\">SWIFT_ReportHistory::Create<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#221\">SWIFT_ReportHistory::Delete<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#241\">SWIFT_ReportHistory::DeleteList<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#261\">SWIFT_ReportHistory::DeleteOnReport<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#292\">SWIFT_ReportHistory::GetTotalCount<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportHistory.php.html#318\">SWIFT_ReportHistory::RetrieveOnReport<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#52\">SWIFT_ReportUsageLog::__construct<\/a>"],[0,1,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#66\">SWIFT_ReportUsageLog::__destruct<\/a>"],[0,3,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#80\">SWIFT_ReportUsageLog::ProcessUpdatePool<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#102\">SWIFT_ReportUsageLog::GetReportUsageLogID<\/a>"],[0,9,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#119\">SWIFT_ReportUsageLog::LoadData<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#154\">SWIFT_ReportUsageLog::GetDataStore<\/a>"],[0,3,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#171\">SWIFT_ReportUsageLog::GetProperty<\/a>"],[0,6,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#192\">SWIFT_ReportUsageLog::Create<\/a>"],[0,2,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#218\">SWIFT_ReportUsageLog::Delete<\/a>"],[0,1,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#238\">SWIFT_ReportUsageLog::DeleteList<\/a>"],[0,4,"<a href=\"models\/Report\/class.SWIFT_ReportUsageLog.php.html#254\">SWIFT_ReportUsageLog::DeleteOnReport<\/a>"],[0,4,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#77\">SWIFT_ReportSchedule::__construct<\/a>"],[0,1,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#91\">SWIFT_ReportSchedule::__destruct<\/a>"],[0,2,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#105\">SWIFT_ReportSchedule::GetScheduleID<\/a>"],[0,10,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#126\">SWIFT_ReportSchedule::Update<\/a>"],[0,26,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#158\">SWIFT_ReportSchedule::Execute<\/a>"],[0,12,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#342\">SWIFT_ReportSchedule::ReSchedule<\/a>"],[0,2,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#415\">SWIFT_ReportSchedule::IsExecuting<\/a>"],[0,2,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#431\">SWIFT_ReportSchedule::StartExecuting<\/a>"],[0,2,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#451\">SWIFT_ReportSchedule::StopExecuting<\/a>"],[0,11,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#477\">SWIFT_ReportSchedule::Create<\/a>"],[0,4,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#520\">SWIFT_ReportSchedule::DeleteOnReport<\/a>"],[63.63636363636363,4,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#551\">SWIFT_ReportSchedule::DeleteOnStaff<\/a>"],[0,6,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#584\">SWIFT_ReportSchedule::RetrieveOnReportAndStaff<\/a>"],[0,2,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#610\">SWIFT_ReportSchedule::RetrievePendingSchedules<\/a>"],[0,6,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#631\">SWIFT_ReportSchedule::ExecutePendingSchedules<\/a>"],[0,2,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#665\">SWIFT_ReportSchedule::QuerySummaryList<\/a>"],[0,1,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#689\">SWIFT_ReportSchedule::GetSupportedRecurrenceTypes<\/a>"],[0,1,"<a href=\"models\/Schedule\/class.SWIFT_ReportSchedule.php.html#701\">SWIFT_ReportSchedule::IsValidRecurrenceType<\/a>"],[0,1,"<a href=\"staff\/class.Controller_Category.php.html#43\">Controller_Category::__construct<\/a>"],[0,10,"<a href=\"staff\/class.Controller_Category.php.html#60\">Controller_Category::DeleteList<\/a>"],[0,2,"<a href=\"staff\/class.Controller_Category.php.html#110\">Controller_Category::Delete<\/a>"],[0,2,"<a href=\"staff\/class.Controller_Category.php.html#131\">Controller_Category::_LoadDisplayData<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Category.php.html#151\">Controller_Category::Manage<\/a>"],[0,10,"<a href=\"staff\/class.Controller_Category.php.html#186\">Controller_Category::RunChecks<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Category.php.html#236\">Controller_Category::Insert<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Category.php.html#269\">Controller_Category::_RenderConfirmation<\/a>"],[0,4,"<a href=\"staff\/class.Controller_Category.php.html#294\">Controller_Category::InsertSubmit<\/a>"],[0,6,"<a href=\"staff\/class.Controller_Category.php.html#335\">Controller_Category::Edit<\/a>"],[0,7,"<a href=\"staff\/class.Controller_Category.php.html#376\">Controller_Category::EditSubmit<\/a>"],[0,6,"<a href=\"staff\/class.Controller_KQL.php.html#37\">Controller_KQL::FetchKQLJSON<\/a>"],[0,1,"<a href=\"staff\/class.Controller_Report.php.html#46\">Controller_Report::__construct<\/a>"],[0,8,"<a href=\"staff\/class.Controller_Report.php.html#62\">Controller_Report::DeleteList<\/a>"],[0,2,"<a href=\"staff\/class.Controller_Report.php.html#114\">Controller_Report::Delete<\/a>"],[0,2,"<a href=\"staff\/class.Controller_Report.php.html#135\">Controller_Report::_LoadDisplayData<\/a>"],[0,15,"<a href=\"staff\/class.Controller_Report.php.html#156\">Controller_Report::QuickFilter<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Report.php.html#250\">Controller_Report::Manage<\/a>"],[0,11,"<a href=\"staff\/class.Controller_Report.php.html#284\">Controller_Report::RunChecks<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Report.php.html#343\">Controller_Report::InsertDialog<\/a>"],[0,10,"<a href=\"staff\/class.Controller_Report.php.html#375\">Controller_Report::Insert<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Report.php.html#443\">Controller_Report::_RenderConfirmation<\/a>"],[0,4,"<a href=\"staff\/class.Controller_Report.php.html#468\">Controller_Report::InsertSubmit<\/a>"],[0,11,"<a href=\"staff\/class.Controller_Report.php.html#511\">Controller_Report::Edit<\/a>"],[0,11,"<a href=\"staff\/class.Controller_Report.php.html#575\">Controller_Report::EditSubmit<\/a>"],[0,6,"<a href=\"staff\/class.Controller_Report.php.html#648\">Controller_Report::PropertiesDialog<\/a>"],[0,10,"<a href=\"staff\/class.Controller_Report.php.html#689\">Controller_Report::PropertiesSubmit<\/a>"],[0,13,"<a href=\"staff\/class.Controller_Report.php.html#741\">Controller_Report::Generate<\/a>"],[0,16,"<a href=\"staff\/class.Controller_Report.php.html#838\">Controller_Report::Export<\/a>"],[0,10,"<a href=\"staff\/class.Controller_Report.php.html#973\">Controller_Report::GenerateSubmit<\/a>"],[0,6,"<a href=\"staff\/class.Controller_Report.php.html#1024\">Controller_Report::PrintReport<\/a>"],[0,1,"<a href=\"staff\/class.Controller_Schedule.php.html#45\">Controller_Schedule::__construct<\/a>"],[0,2,"<a href=\"staff\/class.Controller_Schedule.php.html#60\">Controller_Schedule::_LoadDisplayData<\/a>"],[0,5,"<a href=\"staff\/class.Controller_Schedule.php.html#81\">Controller_Schedule::Manage<\/a>"],[0,12,"<a href=\"staff\/class.Controller_Schedule.php.html#116\">Controller_Schedule::Dialog<\/a>"],[0,13,"<a href=\"staff\/class.Controller_Schedule.php.html#171\">Controller_Schedule::Submit<\/a>"],[0,7,"<a href=\"staff\/class.Controller_Schedule.php.html#252\">Controller_Schedule::DeleteList<\/a>"],[0,6,"<a href=\"staff\/class.Controller_Schedule.php.html#295\">Controller_Schedule::Delete<\/a>"],[0,18,"<a href=\"staff\/class.Controller_Schedule.php.html#330\">Controller_Schedule::RunChecks<\/a>"],[0,2,"<a href=\"staff\/class.Controller_Schedule.php.html#398\">Controller_Schedule::IsValidRecurrenceType<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Schedule.php.html#419\">Controller_Schedule::GetRecurrenceTypeFromString<\/a>"],[0,5,"<a href=\"staff\/class.Controller_Schedule.php.html#441\">Controller_Schedule::_CheckPOSTEmailContainer<\/a>"],[0,3,"<a href=\"staff\/class.Controller_Schedule.php.html#469\">Controller_Schedule::_RenderConfirmation<\/a>"],[0,11,"<a href=\"staff\/class.View_Category.php.html#43\">View_Category::Render<\/a>"],[0,4,"<a href=\"staff\/class.View_Category.php.html#124\">View_Category::RenderGrid<\/a>"],[0,2,"<a href=\"staff\/class.View_Category.php.html#201\">View_Category::GridRender<\/a>"],[0,9,"<a href=\"staff\/class.View_Report.php.html#45\">View_Report::RenderDialog<\/a>"],[0,9,"<a href=\"staff\/class.View_Report.php.html#167\">View_Report::RenderPropertiesDialog<\/a>"],[0,15,"<a href=\"staff\/class.View_Report.php.html#279\">View_Report::Render<\/a>"],[0,2,"<a href=\"staff\/class.View_Report.php.html#500\">View_Report::Generate<\/a>"],[0,3,"<a href=\"staff\/class.View_Report.php.html#571\">View_Report::RenderGrid<\/a>"],[0,16,"<a href=\"staff\/class.View_Report.php.html#647\">View_Report::GridRender<\/a>"],[0,2,"<a href=\"staff\/class.View_Report.php.html#708\">View_Report::RenderInfoBox<\/a>"],[0,3,"<a href=\"staff\/class.View_Report.php.html#741\">View_Report::GetExportOptionsMenu<\/a>"],[0,12,"<a href=\"staff\/class.View_Schedule.php.html#37\">View_Schedule::RenderReport<\/a>"],[0,19,"<a href=\"staff\/class.View_Schedule.php.html#163\">View_Schedule::RenderScheduleDialog<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
