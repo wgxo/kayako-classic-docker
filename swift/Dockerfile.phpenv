@@ -180,9 +180,12 @@ ENV PHPENV_ROOT /home/.phpenv
 RUN apt-get install -y libbz2-dev libmcrypt-dev libpng-dev libc-client-dev libkrb5-dev libzip-dev \
 		libreadline-dev libxpm4 libxpm-dev libjpeg-dev libfreetype6-dev libtidy-dev libxslt1-dev
 
-RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.1.26
+# required by phpenv builds from git
+RUN apt-get install -y bison
 
-RUN phpenv global 7.1.26 && phpenv rehash
+RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.1.30
+
+RUN phpenv global 7.1 && phpenv rehash
 
 # Install pear, pecl, xdebug and uopz
 RUN curl -Ls -o /tmp/pear.phar http://pear.php.net/install-pear-nozlib.phar && php /tmp/pear.phar
@@ -194,58 +197,76 @@ RUN pecl -q install xdebug uopz
 
 # Configure PHP settings
 RUN sed -i '/extension="xdebug.so"/d' $(php-config --prefix)/etc/php.ini
-RUN perl -pi -e 's[;(date.timezone =).*][\1 "UTC"]' $(php-config --prefix)/etc/php.ini
-RUN perl -pi -e 's[memory_limit = 128M][memory_limit = -1]' $(php-config --prefix)/etc/php.ini
-# disable sendmail during tests
-RUN perl -pi -e "s[^.*sendmail_path.*$][sendmail_path = /bin/false]" $(php-config --prefix)/etc/php.ini
-
-
-RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.2.19
-
-RUN phpenv global 7.2.19 && phpenv rehash
-
-# Install pear, pecl and uopz
-RUN curl -Ls -o /tmp/pear.phar http://pear.php.net/install-pear-nozlib.phar && php /tmp/pear.phar
-RUN phpenv rehash
-RUN pecl config-set php_ini $(php-config --prefix)/etc/php.ini && \
-    pear config-set php_ini $(php-config --prefix)/etc/php.ini
-RUN pecl channel-update pecl.php.net
-RUN pecl -q install uopz 
-
-# Configure PHP settings
-RUN sed -i '/extension="xdebug.so"/d' $(php-config --prefix)/etc/php.ini
-RUN perl -pi -e 's[;(date.timezone =).*][\1 "UTC"]' $(php-config --prefix)/etc/php.ini
-RUN perl -pi -e 's[memory_limit = 128M][memory_limit = -1]' $(php-config --prefix)/etc/php.ini
-# disable sendmail during tests
-RUN perl -pi -e "s[^.*sendmail_path.*$][sendmail_path = /bin/false]" $(php-config --prefix)/etc/php.ini
-
-
-RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.3.6
-
-RUN phpenv global 7.3.6 && phpenv rehash
-
-# Install pear, pecl and uopz
-RUN curl -Ls -o /tmp/pear.phar http://pear.php.net/install-pear-nozlib.phar && php /tmp/pear.phar
-RUN phpenv rehash
-RUN pecl config-set php_ini $(php-config --prefix)/etc/php.ini && \
-    pear config-set php_ini $(php-config --prefix)/etc/php.ini
-RUN pecl channel-update pecl.php.net
-RUN pecl -q install uopz 
-
-# Configure PHP settings
-RUN sed -i '/extension="xdebug.so"/d' $(php-config --prefix)/etc/php.ini
 RUN perl -pi -e 's[;(?=extension=imap)][]' $(php-config --prefix)/etc/php.ini
 RUN perl -pi -e 's[;(date.timezone =).*][\1 "UTC"]' $(php-config --prefix)/etc/php.ini
 RUN perl -pi -e 's[memory_limit = 128M][memory_limit = -1]' $(php-config --prefix)/etc/php.ini
 # disable sendmail during tests
 RUN perl -pi -e "s[^.*sendmail_path.*$][sendmail_path = /bin/false]" $(php-config --prefix)/etc/php.ini
 
-# Set default PHP version
+
+RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.2.20
+
 RUN phpenv global 7.2 && phpenv rehash
+
+# Install pear, pecl and uopz
+RUN curl -Ls -o /tmp/pear.phar http://pear.php.net/install-pear-nozlib.phar && php /tmp/pear.phar
+RUN phpenv rehash
+RUN pecl config-set php_ini $(php-config --prefix)/etc/php.ini && \
+    pear config-set php_ini $(php-config --prefix)/etc/php.ini
+RUN pecl channel-update pecl.php.net
+RUN pecl -q install uopz 
+
+# Configure PHP settings
+RUN sed -i '/extension="xdebug.so"/d' $(php-config --prefix)/etc/php.ini
 RUN perl -pi -e 's[;(?=extension=imap)][]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[;(date.timezone =).*][\1 "UTC"]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[memory_limit = 128M][memory_limit = -1]' $(php-config --prefix)/etc/php.ini
+# disable sendmail during tests
+RUN perl -pi -e "s[^.*sendmail_path.*$][sendmail_path = /bin/false]" $(php-config --prefix)/etc/php.ini
+
+# required by php 7.4
+RUN apt-get install -y libonig-dev
+
+RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.4snapshot
+
+RUN phpenv global 7.4snapshot && phpenv rehash
+
+# Install pear, pecl and uopz
+RUN curl -Ls -o /tmp/pear.phar http://pear.php.net/install-pear-nozlib.phar && php /tmp/pear.phar
+RUN phpenv rehash
+RUN pecl config-set php_ini $(php-config --prefix)/etc/php.ini && \
+    pear config-set php_ini $(php-config --prefix)/etc/php.ini
+RUN pecl channel-update pecl.php.net
+RUN pecl -q install uopz 
+
+# Configure PHP settings
+RUN sed -i '/extension="xdebug.so"/d' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[;(?=extension=imap)][]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[;(date.timezone =).*][\1 "UTC"]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[memory_limit = 128M][memory_limit = -1]' $(php-config --prefix)/etc/php.ini
+# disable sendmail during tests
+RUN perl -pi -e "s[^.*sendmail_path.*$][sendmail_path = /bin/false]" $(php-config --prefix)/etc/php.ini
+
+
+RUN PHP_BUILD_CONFIGURE_OPTS="--with-openssl --enable-debug --with-kerberos --with-imap=shared --with-imap-ssl=/usr --with-zip --with-gd --with-pdo-mysql --with-simplexml --with-jpeg-dir --with-freetype-dir --with-apxs2 --disable-cgi" phpenv install --verbose 7.3.7
 
 RUN phpenv global 7.3 && phpenv rehash
+
+# Install pear, pecl and uopz
+RUN curl -Ls -o /tmp/pear.phar http://pear.php.net/install-pear-nozlib.phar && php /tmp/pear.phar
+RUN phpenv rehash
+RUN pecl config-set php_ini $(php-config --prefix)/etc/php.ini && \
+    pear config-set php_ini $(php-config --prefix)/etc/php.ini
+RUN pecl channel-update pecl.php.net
+RUN pecl -q install uopz 
+
+# Configure PHP settings
+RUN sed -i '/extension="xdebug.so"/d' $(php-config --prefix)/etc/php.ini
 RUN perl -pi -e 's[;(?=extension=imap)][]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[;(date.timezone =).*][\1 "UTC"]' $(php-config --prefix)/etc/php.ini
+RUN perl -pi -e 's[memory_limit = 128M][memory_limit = -1]' $(php-config --prefix)/etc/php.ini
+# disable sendmail during tests
+RUN perl -pi -e "s[^.*sendmail_path.*$][sendmail_path = /bin/false]" $(php-config --prefix)/etc/php.ini
 
 
 # Install composer
