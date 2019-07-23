@@ -12,7 +12,7 @@ WEBHOST="faster.xo.local"
 
 sh build.sh 1
 
-docker-compose exec swift bash -c "composer install"
+docker-compose exec swift bash -c "XDEBUG_CONFIG=0 composer install"
 
 sudo rm -rf "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
 mkdir "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
@@ -26,4 +26,4 @@ WEBHOST=`echo ${WEBHOST} | perl -lpe 's/([^A-Za-z0-9])/sprintf("%%%02X", ord($1)
 
 [ $# -gt 0 -a "$1" = "-f" ] && mv ${WORKSPACE}/trunk/setup.bak ${WORKSPACE}/trunk/setup >/dev/null 2>&1
 
-[ -d ${WORKSPACE}/trunk/setup.bak ] || docker-compose exec swift bash -c "mysqladmin drop -f swift; mysqladmin create swift; cd setup; XDEBUG_CONFIG=0 php console.setup.php Trilogy \"http%3A%2F%2F${WEBHOST}%2F\" Kayako Admin admin admin \"${EMAIL}\"; cd ..; [ -f __swift/cache/SWIFT_Loader.cache ] && mv setup setup.bak"
+[ -d ${WORKSPACE}/trunk/setup.bak ] || docker-compose exec swift bash -c "mysqladmin drop -f swift; mysqladmin create swift; su - wgarcia -c \"cd setup;XDEBUG_CONFIG=0 php console.setup.php Trilogy http%3A%2F%2F${WEBHOST}%2F Kayako Admin admin admin ${EMAIL}; mv ~/setup ~/setup.bak\""

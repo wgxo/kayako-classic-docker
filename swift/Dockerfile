@@ -50,7 +50,7 @@ RUN echo "alias xdebug-off=\"php -i|grep xdebug.ini|sed 's/.$//'|xargs rm\"" >> 
 
 ARG USER
 
-RUN useradd -g www-data $USER
+RUN useradd -g www-data -d /var/www/html $USER
  
 # Map SWIFT trunk directory to this volume
 VOLUME /var/www/html
