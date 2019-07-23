@@ -6,6 +6,7 @@ WORKSPACE="./swift/kayako-SWIFT"
 ### REPLACE YOUR EMAIL ADDRESS AND WEBHOST BELOW: ###
 #####################################################
 EMAIL="werner.garcia+kcadmin@crossover.com"
+# This is the host of the URL to access Kayako from a web browser: http://faster.xo.local/
 WEBHOST="faster.xo.local"
 
 [ -d ${WORKSPACE}/trunk ] || git clone git@github.com:trilogy-group/kayako-SWIFT ${WORKSPACE}
