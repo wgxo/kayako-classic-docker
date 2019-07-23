@@ -8,9 +8,9 @@ services:
       dockerfile: Dockerfile
       context: ./swift
     extra_hosts:
-      kayako-dev: ${GWIP}
-      swift.kayako-dev.local: ${GWIP}
-      mail.kayako-dev.local: ${GWIP}
+      faster: ${GWIP}
+      faster.xo.local: ${GWIP}
+      mail.xo.local: ${GWIP}
     ports:
      - "80:80"
      - "443:443"
