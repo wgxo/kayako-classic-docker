@@ -55,25 +55,6 @@ fi
 
 echo "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=$HOSTIP remote_enable=1 remote_autostart=1" >> .env
 
-##### Swift stuff #####
-
-if [ ! -d $DIR ]; then
-		echo "$DIR does not exist!"
-		exit 1
-fi
-
-DEST=$(readlink -f $DIR)
-
-printf "CODE_PATH=%s\n" $DEST >> .env
-
-
-##### Vendor stuff #####
-for d in ../vendor/*; do
-		APP=$(basename $d | sed 's/-.*$//' | awk '{print toupper($0)}' )
-		DEST=$(readlink -f $d)
-		printf "%s=%s\n" $APP $DEST >> .env
-done
-
 
 ##### Build it! #####
 if [ $# -gt 0 ]; then
