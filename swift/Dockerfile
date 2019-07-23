@@ -56,3 +56,4 @@ RUN useradd -g www-data -d /var/www/html $USER
 VOLUME /var/www/html
 WORKDIR /var/www/html
 
+RUN umask 002
