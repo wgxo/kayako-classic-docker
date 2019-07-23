@@ -4,9 +4,8 @@ volumes:
 
 services:
   swift:
-    container_name: swiftnew
     build:
-      dockerfile: Dockerfile.phpenv
+      dockerfile: Dockerfile
       context: ./swift
     extra_hosts:
       kayako-dev: ${GWIP}
@@ -16,12 +15,7 @@ services:
      - "80:80"
      - "443:443"
     volumes:
-     - ${CODE_PATH}:/home/swift
-     - /home/wgarcia/kayako/classic/vendor/adminlte:/var/www/html/adminlte
-     - /home/wgarcia/kayako/classic/vendor/samlidp:/var/www/html/samlidp
-     - /home/wgarcia/kayako/classic/vendor/magento-1.9.2.4:/var/www/html/magento1
-     - /home/wgarcia/kayako/classic/vendor/magento-2.2.7:/var/www/html/magento2
-     - /home/wgarcia/kayako:/home/kayako
+     - ./swift/kayako-SWIFT/trunk:/var/www/html
     environment:
       PHP_IDE_CONFIG: "serverName=default"
       XDEBUG_CONFIG: "${XDEBUG_CONFIG}"
@@ -33,7 +27,6 @@ services:
 
   mysql:
     image: "mysql:5.7"
-    container_name: mysql
     volumes:
      - database:/var/lib/mysql
      - ./mysql/config:/etc/mysql/conf.d
