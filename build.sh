@@ -22,6 +22,7 @@ COLS=`tput cols`
 echo "COMPOSE_PROJECT_NAME=classic" > .env
 echo "LINES=$LINES" >> .env
 echo "COLS=$COLS" >> .env
+echo "USER=$USER" >> .env
 
 ##### MySQL Stuff #####
 perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \

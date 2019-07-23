@@ -1,15 +1,29 @@
-#!/bin/sh
+#!/bin/bash
 
 WORKSPACE="./swift/kayako-SWIFT"
 
+#####################################################
+### REPLACE YOUR EMAIL ADDRESS AND WEBHOST BELOW: ###
+#####################################################
+EMAIL="werner.garcia+kcadmin@crossover.com"
+WEBHOST="faster.xo.local"
+
 [ -d ${WORKSPACE}/trunk ] || git clone git@github.com:trilogy-group/kayako-SWIFT ${WORKSPACE}
 
-sh build.sh
+sh build.sh 1
 
 docker-compose exec swift bash -c "composer install"
 
 sudo rm -rf "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
-sudo mkdir "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
-sudo chmod 777 -R "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
+mkdir "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
+chmod 777 -R "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
+sudo chgrp -R www-data "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
+sudo chmod -R g+s "${WORKSPACE}/trunk/__swift/logs" "${WORKSPACE}/trunk/__swift/cache" "${WORKSPACE}/trunk/__swift/files"
 
-[ -d ${WORKSPACE}/trunk/setup.bak ] || docker-compose exec swift bash -c "mysqladmin drop -f swift; mysqladmin create swift; cd setup; php console.setup.php Trilogy "http%3A%2F%2Ffaster.xo.local%2F" Kayako Admin admin admin werner.garcia%2Bkcadmin%40crossover.com; cd ..; [ -f __swift/cache/SWIFT_Loader.cache ] && mv setup setup.bak"
+# URLEncode variables
+EMAIL=`echo ${EMAIL} | perl -lpe 's/([^A-Za-z0-9])/sprintf("%%%02X", ord($1))/seg'`
+WEBHOST=`echo ${WEBHOST} | perl -lpe 's/([^A-Za-z0-9])/sprintf("%%%02X", ord($1))/seg'`
+
+[ $# -gt 0 -a "$1" = "-f" ] && mv ${WORKSPACE}/trunk/setup.bak ${WORKSPACE}/trunk/setup >/dev/null 2>&1
+
+[ -d ${WORKSPACE}/trunk/setup.bak ] || docker-compose exec swift bash -c "mysqladmin drop -f swift; mysqladmin create swift; cd setup; XDEBUG_CONFIG=0 php console.setup.php Trilogy \"http%3A%2F%2F${WEBHOST}%2F\" Kayako Admin admin admin \"${EMAIL}\"; cd ..; [ -f __swift/cache/SWIFT_Loader.cache ] && mv setup setup.bak"

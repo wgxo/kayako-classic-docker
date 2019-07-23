@@ -7,6 +7,8 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./swift
+      args:
+       - "USER=${USER}"
     extra_hosts:
       faster: ${GWIP}
       faster.xo.local: ${GWIP}
