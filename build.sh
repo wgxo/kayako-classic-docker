@@ -27,7 +27,7 @@ perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \
 perl -pi -e "s/(?=('DB_PASSWORD', ))'.*'/\\1'$MYSQL_PASS'/" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
-perl -pi -e "s/(?=('SWIFT_DEBUG', ))'.*'/\\1 true/" \
+perl -pi -e "s/(?=('SWIFT_DEBUG',))[^\)]*/\\1 true/" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
 ##### Gateway stuff #####

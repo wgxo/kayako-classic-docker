@@ -26,6 +26,7 @@ services:
       TERM: linux
     links:
       - mysql
+    restart: unless-stopped
 
   mysql:
     image: "mysql:5.7"
@@ -39,3 +40,4 @@ services:
       MYSQL_PASSWORD: OGYxYmI1OTUzZmM
     ports:
      - "3306:3306"
+    restart: unless-stopped
