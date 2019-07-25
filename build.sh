@@ -27,7 +27,12 @@ perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \
 perl -pi -e "s/(?=('DB_PASSWORD', ))'.*'/\\1'$MYSQL_PASS'/" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
+# Enable debugging and ChromePHP logging
 perl -pi -e "s/(?=('SWIFT_DEBUG',))[^\)]*/\\1 true/" \
+        ./swift/kayako-SWIFT/trunk/__swift/config/config.php
+
+# Install sample data
+perl -pi -e "s[\?>][define('INSTALL_SAMPLE_DATA', true);]" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
 ##### Gateway stuff #####
