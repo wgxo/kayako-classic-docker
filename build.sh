@@ -7,10 +7,11 @@ LIGHT_GRAY="\033[0;37m"; BLUE="\033[1;36m"; RED="\033[0;31m"; LIGHT_RED="\033[1;
 GREEN="\033[1;32m"; WHITE="\033[1;37m"; LIGHT_GRAY="\033[0;37m"; YELLOW="\033[1;33m";
 NOCOLOR="\033[0m"
 
-MYSQL_SERVER="aurora5.aureacentral.com"
-MYSQL_DATABASE="clone_p_kyk_kc03_db_5829589"
-MYSQL_USER="Werner Garcia"
-MYSQL_PASS="Welcome123!"
+# MySQL container settings
+MYSQL_SERVER="mysql"
+MYSQL_DATABASE="swift"
+MYSQL_USER="root"
+MYSQL_PASS="OGYxYmI1OTUzZmM"
 
 # PHPStorm development machine MAC address (comment out to disable)
 #MAC="00:0c:29:58:25:aa"
