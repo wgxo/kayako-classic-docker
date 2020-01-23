@@ -6,8 +6,8 @@ WORKSPACE="./swift/kayako-SWIFT"
 ### REPLACE YOUR EMAIL ADDRESS, WEBHOST AND GITHUB SSH KEY BELOW: ###
 #####################################################
 EMAIL="werner.garcia+kcadmin@crossover.com"
-# This is the host of the URL to access Kayako from a web browser: http://faster.xo.local/
-WEBHOST="ip-10-66-20-35.ec2.internal"
+# This is the host of the URL to access Kayako from a web browser: http://maint.xo.local/
+WEBHOST="maint.xo.local"
 SSHKEY="~/.ssh/wgxo"
 
 [ -f `readlink -f ${SSHKEY}` ] || { echo "Github SSH key '${SSHKEY}' not found!" ; exit 1; }

@@ -1,35 +1,49 @@
 [client]
-default-character-set=utf8mb4
+default-character-set = utf8mb4
 
 [mysql]
 default-character-set = utf8mb4
 
 ; Global properties
-; Sorted by name
 [mysqld]
 character-set-server = utf8mb4
-collation-server = utf8mb4_unicode_ci
-connect_timeout = 300
-init-connect = 'SET NAMES utf8mb4'
-interactive_timeout = 604800
+collation-server     = utf8mb4_unicode_ci
+connect_timeout      = 300
+init-connect         = 'SET NAMES utf8mb4'
+interactive_timeout  = 604800
 log_queries_not_using_indexes = 1
-long_query_time = 10
-max_allowed_packet = 1073741824
-max_heap_table_size = 1073741824
-net_read_timeout = 200
-sort_buffer_size = 1048576
-sql_mode = 'no_engine_substitution'
-net_write_timeout = 200
-table_open_cache = 5000
+long_query_time      = 10
+max_allowed_packet   = 1073741824
+max_heap_table_size  = 1073741824
+net_read_timeout     = 200
+sort_buffer_size     = 1048576
+sql_mode             = 'no_engine_substitution'
+net_write_timeout    = 200
+table_open_cache     = 5000
 table_open_cache_instances = 16
-tmp_table_size = 1073741824
-wait_timeout = 604800
-skip_name_resolve=on
-secure_file_priv=''
-local-infile = 1
+tmp_table_size       = 1073741824
+wait_timeout         = 604800
+skip_name_resolve    = on
+secure_file_priv     = ''
+local-infile         = 1
 
 ; Innodb specific configuration
-innodb_file_format = 'Barracuda'
-innodb_large_prefix = 1
-innodb_lock_wait_timeout = 180
+innodb_file_format         = 'Barracuda'
+innodb_large_prefix        = 1
+innodb_lock_wait_timeout   = 180
 innodb_print_all_deadlocks = 1
+
+; Log configuration
+general_log_file       = /var/log/mysql/general.log
+general_log            = 1
+log_error              = /var/log/mysql/error.log
+slow_query_log         = 1
+slow_query_log_file    = /var/log/mysql/slow.log
+long_query_time        = 5
+server-id              = 1
+log_bin                = /var/log/mysql/mysql-bin.log
+
+skip-log-bin
+
+skip_ssl
+log-queries-not-using-indexes

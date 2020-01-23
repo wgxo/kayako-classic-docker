@@ -10,14 +10,15 @@ services:
       args:
        - "USER=${USER}"
     extra_hosts:
-      faster: ${GWIP}
-      faster.xo.local: ${GWIP}
+      maint: ${GWIP}
+      maint.xo.local: ${GWIP}
       mail.xo.local: ${GWIP}
     ports:
      - "80:80"
      - "443:443"
     volumes:
      - ./swift/kayako-SWIFT/trunk:/var/www/html
+     - /home/wgarcia:/home/wgarcia
     environment:
       PHP_IDE_CONFIG: "serverName=default"
       XDEBUG_CONFIG: "${XDEBUG_CONFIG}"

@@ -14,7 +14,7 @@ MYSQL_USER="root"
 MYSQL_PASS="OGYxYmI1OTUzZmM"
 
 # PHPStorm development machine MAC address (comment out to disable)
-#MAC="00:0c:29:58:25:aa"
+MAC="00:0c:29:58:25:aa"
 
 LINES=`tput lines`
 COLS=`tput cols`
@@ -39,13 +39,17 @@ perl -pi -e "s/(?=('DB_PASSWORD', ))'.*'/\\1'$MYSQL_PASS'/" \
 perl -pi -e "s/(?=('SWIFT_DEBUG',))[^\)]*/\\1 true/" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
+# Set development environment
+perl -pi -e "s/(?=('SWIFT_ENVIRONMENT', ))'.*'/\\1'DEVELOP'/" \
+        ./swift/kayako-SWIFT/trunk/__swift/config/config.php
+
 # Install sample data
 perl -pi -e "s[\?>][define('INSTALL_SAMPLE_DATA', true);]" \
         ./swift/kayako-SWIFT/trunk/__swift/config/config.php
 
 ##### Gateway stuff #####
 # I need to get the IP of the machine running docker, so it can be accessed internally by swift
-DEV=$(ip route show scope global|grep -Poe '(?<=dev )\w+')
+DEV=$(ip route show scope global|head -n 1|grep -Poe '(?<=dev )\w+')
 GWIP=$(ip addr show dev $DEV|grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 
 if [ -z "$GWIP" ]; then
