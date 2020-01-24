@@ -57,3 +57,7 @@ VOLUME /var/www/html
 WORKDIR /var/www/html
 
 RUN umask 002
+
+# Enable headers module
+RUN a2enmod headers
+COPY headers.conf /etc/apache2/conf-enabled/headers.conf
