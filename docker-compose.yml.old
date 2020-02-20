@@ -1,4 +1,6 @@
 version: '3.0'
+volumes:
+  database:
 
 services:
   swift:
@@ -12,8 +14,8 @@ services:
       maint.xo.local: ${GWIP}
       mail.xo.local: ${GWIP}
     ports:
-     - "8080:80"
-     - "4443:443"
+     - "80:80"
+     - "443:443"
     volumes:
      - ./swift/kayako-SWIFT/trunk:/var/www/html
      - /home/wgarcia:/home/wgarcia
@@ -23,18 +25,20 @@ services:
       LINES: ${LINES}
       COLUMNS: ${COLS}
       TERM: linux
-    external_links:
+    links:
       - mysql
-    networks:
-      backend_default:
-      default:
     restart: unless-stopped
 
-networks:
-  backend_default:
-    external: true
-  default:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.19.1.0/24
+  mysql:
+    image: "mysql:5.7"
+    volumes:
+     - database:/var/lib/mysql
+     - ./mysql/config:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: OGYxYmI1OTUzZmM
+      MYSQL_DATABASE: swift
+      MYSQL_USER: root
+      MYSQL_PASSWORD: OGYxYmI1OTUzZmM
+    ports:
+     - "3306:3306"
+    restart: unless-stopped
