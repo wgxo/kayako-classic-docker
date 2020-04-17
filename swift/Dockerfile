@@ -26,6 +26,8 @@ RUN docker-php-ext-enable xdebug
 RUN apt-get install -y icu-devtools libicu-dev
 RUN docker-php-ext-install intl
 
+RUN apt install -y libapache2-mod-security2 emacs-nox elpa-php-mode elpa-yaml-mode
+
 ## Clean up
 RUN apt-get remove -y --purge ${PHPIZE_DEPS}
 RUN apt-get autoremove -y
@@ -59,5 +61,6 @@ WORKDIR /var/www/html
 RUN umask 002
 
 # Enable headers module
-RUN a2enmod headers
+RUN a2enmod headers log_debug log_forensic unique_id
 COPY headers.conf /etc/apache2/conf-enabled/headers.conf
+COPY modsecurity.conf /etc/modsecurity/modsecurity.conf

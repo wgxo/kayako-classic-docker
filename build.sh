@@ -1,5 +1,7 @@
 #!/bin/sh
 
+( cd ~/kc/my-kayako-deploy && docker-compose up -d db)
+
 DIR="./swift/kayako-SWIFT"
 
 # COLORS
@@ -67,7 +69,7 @@ echo "GWIP=$GWIP" >> .env
 if [ ! -z "$MAC" ]; then
     HOSTIP=$(arp -na |grep $MAC|grep -oP '\d+(\.\d+){3}'|head -1)
     if [ ! -z "$HOSTIP" ]; then
-	echo "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=$HOSTIP remote_enable=1 remote_autostart=1" >> .env
+	echo "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=$HOSTIP remote_autostart=1 remote_enable=1" >> .env
     fi
 fi
 
