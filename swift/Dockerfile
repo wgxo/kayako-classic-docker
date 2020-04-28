@@ -26,7 +26,7 @@ RUN docker-php-ext-enable xdebug
 RUN apt-get install -y icu-devtools libicu-dev
 RUN docker-php-ext-install intl
 
-RUN apt install -y libapache2-mod-security2 emacs-nox elpa-php-mode elpa-yaml-mode
+RUN apt install -y libapache2-mod-security2
 
 ## Clean up
 RUN apt-get remove -y --purge ${PHPIZE_DEPS}
@@ -64,3 +64,7 @@ RUN umask 002
 RUN a2enmod headers log_debug log_forensic unique_id
 COPY headers.conf /etc/apache2/conf-enabled/headers.conf
 COPY modsecurity.conf /etc/modsecurity/modsecurity.conf
+
+RUN perl -pi -e 's[memory_limit = .*$][memory_limit = 256M]' /usr/local/etc/php/php.ini
+RUN perl -pi -e 's[upload_max_filesize = .*$][upload_max_filesize = 20M]' /usr/local/etc/php/php.ini
+RUN perl -pi -e 's[post_max_size = .*$][post_max_size = 20M]' /usr/local/etc/php/php.ini
