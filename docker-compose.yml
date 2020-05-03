@@ -12,8 +12,8 @@ services:
       maint.xo.local: ${GWIP}
       mail.xo.local: ${GWIP}
     ports:
-     - "8080:80"
-     - "4443:443"
+     - "8088:80"
+     - "4343:443"
     volumes:
      - ./swift/kayako-SWIFT/trunk:/var/www/html
      - /home/wgarcia:/home/wgarcia
@@ -24,14 +24,14 @@ services:
       COLUMNS: ${COLS}
       TERM: linux
     external_links:
-      - mysql
+      - db:mysql
     networks:
-      backend_default:
+      aladdin_default:
       default:
     restart: unless-stopped
 
 networks:
-  backend_default:
+  aladdin_default:
     external: true
   default:
     driver: bridge
