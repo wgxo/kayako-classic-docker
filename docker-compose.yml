@@ -12,7 +12,7 @@ services:
       maint.xo.local: ${GWIP}
       mail.xo.local: ${GWIP}
     ports:
-     - "8088:80"
+     - "8080:80"
      - "4343:443"
     volumes:
      - ./swift/kayako-SWIFT/trunk:/var/www/html
