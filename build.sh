@@ -1,6 +1,6 @@
 #!/bin/sh
 
-( cd ~/kc/my-kayako-deploy && docker-compose up -d db)
+( cd ~/tnk/aladdin && docker-compose up -d db)
 
 DIR="./swift/kayako-SWIFT"
 
@@ -16,15 +16,15 @@ MYSQL_USER="root"
 MYSQL_PASS="OGYxYmI1OTUzZmM"
 
 # PHPStorm development machine MAC address (comment out to disable)
-MAC="00:0c:29:58:25:aa"
+MAC="00:0C:29:74:E5:32"
 
 LINES=`tput lines`
 COLS=`tput cols`
 
-echo "COMPOSE_PROJECT_NAME=classic" > .env
-echo "LINES=$LINES" >> .env
-echo "COLS=$COLS" >> .env
-echo "USER=$USER" >> .env
+echo -e "COMPOSE_PROJECT_NAME=classic" > .env
+echo -e "LINES=$LINES" >> .env
+echo -e "COLS=$COLS" >> .env
+echo -e "USER=$USER" >> .env
 
 ##### MySQL Stuff #####
 perl -pi -e "s/(?=('DB_HOSTNAME', ))'.*'/\\1'$MYSQL_SERVER'/" \
@@ -55,11 +55,11 @@ DEV=$(ip route show scope global|head -n 1|grep -Poe '(?<=dev )\w+')
 GWIP=$(ip addr show dev $DEV|grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 
 if [ -z "$GWIP" ]; then
-		echo "Unable to get GW IP address"
+		echo -e "Unable to get GW IP address"
 		exit 1
 fi
 
-echo "GWIP=$GWIP" >> .env
+echo -e "GWIP=$GWIP" >> .env
 
 ##### Xdebug stuff #####
 # I need to get the IP of my Windows development machine where PHPStorm is installed.
@@ -67,9 +67,9 @@ echo "GWIP=$GWIP" >> .env
 # Since the network uses DHCP to get IPs, I only know the MAC address and I use the following
 # code to get the dynamic IP
 if [ ! -z "$MAC" ]; then
-    HOSTIP=$(arp -na |grep $MAC|grep -oP '\d+(\.\d+){3}'|head -1)
+    HOSTIP=$(arp -na |grep -i $MAC|grep -oP '\d+(\.\d+){3}'|head -1)
     if [ ! -z "$HOSTIP" ]; then
-	echo "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=$HOSTIP remote_autostart=1 remote_enable=1" >> .env
+	echo -e "XDEBUG_CONFIG=idekey=PHPSTORM remote_host=$HOSTIP remote_autostart=1 remote_enable=1" >> .env
     fi
 fi
 
@@ -85,7 +85,7 @@ else
 		docker-compose up -d swift
 fi
 
-echo "$GREEN*** Remember to check your database settings in $DIR/trunk/__swift/config/config.php ***$NOCOLOR"
+echo -e "$GREEN*** Remember to check your database settings in $DIR/trunk/__swift/config/config.php ***$NOCOLOR"
 grep "DB_" $DIR/trunk/__swift/config/config.php|head -4
 grep "^define.*DEBUG" $DIR/trunk/__swift/config/config.php
 grep "^define.*ENVIRON" $DIR/trunk/__swift/config/config.php
